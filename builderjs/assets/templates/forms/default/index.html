@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="AcelleSystemLayouts">
+    <title>One column layout</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap-datepicker-1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.input-group.date').datepicker({});
+      });
+    </script>
+  </head>
+  <body>    
+    <main builder-element="BlockElement" builder-container builder-wrapper role="main">
+      <div class="p-5">
+        <div class="container">
+          <h1 builder-element builder-draggable>Hello List #1</h1>
+          <p builder-element builder-draggable>Vestibulum id convallis ligula. Maecenas tellus erat, porta in augue eget, pretium aliquet neque. Nunc pulvinar turpis sed pellentesque aliquet.</p>
+          <div class="row mt-4">
+            <div class="col-md-6">              
+              <form builder-element="BlockElement" builder-container>
+                <div builder-element="TextFieldElement" builder-draggable class="form-group">
+                  <label builder-element builder-inline-edit for="" class="font-weight-bold">Full name</label>
+                  <input name="full_name" type="text" class="form-control" id="" placeholder="Your name here">
+                </div>
+                <div builder-element="TextFieldElement" builder-draggable class="form-group">
+                  <label for="exampleFormControlInput1" class="font-weight-bold">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div builder-element="TextFieldElement" builder-draggable class="form-group">
+                  <label for="exampleFormControlInput1" class="font-weight-bold">Date example</label>
+                  <div class="input-group date">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.2em" height="1.2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-outline clr-i-outline-path-1" d="M32.25 6H29v2h3v22H4V8h3V6H3.75A1.78 1.78 0 0 0 2 7.81v22.38A1.78 1.78 0 0 0 3.75 32h28.5A1.78 1.78 0 0 0 34 30.19V7.81A1.78 1.78 0 0 0 32.25 6z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-2" d="M8 14h2v2H8z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-3" d="M14 14h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-4" d="M20 14h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-5" d="M26 14h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-6" d="M8 19h2v2H8z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-7" d="M14 19h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-8" d="M20 19h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-9" d="M26 19h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-10" d="M8 24h2v2H8z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-11" d="M14 24h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-12" d="M20 24h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-13" d="M26 24h2v2h-2z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-14" d="M10 10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-15" d="M26 10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1z" fill="currentColor"/><path class="clr-i-outline clr-i-outline-path-16" d="M13 6h10v2H13z" fill="currentColor"/></svg>
+                    </span>
+                  </div>
+                </div>
+                <div builder-element="TextFieldElement" builder-draggable class="form-group">
+                  <label for="exampleFormControlSelect1" class="font-weight-bold">Example select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div builder-element="TextFieldElement" builder-draggable class="form-group">
+                  <label for="exampleFormControlSelect1" class="font-weight-bold">Example select</label>
+                  <div class="">
+                    <span class="mr-4">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Male
+                    </span>
+                    <span class="mr-4">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Female
+                    </span>
+                    <span class="mr-4">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Other
+                    </span>
+                  </div>
+                </div>
+                <div builder-element="TextFieldElement" builder-draggable class="form-group">
+                  <label for="exampleFormControlTextarea1" class="font-weight-bold">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div builder-element class="mt-4">
+                  <button builder-element type="submit" class="btn btn-primary mr-2">Submit</button>
+                  <button builder-element class="btn btn-light">Cancel</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center">
+                <img builder-element class="" src="image/1_1_placeholder.png" width="100%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
