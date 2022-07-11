@@ -1006,6 +1006,7 @@ body.dark-body {
 
 .portfolio-col .portfolio-info {
   padding: 10px 0 0;
+  line-height: normal;
 }
 
 .portfolio-col .portfolio-info h5 {
@@ -1014,6 +1015,7 @@ body.dark-body {
   color: #151515;
   font-weight: 600;
   font-size: 16px;
+  margin-bottom: 10px
 }
 
 .portfolio-col .portfolio-info span {
