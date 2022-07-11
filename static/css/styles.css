@@ -15,7 +15,7 @@ Table of contents
 04. Header
 05. Home Banner
 06. About us
-07. Feature Box 
+07. Feature Box
 08. Portfolio
 09. Counter
 10. Testimonial
@@ -488,6 +488,7 @@ body.dark-body {
   right: 0;
   bottom: 0;
   margin: auto;
+  overflow: hidden;
 }
 
 .pages-nav .link {
