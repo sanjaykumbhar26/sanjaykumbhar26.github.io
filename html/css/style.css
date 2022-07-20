@@ -744,22 +744,22 @@ fieldset[disabled] .btn {
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 12px;
+        top: 06px !important;
         left: 35%;
     }
 
     .placeholders::-moz-placeholder {
-        top: 12px;
+        top: 06px !important;
         left: 35%;
     }
 
     .placeholders:-ms-input-placeholder {
-        top: 12px;
+        top: 06px !important;
         left: 35%;
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 12px;
+        top: 06px !important;
         left: 35%;
     }
 
