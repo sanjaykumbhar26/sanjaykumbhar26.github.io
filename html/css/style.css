@@ -625,6 +625,7 @@ fieldset[disabled] .btn {
     position: absolute;
     right: 60px;
     width: 4px;
+    top: 0px;
     height: 60px;
 }
 
