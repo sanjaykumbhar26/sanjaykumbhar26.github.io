@@ -464,9 +464,10 @@ fieldset[disabled] .btn {
     animation: slide1 1s ease-in-out infinite;
     position: absolute;
     z-index: 10;
-    margin-left: -74px;
-    bottom: 21px;
-    width: 46px;
+    left: 38px;
+    bottom: 32px;
+    width: 28px;
+    padding: 0
 }
 
 /* info list */
