@@ -208,6 +208,7 @@ textarea.form-control {
     top: 13px;
     left: 35%;
     text-indent: 1rem;
+    line-height: 1;
     white-space: normal;
 }
 
@@ -222,6 +223,7 @@ textarea.form-control {
     align-items: center;
     text-indent: 1rem;
     white-space: normal;
+    line-height: 1;
 }
 
 ::-moz-placeholder {
@@ -235,6 +237,7 @@ textarea.form-control {
     align-items: center;
     text-indent: 1rem;
     white-space: normal;
+    line-height: 1;
 }
 
 :-ms-input-placeholder {
@@ -249,6 +252,7 @@ textarea.form-control {
     justify-content: center;
     text-indent: 1rem;
     white-space: normal;
+    line-height: 1;
 }
 
 
@@ -762,18 +766,22 @@ fieldset[disabled] .btn {
 
     .placeholders::-webkit-input-placeholder {
         left: 35%;
+        line-height: 1;
     }
 
     .placeholders::-moz-placeholder {
         left: 35%;
+        line-height: 1;
     }
 
     .placeholders:-ms-input-placeholder {
         left: 35%;
+        line-height: 1;
     }
 
     .placeholders::-webkit-input-placeholder {
         left: 35%;
+        line-height: 1;
     }
 
     .form-action button .blink-1 {
