@@ -171,6 +171,8 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 .placeholders::-webkit-input-placeholder {
@@ -178,6 +180,8 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 .placeholders::-moz-placeholder {
@@ -185,6 +189,8 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 .placeholders:-ms-input-placeholder {
@@ -192,6 +198,8 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 .placeholders::-webkit-input-placeholder {
@@ -199,6 +207,8 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 :-moz-placeholder {
@@ -210,6 +220,8 @@ textarea.form-control {
     height: 60px;
     display: flex;
     align-items: center;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 ::-moz-placeholder {
@@ -221,6 +233,8 @@ textarea.form-control {
     height: 60px;
     display: flex;
     align-items: center;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 :-ms-input-placeholder {
@@ -233,6 +247,8 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-indent: 1rem;
+    white-space: normal;
 }
 
 
@@ -730,37 +746,37 @@ fieldset[disabled] .btn {
     }
 
     .form-control {
-        height: 58px;
+        height: 60px;
         min-width: 100%;
     }
 
     .form-action button {
-        height: 58px;
+        height: 60px;
         min-width: 100%;
     }
 
     .border-br {
-        height: 58px;
+        height: 60px;
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 06px !important;
         left: 35%;
     }
 
     .placeholders::-moz-placeholder {
-        top: 06px !important;
         left: 35%;
     }
 
     .placeholders:-ms-input-placeholder {
-        top: 06px !important;
         left: 35%;
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 06px !important;
         left: 35%;
+    }
+
+    .form-action button .blink-1 {
+        bottom: 0px;
     }
 
     .footer-section {
