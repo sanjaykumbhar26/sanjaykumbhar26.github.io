@@ -534,6 +534,7 @@ fieldset[disabled] .btn {
 
 .cloud-block {
     position: relative;
+    width: 106px;
 }
 
 .form-control:focus {
