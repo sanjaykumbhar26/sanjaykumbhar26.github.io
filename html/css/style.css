@@ -356,7 +356,7 @@ img {
 
 .circle-section {
     margin-bottom: 10px;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .inner-sub {
@@ -729,13 +729,39 @@ fieldset[disabled] .btn {
 
     .form-control {
         height: 58px;
+        min-width: 100%;
     }
 
     .form-action button {
         height: 58px;
+        min-width: 100%;
     }
 
     .border-br {
         height: 58px;
+    }
+
+    .placeholders::-webkit-input-placeholder {
+        top: 12px;
+        left: 35%;
+    }
+
+    .placeholders::-moz-placeholder {
+        top: 12px;
+        left: 35%;
+    }
+
+    .placeholders:-ms-input-placeholder {
+        top: 12px;
+        left: 35%;
+    }
+
+    .placeholders::-webkit-input-placeholder {
+        top: 12px;
+        left: 35%;
+    }
+
+    .footer-section {
+        margin-top: 30px;
     }
 }
