@@ -723,14 +723,14 @@ fieldset[disabled] .btn {
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 12px;
+        top: 13px;
     }
 
     .placeholders:-ms-input-placeholder {
-        top: 12px;
+        top: 13px;
     }
 
     .placeholders::-moz-placeholder {
-        top: 12px;
+        top: 13px;
     }
 }
