@@ -147,18 +147,21 @@ textarea.form-control {
     font-size: 26px;
     font-weight: 500;
     color: #bbbbbb;
+    height: 60px;
 }
 
 .form-control::-moz-placeholder {
     font-size: 26px;
     font-weight: 500;
     color: #bbbbbb;
+    height: 60px;
 }
 
 .form-control:-ms-input-placeholder {
     font-size: 26px;
     font-weight: 500;
     color: #bbbbbb;
+    height: 60px;
 }
 
 ::-webkit-input-placeholder {
@@ -168,11 +171,6 @@ textarea.form-control {
     font-size: 26px;
     font-weight: 500;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-indent: 1rem;
-    white-space: normal;
 }
 
 .placeholders::-webkit-input-placeholder {
@@ -180,8 +178,7 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
-    text-indent: 1rem;
-    white-space: normal;
+    height: 60px;
 }
 
 .placeholders::-moz-placeholder {
@@ -189,8 +186,7 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
-    text-indent: 1rem;
-    white-space: normal;
+    height: 60px;
 }
 
 .placeholders:-ms-input-placeholder {
@@ -198,8 +194,7 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
-    text-indent: 1rem;
-    white-space: normal;
+    height: 60px;
 }
 
 .placeholders::-webkit-input-placeholder {
@@ -207,9 +202,7 @@ textarea.form-control {
     position: absolute;
     top: 13px;
     left: 35%;
-    text-indent: 1rem;
-    line-height: 1;
-    white-space: normal;
+    height: 60px;
 }
 
 :-moz-placeholder {
@@ -219,11 +212,6 @@ textarea.form-control {
     font-size: 18px;
     font-weight: 500;
     height: 60px;
-    display: flex;
-    align-items: center;
-    text-indent: 1rem;
-    white-space: normal;
-    line-height: 1;
 }
 
 ::-moz-placeholder {
@@ -233,11 +221,6 @@ textarea.form-control {
     font-size: 18px;
     font-weight: 500;
     height: 60px;
-    display: flex;
-    align-items: center;
-    text-indent: 1rem;
-    white-space: normal;
-    line-height: 1;
 }
 
 :-ms-input-placeholder {
@@ -247,12 +230,6 @@ textarea.form-control {
     font-size: 18px;
     font-weight: 500;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-indent: 1rem;
-    white-space: normal;
-    line-height: 1;
 }
 
 
