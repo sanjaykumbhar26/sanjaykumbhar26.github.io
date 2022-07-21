@@ -157,94 +157,22 @@ textarea.form-control {
 /*-- Placeholder Opacity --*/
 .form-control::-webkit-input-placeholder {
     font-size: 22px;
-    font-weight: 500;
     color: #bbbbbb;
 }
 
 .form-control::-moz-placeholder {
     font-size: 22px;
-    font-weight: 500;
     color: #bbbbbb;
 }
 
 .form-control:-ms-input-placeholder {
     font-size: 22px;
-    font-weight: 500;
     color: #bbbbbb;
 }
 
 ::-webkit-input-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
     font-size: 22px;
-    font-weight: 500;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.placeholders::-webkit-input-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 30%;
-}
-
-.placeholders::-moz-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 30%;
-}
-
-.placeholders:-ms-input-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 30%;
-}
-
-.placeholders::-webkit-input-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 30%;
-}
-
-:-moz-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 18px;
-    font-weight: 500;
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-::-moz-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 18px;
-    font-weight: 500;
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-:-ms-input-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 18px;
-    font-weight: 500;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #bbbbbb;
 }
 
 
@@ -534,6 +462,7 @@ img {
     margin: 0 auto;
     border: 3px solid #25cd77;
     font-size: 22px;
+    line-height: 1.5;
 }
 
 .form-field {
@@ -664,7 +593,7 @@ img {
 }
 
 .footer-info {
-    max-width: 960px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -749,7 +678,6 @@ img {
     text-decoration: none;
     font-size: 12px;
 }
-
 
 @media only screen and (max-width: 768px) {
     .main-block {
