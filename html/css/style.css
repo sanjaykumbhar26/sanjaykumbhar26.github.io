@@ -159,6 +159,28 @@ textarea.form-control {
     color: #bbbbbb;
 }
 
+.placeholders::-webkit-input-placeholder {
+    position: absolute;
+    top: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.placeholders:-ms-input-placeholder {
+    position: absolute;
+    top: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.placeholders::-moz-placeholder {
+    position: absolute;
+    top: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+
 
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
@@ -698,5 +720,17 @@ fieldset[disabled] .btn {
         padding-bottom: 8px;
         top: 0;
         bottom: 3px;
+    }
+
+    .placeholders::-webkit-input-placeholder {
+        top: 12px;
+    }
+
+    .placeholders:-ms-input-placeholder {
+        top: 12px;
+    }
+
+    .placeholders::-moz-placeholder {
+        top: 12px;
     }
 }
