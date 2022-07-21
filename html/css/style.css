@@ -143,94 +143,21 @@ textarea.form-control {
 }
 
 /*-- Placeholder Opacity --*/
-/* .form-control::-webkit-input-placeholder {
-    font-size: 26px;
-    font-weight: 500;
+.form-control::-webkit-input-placeholder {
     color: #bbbbbb;
-    height: 60px;
 }
 
 .form-control::-moz-placeholder {
-    font-size: 26px;
-    font-weight: 500;
     color: #bbbbbb;
-    height: 60px;
 }
 
 .form-control:-ms-input-placeholder {
-    font-size: 26px;
-    font-weight: 500;
     color: #bbbbbb;
-    height: 60px;
 }
 
 ::-webkit-input-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 26px;
-    font-weight: 500;
-    height: 60px;
+    color: #bbbbbb;
 }
-
-.placeholders::-webkit-input-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 35%;
-    height: 60px;
-}
-
-.placeholders::-moz-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 35%;
-    height: 60px;
-}
-
-.placeholders:-ms-input-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 35%;
-    height: 60px;
-}
-
-.placeholders::-webkit-input-placeholder {
-    font-size: 30px;
-    position: absolute;
-    top: 13px;
-    left: 35%;
-    height: 60px;
-}
-
-:-moz-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 18px;
-    font-weight: 500;
-    height: 60px;
-}
-
-::-moz-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 18px;
-    font-weight: 500;
-    height: 60px;
-}
-
-:-ms-input-placeholder {
-    opacity: 1 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    font-size: 18px;
-    font-weight: 500;
-    height: 60px;
-} */
 
 
 body::-webkit-scrollbar-track {
@@ -588,12 +515,14 @@ fieldset[disabled] .btn {
 
 .form-action button .blink-1 {
     width: 50px;
-    height: 60px;
+    height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     right: 6px;
+    padding-bottom: 8px;
+    top: 0;
     bottom: 3px;
 }
 
@@ -715,6 +644,9 @@ fieldset[disabled] .btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .subscription-block .label {
+        font-size: 11px;
+    }
 
     .inner-sub {
         margin-bottom: 30px;
@@ -743,26 +675,6 @@ fieldset[disabled] .btn {
         height: 60px;
     }
 
-    /* .placeholders::-webkit-input-placeholder {
-        left: 35%;
-        line-height: 1;
-    }
-
-    .placeholders::-moz-placeholder {
-        left: 35%;
-        line-height: 1;
-    }
-
-    .placeholders:-ms-input-placeholder {
-        left: 35%;
-        line-height: 1;
-    }
-
-    .placeholders::-webkit-input-placeholder {
-        left: 35%;
-        line-height: 1;
-    } */
-
     .form-action button .blink-1 {
         bottom: 0px;
     }
@@ -772,6 +684,19 @@ fieldset[disabled] .btn {
     }
 
     .border-br {
-        height: 60px;
+        height: 56px;
+    }
+
+    .form-action button .blink-1 {
+        width: 50px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 6px;
+        padding-bottom: 8px;
+        top: 0;
+        bottom: 3px;
     }
 }
