@@ -744,7 +744,7 @@ fieldset[disabled] .btn {
     }
 
     .circle-wrap .circle .mask {
-        clip: rect(0px, 120px, 120px, 60px);
+        clip: rect(0px, 120.5px, 120px, 60px);
     }
 
     .circle-wrap .circle .mask,
@@ -782,7 +782,7 @@ fieldset[disabled] .btn {
     }
 
     .mask .fill {
-        clip: rect(0px, 78px, 121px, 0px);
+        clip: rect(0px, 60px, 121px, 0px);
         background-color: #23d741;
     }
 
