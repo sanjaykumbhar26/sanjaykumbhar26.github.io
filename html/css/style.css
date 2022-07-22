@@ -721,15 +721,15 @@ fieldset[disabled] .btn {
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 13px;
+        top: 10px;
     }
 
     .placeholders:-ms-input-placeholder {
-        top: 13px;
+        top: 10px;
     }
 
     .placeholders::-moz-placeholder {
-        top: 13px;
+        top: 10px;
     }
 
     .subscription-block {
@@ -779,6 +779,11 @@ fieldset[disabled] .btn {
 
     .footer-section {
         margin-top: 10px;
+    }
+
+    .mask .fill {
+        clip: rect(0px, 78px, 121px, 0px);
+        background-color: #23d741;
     }
 
 
