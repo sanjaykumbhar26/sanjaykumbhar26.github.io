@@ -721,15 +721,15 @@ fieldset[disabled] .btn {
     }
 
     .placeholders::-webkit-input-placeholder {
-        top: 10px;
+        top: 11px;
     }
 
     .placeholders:-ms-input-placeholder {
-        top: 10px;
+        top: 11px;
     }
 
     .placeholders::-moz-placeholder {
-        top: 10px;
+        top: 11px;
     }
 
     .subscription-block {
