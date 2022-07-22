@@ -563,7 +563,7 @@ fieldset[disabled] .btn {
 }
 
 .footer-info {
-    max-width: 860px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -671,11 +671,12 @@ fieldset[disabled] .btn {
     }
 
     .inner-sub {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .circle-section {
-        margin-top: 90px;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 
     .main-block {
@@ -683,18 +684,18 @@ fieldset[disabled] .btn {
     }
 
     .form-control {
-        height: 60px;
+        height: 54px;
         min-width: 100%;
 
     }
 
     .form-action button {
-        height: 60px;
+        height: 54px;
         min-width: 100%;
     }
 
     .border-br {
-        height: 60px;
+        height: 48px;
     }
 
     .form-action button .blink-1 {
@@ -705,13 +706,10 @@ fieldset[disabled] .btn {
         margin-top: 30px;
     }
 
-    .border-br {
-        height: 56px;
-    }
 
     .form-action button .blink-1 {
         width: 50px;
-        height: 56px;
+        height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -733,4 +731,55 @@ fieldset[disabled] .btn {
     .placeholders::-moz-placeholder {
         top: 13px;
     }
+
+    .subscription-block {
+        position: relative;
+    }
+
+    .circle-wrap .inside-circle {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .circle-wrap .circle .mask {
+        clip: rect(0px, 120px, 120px, 60px);
+    }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 120.5px;
+        height: 120px;
+    }
+
+    .circle-wrap {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cloud-block {
+        width: 88px;
+    }
+
+    .arrow1 {
+        animation: slide1 1s ease-in-out infinite;
+        position: absolute;
+        z-index: 10;
+        left: 33px;
+        bottom: 34px;
+        width: 21px;
+        padding: 0;
+    }
+
+    .cloud-img {
+        top: -7px;
+        position: relative;
+    }
+
+    .footer-section {
+        margin-top: 10px;
+    }
+
+
 }
