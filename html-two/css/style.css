@@ -683,4 +683,30 @@ img {
     .main-block {
         min-height: auto;
     }
+
+    .logo-block p {
+        margin-bottom: 10px;
+    }
+
+    .logo-block img {
+        height: 110px;
+    }
+
+    .form-control {
+        height: 54px;
+    }
+
+    .inner-sub {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .form-action button {
+        height: 54px;
+    }
+
+    .info-list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
