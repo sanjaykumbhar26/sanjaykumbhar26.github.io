@@ -631,15 +631,15 @@ body.dark-body {
 }
 
 .home-banner .social-icons a {
-  width: 30px;
-  height: 30px;
-  background: #111;
+  width: 60px;
+  height: 60px;
+  background: #0a66c2;
   display: block;
   text-align: center;
-  line-height: 30px;
+  line-height: 60px;
   color: #fff;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: 28px;
 }
 
 @media(max-width: 991px) {
@@ -1140,11 +1140,14 @@ body.dark-body {
 .testimonial-col .say {
   position: relative;
   padding: 20px;
+  background-color: rgb(242 242 242 / 50%);
 }
 
 .testimonial-col .say p {
   font-size: 14px;
   margin: 0;
+  color: #000;
+  line-height: 24px;
 }
 
 .testimonial-col .user {
@@ -1289,19 +1292,21 @@ body.dark-body {
 }
 
 .contact-info {
-  background: #fff;
+  background: #ffc815;
   padding: 20px;
   position: relative;
   margin-bottom: 15px;
-  border: 1px solid #eee;
-  border-bottom: 4px solid #eee;
+  border: 1px solid #e2af09;
+  border-bottom: 4px solid #e2af09;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .contact-info h6 {
   font-weight: 600;
   font-size: 16px;
   margin: 0 0 6px;
+  color: #000;
 }
 
 .contact-info i {
@@ -1309,15 +1314,17 @@ body.dark-body {
   margin-bottom: 20px;
   display: inline-block;
   vertical-align: top;
+  color: rgb(255, 255, 255);
 }
 
 .contact-info p {
   margin: 0;
   word-break: break-word;
+  color: #000;
 }
 
-.contact-info:last-child {
-  margin-bottom: 0;
+.btn-bar a {
+  margin-right: 10px;
 }
 
 @media(max-width: 767px) {
