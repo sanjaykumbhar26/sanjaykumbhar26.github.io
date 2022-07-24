@@ -8,24 +8,24 @@
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
-;(function(window) {
+; (function (window) {
 
 	'use strict';
 
 	var support = { transitions: Modernizr.csstransitions },
 		// transition end event name
 		transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		onEndTransition = function( el, callback ) {
-			var onEndCallbackFn = function( ev ) {
-				if( support.transitions ) {
-					if( ev.target != this ) return;
-					this.removeEventListener( transEndEventName, onEndCallbackFn );
+		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
+		onEndTransition = function (el, callback) {
+			var onEndCallbackFn = function (ev) {
+				if (support.transitions) {
+					if (ev.target != this) return;
+					this.removeEventListener(transEndEventName, onEndCallbackFn);
 				}
-				if( callback && typeof callback === 'function' ) { callback.call(this); }
+				if (callback && typeof callback === 'function') { callback.call(this); }
 			};
-			if( support.transitions ) {
-				el.addEventListener( transEndEventName, onEndCallbackFn );
+			if (support.transitions) {
+				el.addEventListener(transEndEventName, onEndCallbackFn);
 			}
 			else {
 				onEndCallbackFn();
@@ -57,14 +57,14 @@
 		var stackPagesIdxs = getStackPagesIdxs();
 
 		// set z-index, opacity, initial transforms to pages and add class page--inactive to all except the current one
-		for(var i = 0; i < pagesTotal; ++i) {
+		for (var i = 0; i < pagesTotal; ++i) {
 			var page = pages[i],
 				posIdx = stackPagesIdxs.indexOf(i);
 
-			if( current !== i ) {
+			if (current !== i) {
 				classie.add(page, 'page--inactive');
 
-				if( posIdx !== -1 ) {
+				if (posIdx !== -1) {
 					// visible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,100%,0)';
 					page.style.transform = 'translate3d(0,100%,0)';
@@ -72,7 +72,7 @@
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
-					page.style.transform = 'translate3d(0,75%,-300px)';		
+					page.style.transform = 'translate3d(0,75%,-300px)';
 				}
 			}
 			else {
@@ -80,8 +80,8 @@
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
-			
-			if( posIdx !== -1 ) {
+
+			if (posIdx !== -1) {
 				page.style.opacity = parseFloat(1 - 0.1 * posIdx);
 			}
 			else {
@@ -96,20 +96,20 @@
 		menuCtrl.addEventListener('click', toggleMenu);
 
 		// navigation menu clicks
-		navItems.forEach(function(item) {
+		navItems.forEach(function (item) {
 			// which page to open?
 			var pageid = item.getAttribute('href').slice(1);
-			item.addEventListener('click', function(ev) {
+			item.addEventListener('click', function (ev) {
 				ev.preventDefault();
 				openPage(pageid);
 			});
 		});
 
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
-		pages.forEach(function(page) {
+		pages.forEach(function (page) {
 			var pageid = page.getAttribute('id');
-			page.addEventListener('click', function(ev) {
-				if( isMenuOpen ) {
+			page.addEventListener('click', function (ev) {
+				if (isMenuOpen) {
 					ev.preventDefault();
 					openPage(pageid);
 				}
@@ -117,18 +117,18 @@
 		});
 
 		// keyboard navigation events
-		document.addEventListener( 'keydown', function( ev ) {
-			if( !isMenuOpen ) return; 
+		document.addEventListener('keydown', function (ev) {
+			if (!isMenuOpen) return;
 			var keyCode = ev.keyCode || ev.which;
-			if( keyCode === 27 ) {
+			if (keyCode === 27) {
 				closeMenu();
 			}
-		} );
+		});
 	}
 
 	// toggle menu fn
 	function toggleMenu() {
-		if( isMenuOpen ) {
+		if (isMenuOpen) {
 			closeMenu();
 		}
 		else {
@@ -148,10 +148,10 @@
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
-		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+		for (var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
-			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
-			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
+			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50 * i) + 'px)'; // -200px, -230px, -260px
+			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50 * i) + 'px)';
 		}
 	}
 
@@ -173,21 +173,21 @@
 		futurePage.style.opacity = 1;
 
 		// set transforms for the other items in the stack
-		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+		for (var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
 			page.style.transform = 'translate3d(0,100%,0)';
 		}
 
 		// set current
-		if( id ) {
+		if (id) {
 			current = futureCurrent;
 		}
-		
+
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
-		onEndTransition(futurePage, function() {
+		onEndTransition(futurePage, function () {
 			classie.remove(stack, 'pages-stack--open');
 			// reorganize stack
 			buildStack();
@@ -203,13 +203,13 @@
 
 			excludeIdx = excludePageIdx || -1;
 
-		if( excludePageIdx != current ) {
+		if (excludePageIdx != current) {
 			idxs.push(current);
 		}
-		if( excludePageIdx != nextStackPageIdx ) {
+		if (excludePageIdx != nextStackPageIdx) {
 			idxs.push(nextStackPageIdx);
 		}
-		if( excludePageIdx != nextStackPageIdx_2 ) {
+		if (excludePageIdx != nextStackPageIdx_2) {
 			idxs.push(nextStackPageIdx_2);
 		}
 

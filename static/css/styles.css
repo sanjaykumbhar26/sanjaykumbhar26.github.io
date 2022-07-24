@@ -41,9 +41,8 @@ body {
 }
 
 .home-bg {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #fff7fa, #e4f8ff, #fdfdfd);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
@@ -611,6 +610,10 @@ body.dark-body {
 
 .home-text .btn-bar {
   margin-top: 20px;
+}
+
+.home-text .btn-bar a {
+  margin-right: 20px;
 }
 
 .home-banner .social-icons {
@@ -6457,4 +6460,12 @@ body.dark-body {
     padding-right: 100px
   }
 
+}
+
+
+.profile-pic {
+  width: 306px;
+  height: 228px;
+  border-radius: 100%;
+  overflow: hidden;
 }
