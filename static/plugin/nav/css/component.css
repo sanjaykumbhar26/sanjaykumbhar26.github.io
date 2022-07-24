@@ -57,11 +57,11 @@ html.js,
 
 .js .page {
 	position: relative;
-    z-index: 5;
-    width: 100%;
-    height: 100vh;
-    pointer-events: auto;
-    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	pointer-events: auto;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .js .pages-stack--open .page {
@@ -83,7 +83,7 @@ html.js,
 /* Menu button */
 .menu-button {
 	width: 60px;
-    height: 60px;
+	height: 60px;
 	padding: 0;
 	cursor: pointer;
 	border: none;
@@ -163,26 +163,32 @@ html.js,
 		padding: 10px 20px 0 20px;
 		text-align: left;
 	}
+
 	.js .pages-nav__item {
 		width: 100%;
 		padding: 4px 0;
 	}
+
 	.js .pages-nav__item--small {
 		display: inline-block;
 		width: auto;
 		margin-right: 5px;
 	}
+
 	.pages-nav__item--social {
 		font-size: 0.9em;
 	}
+
 	.menu-button {
 		top: 15px;
 		right: 10px;
 		left: auto;
 	}
+
 	.info {
 		font-size: 0.85em;
 	}
+
 	.poster {
 		margin: 1em;
 	}
