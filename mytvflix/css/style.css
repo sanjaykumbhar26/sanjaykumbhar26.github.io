@@ -390,7 +390,7 @@ img {
 }
 
 .logo-block img {
-    height: 25px;
+    height: 35px;
 }
 
 
@@ -699,9 +699,7 @@ img {
         margin-bottom: 10px;
     }
 
-    .logo-block img {
-        height: 110px;
-    }
+
 
     .form-control {
         height: 54px;
