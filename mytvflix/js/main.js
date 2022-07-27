@@ -67,17 +67,17 @@ $(document).ready(function () {
 
     setTimeout(function () {
         $(".firstThree").addClass("dropin3");
-    }, 8000);
+    }, 6000);
 
 
     setTimeout(function () {
         $(".firstFour").addClass("dropin4");
-    }, 11000);
+    }, 8000);
 
     setTimeout(function () {
         $(".second-page").addClass("active");
         $(".first-page").addClass("inactive");
-    }, 12000);
+    }, 9000);
 
 });
 
