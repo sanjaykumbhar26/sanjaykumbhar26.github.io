@@ -59,25 +59,24 @@ $(document).ready(function () {
 
     setTimeout(function () {
         $(".firstOne").addClass("dropin");
-    }, 2000);
+    }, 750);
 
     setTimeout(function () {
         $(".firstTwo").addClass("dropin2");
-    }, 4000);
+    }, 1500);
 
     setTimeout(function () {
         $(".firstThree").addClass("dropin3");
-    }, 6000);
-
+    }, 2250);
 
     setTimeout(function () {
         $(".firstFour").addClass("dropin4");
-    }, 8000);
+    }, 3000);
 
     setTimeout(function () {
         $(".second-page").addClass("active");
         $(".first-page").addClass("inactive");
-    }, 9000);
+    }, 3700);
 
 });
 

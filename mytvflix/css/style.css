@@ -380,7 +380,7 @@ img {
 
 .info-list ul li label {
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -390,7 +390,7 @@ img {
 }
 
 .logo-block img {
-    height: 35px;
+    height: 32px;
 }
 
 
@@ -399,20 +399,22 @@ img {
 }
 
 .tv-block .tv {
-    max-width: 266px;
+    max-width: 330px;
     margin: 0 auto 20px;
     position: relative;
 }
 
 .tv-block .tv img {
-    height: 126px;
+    height: auto;
+    width: 100%;
 }
 
 .tv-block .tv span img {
     position: absolute;
-    top: 44px;
-    right: 114px;
-    height: 40px;
+    top: 64px;
+    right: 138px;
+    height: 60px;
+    width: auto;
 }
 
 .info-list ul {
@@ -425,7 +427,7 @@ img {
     height: 25px;
     max-width: 330px;
     border-radius: 50px;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;
     display: flex;
     align-items: center;
 }
@@ -550,14 +552,12 @@ img {
     top: 0;
 }
 
-.blink-1 {
-    font-size: 45px;
-    line-height: 30px;
-    -webkit-animation: blink-1 2.5s ease-in-out infinite both;
-    animation: blink-1 2.5s ease-in-out infinite both;
+.blink {
+    -webkit-animation: blink 5.5s ease-in-out infinite both;
+    animation: blink 5.5s ease-in-out infinite both;
 }
 
-@-webkit-keyframes blink-1 {
+@-webkit-keyframes blink {
 
     0%,
     50%,
@@ -571,7 +571,7 @@ img {
     }
 }
 
-@keyframes blink-1 {
+@keyframes blink {
 
     0%,
     50%,
@@ -605,7 +605,7 @@ img {
 
 .footer-info {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
 .footer-info p {
@@ -691,6 +691,12 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .footer-info {
+        max-width: 500px;
+        margin: 20px auto 0;
+    }
+
     .main-block {
         min-height: auto;
     }
@@ -846,26 +852,26 @@ img {
 .firstTwo,
 .firstThree,
 .firstFour {
-    display: none;
+    display: none !important;
 }
 
 .firstOne.dropin,
 .firstTwo.dropin2,
 .firstThree.dropin3,
 .firstFour.dropin4 {
-    display: block !important;
+    display: flex !important;
 }
 
 .dropin {
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 0.75s;
 }
 
 .dropin2 {
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 0.75s;
 }
 
 .dropin3 {
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 0.75s;
 }
 
 .dropin4 {
@@ -886,4 +892,40 @@ img {
 
 .header-end {
     justify-content: flex-end;
+}
+
+.first-page .tv-list {
+    margin-top: 10px;
+    min-height: 240px;
+}
+
+.info-list ul.firsts-page {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-list ul.firsts-page li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+    width: 297px;
+}
+
+
+.info-list ul.seconds-page {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-list ul.seconds-page li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+    width: 259px;
 }
