@@ -1,0 +1,31 @@
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
+
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+
+RewriteRule ^locations$ locations.html [L]
+RewriteRule ^index$ index.html [L]
+RewriteRule ^careers$ careers.html [L]
+RewriteRule ^connect$ connect.html [L]
+RewriteRule ^chicago$ chicago.html [L]
+RewriteRule ^dallas$ dallas.html [L]
+RewriteRule ^privacy$ privacy.html [L]
+RewriteRule ^terms$ terms.html [L]
+RewriteRule ^terms-conditions$ terms-conditions.html [L]
+RewriteRule ^licensing$ licensing.html [L]
+RewriteRule ^accessibility$ accessibility.html [L]
+RewriteRule ^michael-black$ michael-black.html [L]
+RewriteRule ^tom-merritt$ tom-merritt.html [L]
+RewriteRule ^john-townes$ john-townes.html [L]
+RewriteRule ^lo$ lo.html [L]
+
+
+
+
