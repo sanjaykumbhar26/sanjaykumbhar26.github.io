@@ -1,0 +1,359 @@
+/* Adaptive styles for template "Halloween TV" */
+/* 640PX < 1023PX
+---------------------------------------------------*/
+@media (max-width: 1023px) {
+  /* Wrappers */
+  .wrapper-wall {
+    padding-bottom: 157px;
+  }
+  .wrapper-floor {
+    margin: -157px auto 0;
+    height: 157px;
+  }
+  /* Environment / Room */
+  .baseboard {
+    height: 40px;
+    background-size: 472px 40px;
+  }
+  .floor {
+    height: 118px;
+    background-size: 700px 118px;
+  }
+  .floor-content {
+    height: 400px;
+  }
+  .environment-wrapper {
+    height: 900px;
+  }
+  .environment-wrapper .environment-inner .environment.center {
+    width: 700px;
+    height: 900px;
+  }
+  .environment-wrapper .environment-inner .environment.center .window-ghost {
+    margin-top: -900px;
+  }
+  .environment-wrapper .environment-inner .environment.left {
+    background-size: 1px 900px;
+  }
+  .environment-wrapper .environment-inner .environment.right {
+    background-size: 1px 900px;
+  }
+  /* Wall poster */
+  .wrapper-wall {
+    width: 600px;
+  }
+  .wrapper-wall .wall-poster {
+    max-width: 400px;
+    margin: 100px auto 300px;
+    background-size: 100% auto;
+  }
+  .wrapper-wall .wall-poster img {
+    width: 400px;
+    height: auto;
+  }
+  .wrapper-wall .wall-poster .scotch-tape {
+    width: 75px;
+    height: 75px;
+    background-size: 75px 300px;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.top-left {
+    top: -20px;
+    left: -20px;
+    background-position: 0 -75px;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.top-right {
+    top: -20px;
+    right: -20px;
+    background-position: 0 -150px;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.bot-left {
+    bottom: -20px;
+    left: -20px;
+    background-position: 0 0;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.bot-right {
+    bottom: -20px;
+    right: -20px;
+    background-position: 0 75px;
+  }
+  /* TV box */
+  .tv-box {
+    width: 500px;
+    height: 400px;
+  }
+  .channel-switcher {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 72px;
+    height: 72px;
+    top: 182px;
+  left: 400px;
+    background: url(../images/tv/72_channel-switcher.png);
+    background-size: cover;
+  }
+  .tv .tv-screen {
+    width: 325px;
+    height: 238px;
+    left: 40px;
+    top: 40px;
+  }
+  .screen-inner {
+    left: 35px;
+    bottom: 114px;
+    width: 340px;
+    height: 255px;
+  }
+  .screen-item {
+    left: 35px;
+    bottom: 114px;
+    width: 340px;
+    height: 255px;
+    font-size: 8px;
+  }
+  .screen-item > * {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .custom-01 {
+    width: 68%;
+    font-size: 10px;
+}
+  /* Robbie the Rabbit */
+  .rabbit {
+    margin-left: 210px;
+    bottom: 90px;
+    width: 121px;
+    height: 278px;
+  }
+  .rabbit:after {
+    width: 121px;
+    height: 278px;
+    background-position: 121px 0;
+  }
+  /* Countdowns */
+  .counter-wrapper-poster {
+    bottom: 5px;
+    width: 400px;
+    padding: 0 15px;
+  }
+  .counter-wrapper-poster .counter {
+    font-size: 13px;
+  }
+  .counter-wrapper-poster .counter span {
+    font-size: 60px;
+  }
+  .counter-wrapper-tv {
+    width: 100%;
+    height: 100%;
+    padding: 40px 5px 15px;
+    font-size: 8px;
+  }
+  .counter-wrapper-tv .counter {
+    margin-top: 20px;
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .counter-wrapper-tv .counter span {
+    font-size: 50px;
+  }
+  /* TV slider */
+  .tv-slider {
+    width: 340px;
+    height: 255px;
+  }
+  /* TV note */
+  .tv-note {
+    display: none;
+    top: 25px;
+    right: 12px;
+    width: 98px;
+    height: 78px;
+  }
+}
+/* 320PX < 639PX
+---------------------------------------------------*/
+@media (max-width: 639px) {
+  body {
+    background-size: 100px auto;
+  }
+  h1 {
+    word-wrap: break-word;
+  }
+
+  /* Wrappers */
+  .wrapper-wall {
+    padding-bottom: 79px;
+  }
+  .wrapper-floor {
+    margin: -79px auto 0;
+    height: 79px;
+  }
+  /* Environment / Room */
+  .baseboard {
+    height: 20px;
+    background-size: 236px 20px;
+  }
+  .floor {
+    height: 63px;
+    background-size: 350px 59px;
+  }
+  .floor-content {
+    height: 375px;
+  }
+  .environment-wrapper {
+    height: 450px;
+  }
+  .environment-wrapper .environment-inner .environment.center {
+    width: 350px;
+    height: 450px;
+  }
+  .environment-wrapper .environment-inner .environment.center .window-ghost {
+    margin-top: -450px;
+  }
+  .environment-wrapper .environment-inner .environment.left {
+    background-size: 1px 450px;
+  }
+  .environment-wrapper .environment-inner .environment.right {
+    background-size: 1px 450px;
+  }
+  /* Wall poster */
+  .wrapper-wall {
+    width: 300px;
+  }
+  .wrapper-wall .wall-poster {
+    max-width: 200px;
+    margin: 100px auto 150px;
+    background-size: 100% auto;
+  }
+  .wrapper-wall .wall-poster img {
+    width: 200px;
+    height: auto;
+  }
+  .wrapper-wall .wall-poster .scotch-tape {
+    width: 38px;
+    height: 38px;
+    background-size: 38px 150px;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.top-left {
+    top: -10px;
+    left: -10px;
+    background-position: 0 -38px;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.top-right {
+    top: -10px;
+    right: -10px;
+    background-position: 0 -75px;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.bot-left {
+    bottom: -10px;
+    left: -10px;
+    background-position: 0 0;
+  }
+  .wrapper-wall .wall-poster .scotch-tape.bot-right {
+    bottom: -20px;
+    right: -20px;
+    background-position: 0 38px;
+  }
+  /* TV box */
+  .tv-box {
+    width: 465px;
+    height: 365px;
+  }
+  .tv .tv-screen {
+    width: 305px;
+    height: 220px;
+    left: 35px;
+    top: 36px;
+  }
+  .screen-inner {
+    left: 26px;
+    bottom: 93px;
+    width: 340px;
+    height: 255px;
+  }
+  .screen-inner .screen-item {
+    font-size: 4px;
+    top: 0;
+    left: 0px;
+    bottom: 93px;
+    width: 340px;
+    height: 255px;
+
+  }
+  .floor-content .channel-switcher {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 72px;
+    height: 72px;
+    top: 166px;
+    left: 368px;
+    background: url(../images/tv/72_channel-switcher.png);
+    background-size: cover;
+}
+  /* Robbie the Rabbit */
+  .rabbit {
+    margin-left: 207px;
+      bottom: 66px;
+      width: 60px;
+      height: 139px;
+  }
+  .rabbit:after {
+    width: 60px;
+    height: 139px;
+    background-position: 60px 0;
+  }
+  /* Countdowns */
+  .counter-wrapper-poster {
+    bottom: 3px;
+    width: 200px;
+    padding: 0;
+    padding-left: 5px;
+  }
+  .counter-wrapper-poster .counter {
+    font-size: 7px;
+  }
+  .counter-wrapper-poster .counter span {
+    font-size: 30px;
+  }
+  .counter-wrapper-tv {
+    padding: 20px 5px 5px;
+    font-size: 4px;
+  }
+  .counter-wrapper-tv .counter {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .counter-wrapper-tv .counter span {
+    font-size: 25px;
+  }
+  /* TV slider */
+  .tv-slider {
+    width: 340px;
+    height: 255px;
+    top: 10px;
+  }
+
+  .overlay-artefacts, .background-artefacts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 255px;
+  }
+  /* TV note */
+  .tv-note {
+    display: none;
+    top: 12px;
+    right: 6px;
+    width: 49px;
+    height: 39px;
+  }
+  .custom-01 {
+    width: 68%;
+    font-size: 10px;
+}
+}

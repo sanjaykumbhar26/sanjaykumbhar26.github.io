@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Social">
+  <meta name="generator" content="Social">
+  <title>Modifier Group</title>
+  <link rel="stylesheet" href="./src/css/third-party/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/css/third-party/font-awesome.min.css">
+  <link rel="stylesheet" href="./src/css/third-party/dropzone.min.css">
+  <link rel="stylesheet" href="./src/css/third-party/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="./src/css/third-party/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="src/css/third-party/daterangepicker.css">
+  <link rel="stylesheet" href="./src/css/common/common-style.css">
+  <link rel="stylesheet" href="./src/css/custom/menu-style.css">
+  <script>
+    ! function () {
+      var analytics = window.analytics = window.analytics || [];
+      if (!analytics.initialize)
+        if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+        else {
+          analytics.invoked = !0;
+          analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset",
+            "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware",
+            "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"
+          ];
+          analytics.factory = function (e) {
+            return function () {
+              var t = Array.prototype.slice.call(arguments);
+              t.unshift(e);
+              analytics.push(t);
+              return analytics
+            }
+          };
+          for (var e = 0; e < analytics.methods.length; e++) {
+            var key = analytics.methods[e];
+            analytics[key] = analytics.factory(key)
+          }
+          analytics.load = function (key, e) {
+            var t = document.createElement("script");
+            t.type = "text/javascript";
+            t.async = !0;
+            t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(t, n);
+            analytics._loadOptions = e
+          };
+          analytics.SNIPPET_VERSION = "4.13.1";
+          analytics.load("7l9k4CZoobg0JbHiANnRHgVeWFhdzdSG");
+          analytics.page();
+        }
+    }();
+  </script>
+</head>
+
+<body>
+  <div class="content-block">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-xs-12">
+        <!-- breadcrumb -->
+        <div class="rich-text font-size-14 margin-top-16">
+          <p>Menu / <span class="font-semibold">Overview</span></p>
+        </div>
+        <!---->
+        <div class="menu-tab">
+          <ul class=" nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-link="overview_page.html"   data-target="#navigate-away">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-link="items_page.html"  data-target="#navigate-away">Items</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-link="categories_page.html"  data-target="#navigate-away">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-link="modifier_page.html"  data-target="#navigate-away">Modifiers</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <!-- menu content -->
+            <div class="add-edit-nav">
+              <ul class="disable">
+                <li><button type="button" class="btn-inactive font-semibold border-radius-4">+ Add Modifier
+                    Group</button></li>
+              </ul>
+            </div>
+            <div class="add-edit-menu-box">
+              <div class="md-modifier-group-details">
+                <div class="md-modifier-group-header">
+                  <h2>Modifier Group Details</h2>
+                </div>
+                <div class="menu-name-input-type">
+                  <div class="textfield md-form-group">
+                    <div class="form-group">
+                      <input type="text" class="md-form-field md-input" id="modifier-group-name"
+                        placeholder="Modifier group name ( e.g., Choice of side )"> <img data-toggle="tooltip"
+                        data-placement="right" title=""
+                        data-original-title="Review your menu and find items that include side dishes, toppings, extras, etc. First, create a modifier group (Ex. Salad Dressings), and then add the individual options like French Dressing, Ranch Dressing, etc."
+                        src="src/images/icon-info-lightgrey.svg">                      
+                    </div>
+                    <div class="error">Can't be empty</div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="modifier-group-details-field">
+                <h3>How would you like to display options in this modifier group on your menu?</h3>
+                <div class="mgroup-details">
+                  <div class="modifier-group-details-option">
+                    <select class="selectpicker md-group-dropdown" data-group="md-group-options">
+                      <option value="md-checkbox-option" selected>Checkbox</option>
+                      <option value="md-radio-button-option">Radio button</option>
+                      <option value="md-dropdown-option">Dropdown</option>
+                      <option value="md-quantity-sign-option">Quantity sign</option>
+                      <option value="md-toppings-matrix-option">Toppings matrix</option>
+                    </select>
+                  </div>
+                  <div class="modifier-group-details-preview">
+                    <h4>Preview</h4>
+                    <!-- Checkbox -->
+                    <div class="modifier-checkbox md-group-options" id="md-checkbox-option">
+                      <div class="form-group md-checkbox">
+                        <input type="checkbox" value="checkbox">
+                        <span class="md-checkbox-icon"></span>
+                        <label for="checkbox" class="margin-left-15 padding-left-15 padding-right-15">
+                          Option 1
+                        </label>
+                      </div>
+                      <div class="form-group md-checkbox">
+                        <input type="checkbox" value="checkbox">
+                        <span class="md-checkbox-icon"></span>
+                        <label for="checkbox" class="margin-left-15 padding-left-15 padding-right-15">
+                          Option 2
+                        </label>
+                      </div>
+                      <div class="form-group md-checkbox">
+                        <input type="checkbox" value="checkbox">
+                        <span class="md-checkbox-icon"></span>
+                        <label for="checkbox" class="margin-left-15 padding-left-15 padding-right-15">
+                          Option 3
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Radio button  -->
+                    <div class="modifier-radio-button md-group-options d-none" id="md-radio-button-option">
+                      <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="md-radio-button-option"> Option 1
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="md-radio-button-option"> Option 2
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="md-radio-button-option"> Option 3
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Dropdown option  -->
+                    <div class="mg-option md-group-options d-none" id="md-dropdown-option">
+                      <select class="selectpicker" title="Select an option" name="md-dropdown-option">
+                        <option value="option">Select an option</option>
+                        <option value="option">option</option>
+                        <option value="option">option</option>
+                        <option value="option">option</option>
+                        <option value="option">option</option>
+                      </select>
+                    </div>
+
+                    <!-- Quantity sign -->
+                    <div class="md-quantity-sign md-group-options d-none" id="md-quantity-sign-option">
+                      <div class="quantity">
+                        <img alt="announcements" src="./src/images/icon-md-minus.svg">
+                        <input type="text">
+                        <img alt="announcements" src="./src/images/icon-md-plus.svg">
+                      </div>
+                      <div class="quantity-text">
+                        <span>Customers can select up to</span>
+                        <span><input type="text"></span>
+                        <span>units for each option. <img data-toggle="tooltip" data-placement="right" title=""
+                            data-original-title="For example, if you offer a maximum of two cookies for one item, enter 2 here."
+                            src="src/images/icon-info-lightgrey.svg"></span>
+                      </div>
+                    </div>
+
+                    <!-- Toppings matrix -->
+                    <div class="md-toppings-matrix md-group-options d-none" id="md-toppings-matrix-option">
+                      <div class="md-toppings-radio-button">
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" data-group="md-sub-group-options" value="md-sub-group-pizza-option"
+                                class="toppings-matrix" name="md-toppings-matrix-option" checked>Pizza
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" data-group="md-sub-group-options" value="md-sub-group-sandwich-option"
+                                class="toppings-matrix" name="md-toppings-matrix-option"> Sub sandwich
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" data-group="md-sub-group-options" value="md-sub-group-custom-option"
+                                class="toppings-matrix" name="md-toppings-matrix-option">Custom
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="md-toppings-Preview">
+                        <div class="custom-toppings-matrix">
+                          <!-- Pizza -->
+                          <div class="md-pizza md-sub-group-options" id="md-sub-group-pizza-option">
+                            <ul>
+                              <li> <img alt="items image" src="./src/images/pizza-none.svg"> <span>None</span></li>
+                              <li> <img alt="items image" src="./src/images/pizza-1st-half.svg"> <span>1st Half</span>
+                              </li>
+                              <li> <img alt="items image" src="./src/images/pizza-whole.svg"> <span>Whole</span></li>
+                              <li> <img alt="items image" src="./src/images/pizza-2nd-half.svg"> <span>2nd Half</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- Sandwich -->
+                          <div class="md-sub-sandwich md-sub-group-options d-none" id="md-sub-group-sandwich-option">
+                            <ul>
+                              <li> <img alt="items image" src="./src/images/sub-none.svg"> <span>None</span></li>
+                              <li> <img alt="items image" src="./src/images/sub-1st-half.svg"> <span>1st Half</span>
+                              </li>
+                              <li> <img alt="items image" src="./src/images/sub-whole.svg"> <span>Whole</span></li>
+                              <li> <img alt="items image" src="./src/images/sub-2nd half.svg"> <span>2nd Half</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- Custom -->
+                          <div class="md-sub-group-options d-none" id="md-sub-group-custom-option">
+                            <h4>Create your custom toppings matrix by customizing labels and images.</h4>
+                            <div class="md-custom-toppings">
+                              <div class="custom-toppings-input">
+                                <input type="text" id="custom-label-name" placeholder="Custom label name">
+                              </div>
+                              <div class="md-none">
+                                <h4>None</h4>
+                                <div class="md-none-line" id="md-custom-toppings-list"></div>
+                                <span class="error-span"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mg-minmaxi-block" id="md-min-max-zone">
+                  <!-- <h4>What are the minimum and maximum number of <span> different </span> options a customer can select
+                    on any given menu item? <img data-toggle="tooltip" data-placement="right" title=""
+                      data-original-title="If you require customers to choose a certain number of different options for an item, you can set minimum and maximum requirements here. For example, if you want customers to choose at least one pizza topping but no more than three different toppings, you would set a minimum of 1 and a maximum of 3."
+                      src="src/images/icon-info-lightgrey.svg"></h4> -->
+                      <div class="tool-tip-div">
+                        <p class="minmax-label">What are the minimum and maximum number of <span> different </span> options a customer can select
+                          on any given menu item?</p>
+                        <div class="tool-wrap">
+                          <div class="tool-parent">
+                              <img src="./src/images/icon-info-lightgrey.svg">
+                             <div class="tool-show-wrap">
+                                <div class="tool-show">
+                                   <p class="minmax-label">If you require customers to choose a certain number of <span>different</span> options for an item, you can set minimum and maximum requirements here. For example, if you want customers to choose at least one pizza topping but no more than three different toppings, you would set a minimum of 1 and a maximum of 3.
+                                   </p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                      </div>
+                  <div class="mg-select">
+                    <div class="md-form-group">
+                      <div class="select-min">
+                        <h3>MIN</h3>
+                        <input type="number" id="minimum" class="md-form-field md-form-input md-input" />
+                        <div class="error">Can't be empty</div>
+                      </div>
+                    </div>
+                    <div class="md-form-group">
+                      <div class="select-max">
+                        <h3>MAX</h3>
+                        <input type="number" id="maximum" class="md-form-field md-form-input md-input" />
+                        <div class="error">Can't be empty</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- box footer -->
+                <div class="menu-box-footer">
+                  <div class="form-group button-row">
+                    <button class="btn-control font-semibold font-semibold" id="cancel-modifier-group"
+                      type="button">Cancel</button>
+                    <button class="md-btn-primary border-radius-4 font-semibold" type="button"
+                      id="save-modifier-group">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--data model for nav tabs-->
+  <div class="modal alert fades d-none" id="navigate-away" tabindex="-1" role="dialog" aria-labelledby="navigate-item"
+  aria-hidden="true">
+  <div class="modal-dialog delete-modal" role="document">
+    <div class="modal-content">
+      <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+        <img alt="close" src="src/images/icon-close-black.svg" />
+      </button>
+      <div
+        class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+        <div>
+          <img alt="facebook" src="src/images/status-alert.svg" />
+          <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Before you go..</h4>
+          <p class="deleting-info navigation-modal font-size-16 text-center">Are you sure you want to leave this page?<br>If you leave, your work will not be saved.
+              </p>
+        </div>
+      </div>
+      <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+        <button type="button" 
+          class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+          data-dismiss="modal">Cancel</button>
+        <button type="button" id="navigate-away-continue"
+          class="btn  font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- LIBRARIES  -->
+    <script type="text/javascript" src="./src/js/third-party/moment.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/popper.min.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/daterangepicker.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/lodash.min.js"></script>
+    <script src="src/js/common/common.js"></script>
+
+    <!-- CUSTOM JS  -->
+    <script src="src/js/custom/custom.js"></script>
+</body>
+
+</html>

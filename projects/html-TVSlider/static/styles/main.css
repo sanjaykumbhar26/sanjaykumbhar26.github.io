@@ -1,0 +1,862 @@
+/* Main styles for template
+
+01. Main settings/Typography
+02. Wrappers
+03. Environment / Room
+04. Objects (wall poster, tv-box)
+05. Slider
+06. Counter
+07. Extra Information
+08. Effects
+09. Animations
+10. Custom styles
+-------------------------------------------------------- */
+html,
+body {
+  height: 100% !important;
+}
+body {
+  color: #808080;
+  background: #000000 url('../images/room/wall.jpg');
+  font-family: "Open Sans";
+  overflow-x: hidden;
+  font-size: 16px;
+}
+/* 01. Main settings/Typography
+-------------------------------------------------------- */
+h1 {
+  font-size: 300%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 250%;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 175%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 150%;
+}
+h5 {
+  font-size: 100%x;
+}
+h6 {
+  font-size: 87.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+small {
+  font-size: 80%;
+}
+.title {
+  margin: 10px 0;
+}
+p {
+  font-size: 100%;
+  margin-bottom: 2em;
+}
+a {
+  color: #fff;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  font-weight: normal;
+  text-decoration: underline;
+}
+ul {
+  padding-left: 0;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
+}
+.separator.mini {
+  height: 1px;
+  margin: 10px 0;
+}
+.relative {
+  position: relative;
+}
+/* 02. Wrappers
+/* -------------------------------------- */
+.wrapper-main {
+  width: 100%;
+  min-height: 100% !important;
+}
+.wrapper-wall {
+  overflow: auto;
+  padding-bottom: 314px;
+}
+.wrapper-floor {
+  /* margin: -314px auto 0; */
+  width: 100%;
+  height: 314px;
+}
+/* 03. Environment / Room
+/* -------------------------------------- */
+.baseboard {
+  width: 100%;
+  height: 79px;
+  background: #000000 url('../images/room/baseboard.jpg');
+}
+.floor {
+  position: relative;
+  width: 100%;
+  height: 235px;
+  background: #000000 url('../images/room/floor.jpg') no-repeat center center;
+}
+.floor-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 800px;
+}
+.environment-wrapper {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 1800px;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.environment-wrapper .environment-inner {
+  display: table-row;
+}
+.environment-wrapper .environment-inner .environment {
+  display: table-cell;
+}
+.environment-wrapper .environment-inner .environment.center {
+  width: 1400px;
+  height: 1800px;
+  background: url('../images/room/environment.png') no-repeat;
+  background-size: 100% auto;
+}
+.environment-wrapper .environment-inner .environment.center .window-light {
+  width: 100%;
+  height: 100%;
+  background: url('../images/room/window-light.png') no-repeat;
+  background-size: 100% auto;
+}
+.environment-wrapper .environment-inner .environment.center .window-ghost {
+  margin-top: -1800px;
+  width: 100%;
+  height: 100%;
+  background: url('../images/room/window-ghost_02.png') no-repeat;
+  background-size: 100% auto;
+}
+.environment-wrapper .environment-inner .environment.left {
+  width: auto;
+  height: 100%;
+  background: url('../images/room/environment_left.png');
+}
+.environment-wrapper .environment-inner .environment.right {
+  width: auto;
+  height: 100%;
+  background: url('../images/room/environment_right.png');
+}
+/* 04. Objects (wall poster, tv-box)
+-------------------------------------------------------- */
+/* Wall poster */
+.wrapper-wall {
+  width: 1000px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-wall .wall-poster {
+  position: relative;
+  max-width: 800px;
+  margin: 100px auto 600px;
+  background: #0e0f0c url('../images/user/poster_4x6.jpg') no-repeat;
+  background-color: #2c3943;
+  background-blend-mode: multiply;
+  -webkit-transition: background 2s ease-out;
+  -moz-transition: background 2s ease-out;
+  -o-transition: background 2s ease-out;
+  transition: background 2s ease-out;
+}
+.wrapper-wall .wall-poster:hover {
+  background-color: #fff;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+}
+.wrapper-wall .wall-poster .scotch-tape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('../images/poster/scotch-tape.png');
+}
+.wrapper-wall .wall-poster .scotch-tape.top-left {
+  top: -40px;
+  left: -50px;
+  background-position: 0 -150px;
+}
+.wrapper-wall .wall-poster .scotch-tape.top-right {
+  top: -40px;
+  right: -40px;
+  background-position: 0 -300px;
+}
+.wrapper-wall .wall-poster .scotch-tape.bot-left {
+  bottom: -40px;
+  left: -40px;
+  background-position: 0 0;
+}
+.wrapper-wall .wall-poster .scotch-tape.bot-right {
+  bottom: -40px;
+  right: -40px;
+  background-position: 0 150px;
+}
+/* TV box */
+.tv-box {
+  position: relative;
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+}
+.channel-switcher {
+  position: absolute;
+  overflow: hidden;
+  width: 136px;
+  height: 136px;
+  top: 365px;
+  left: 804px;
+  background: url('../images/tv/channel-switcher.jpg');
+  cursor: pointer;
+}
+.tv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../images/tv/tv.png') no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+.tv .tv-screen {
+  position: absolute;
+  width: 649px;
+  height: 476px;
+  left: 80px;
+  top: 80px;
+}
+.tv .kinescope {
+  background: url('../images/tv/kinescope.png') no-repeat;
+  background-size: 100% 100%;
+}
+.tv .kinescope-grunge {
+  background: url('../images/tv/kinescope-grunge.png') no-repeat;
+  background-size: 100% 100%;
+}
+.tv .kinescope-crack {
+  background: url('../images/tv/kinescope-crack.png') no-repeat;
+  background-size: 100% 100%;
+}
+.screen-inner {
+  position: absolute;
+  left: 70px;
+  bottom: 228px;
+  width: 680px;
+  height: 510px;
+  background: url('../images/tv/screenoff.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.screen-inner .screen-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.screen-inner .screen-item img {
+  width: 100%;
+  height: 100%;
+}
+.screen-inner .js-video-wrapper {
+  pointer-events: none;
+}
+/* Robbie the Rabbit */
+.rabbit {
+  position: absolute;
+  left: 50%;
+  margin-left: 420px;
+  bottom: 160px;
+  width: 242px;
+  height: 556px;
+  background: url('../images/room/rabbit.png');
+  background-size: 200% auto;
+}
+.rabbit:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 242px;
+  height: 556px;
+  background: url('../images/room/rabbit.png');
+  background-position: 242px 0;
+  background-size: 200% auto;
+  opacity: 1;
+  pointer-events: none;
+  -webkit-transition: opacity 1.5s ease-out;
+  -moz-transition: opacity 1.5s ease-out;
+  -o-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
+}
+.rabbit:hover:after {
+  opacity: 0;
+}
+/* 05. Slider
+-------------------------------------------------------- */
+.tv-slider {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 680px;
+  height: 510px;
+}
+ul.tv-slider {
+  padding-left: 0;
+}
+ul.tv-slider li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* Reset slider styles */
+.anythingSlider-default {
+  margin: 0 auto;
+  padding: 0;
+}
+.anythingSlider-default .panel {
+  border: none;
+}
+.anythingSlider-default .anythingWindow {
+  border-top: none;
+  border-bottom: none;
+}
+/* 06. Counter
+-------------------------------------------------------- */
+.counter-wrapper {
+  text-align: center;
+}
+.counter-wrapper .counter {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.counter-wrapper .counter span {
+  font-size: 100px;
+  font-family: 'bebas_neueregular';
+  font-weight: 700;
+  color: #fff;
+}
+.counter-wrapper-poster {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 800px;
+  padding: 0 30px;
+}
+.counter-wrapper-poster .counter {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'bebas_neueregular';
+}
+.counter-wrapper-poster .counter span {
+  font-size: 120px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+}
+.counter-wrapper-tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 680px;
+  height: 510px;
+  text-align: center;
+  padding: 80px 20px 30px;
+  opacity: 0.75;
+}
+.counter-wrapper-tv .counter {
+  margin-top: 40px;
+  font-size: 75px;
+  font-weight: 600;
+  font-family: 'bebas_neueregular';
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 90px;
+}
+.counter-wrapper-tv .counter span {
+  font-size: 100px;
+  color: #000;
+  font-weight: 700;
+}
+/* 07. Extra Information
+-------------------------------------------------------- */
+.wrapper-info {
+  position: fixed;
+  width: 100%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.eye-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  padding-left: 15px;
+  cursor: pointer;
+  z-index: 99;
+}
+.eye-wrapper.active {
+  position: fixed;
+}
+.eye-wrapper .eye {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 85% 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.eye-wrapper:hover .eye,
+.eye-wrapper.active .eye {
+  border-radius: 70% 0;
+}
+.eye-wrapper .eye-apple {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #000;
+  border: 5px solid #808080;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.eye-wrapper .eye-apple:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #fff;
+}
+.eye-wrapper:hover .eye-apple,
+.eye-wrapper.active .eye-apple {
+  border-color: #388a94;
+}
+.info {
+  max-width: 780px;
+  max-height: 90%;
+  margin: 45px auto;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  overflow: auto;
+  -webkit-transition: background 0.3s ease-out 0.3s;
+  -moz-transition: background 0.3s ease-out 0.3s;
+  -o-transition: background 0.3s ease-out 0.3s;
+  transition: background 0.3s ease-out 0.3s;
+}
+.info:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.info::-webkit-scrollbar {
+  display: none;
+}
+/* 08. Effects
+-------------------------------------------------------- */
+.overlay-artefacts,
+.background-artefacts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 680px;
+  height: 510px;
+}
+/* 09. Animations
+-------------------------------------------------------- */
+/* Artefacts */
+.overlay-artefacts {
+  pointer-events: none;
+  background-blend-mode: hard-light;
+  -webkit-animation-name: overlayArtefacts;
+  animation-name: overlayArtefacts;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background: url('../images/tv/transparent-noise.png') 0 0, url('../images/tv/transparent-artefacts.png') 0 0;
+}
+@-webkit-keyframes overlayArtefacts {
+  0% {
+    background: url('../images/tv/transparent-noise.png') 0 0, url('../images/tv/transparent-artefacts.png') 0 0;
+  }
+  100% {
+    background: url('../images/tv/transparent-noise.png') 0 0, url('../images/tv/transparent-artefacts.png') 0 510px;
+  }
+}
+@keyframes overlayArtefacts {
+  0% {
+    background: url('../images/tv/transparent-noise.png') 0 0, url('../images/tv/transparent-artefacts.png') 0 0;
+  }
+  100% {
+    background: url('../images/tv/transparent-noise.png') 0 0, url('../images/tv/transparent-artefacts.png') 0 510px;
+  }
+}
+.background-artefacts {
+  background-blend-mode: hard-light;
+  -webkit-animation-name: backgroundArtefacts;
+  animation-name: backgroundArtefacts;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background: url('../images/tv/screen-noise_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0;
+}
+@-webkit-keyframes backgroundArtefacts {
+  0% {
+    background: url('../images/tv/screen-noise_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/tv/screen-noise_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 510px;
+  }
+}
+@keyframes backgroundArtefacts {
+  0% {
+    background: url('../images/tv/screen-noise_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/tv/screen-noise_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 510px;
+  }
+}
+/* Window Animations */
+.window-light,
+.window-ghost {
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.window-light {
+  -webkit-animation-name: windowLight;
+  animation-name: windowLight;
+}
+@-webkit-keyframes windowLight {
+  0%,
+  9%,
+  15%,
+  70%,
+  77%,
+  85%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  12%,
+  71%,
+  75%,
+  78%,
+  81% {
+    opacity: 1;
+  }
+  11%,
+  80% {
+    opacity: 0.5;
+  }
+}
+@keyframes windowLight {
+  0%,
+  9%,
+  15%,
+  70%,
+  77%,
+  85%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  12%,
+  71%,
+  75%,
+  78%,
+  81% {
+    opacity: 1;
+  }
+  11%,
+  80% {
+    opacity: 0.5;
+  }
+}
+.window-ghost {
+  -webkit-animation-name: windowGhost;
+  animation-name: windowGhost;
+}
+@-webkit-keyframes windowGhost {
+  0%,
+  70%,
+  77%,
+  100% {
+    opacity: 0;
+  }
+  71%,
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes windowGhost {
+  0%,
+  70%,
+  77%,
+  100% {
+    opacity: 0;
+  }
+  71%,
+  75% {
+    opacity: 1;
+  }
+}
+/* Eye */
+.eye-apple {
+  -webkit-animation-name: eyeApple;
+  animation-name: eyeApple;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes eyeApple {
+  0%,
+  25%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  5%,
+  70% {
+    -webkit-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+  }
+  10%,
+  20% {
+    -webkit-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+  }
+}
+@keyframes eyeApple {
+  0%,
+  25%,
+  60%,
+  80%,
+  100% {
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  5%,
+  70% {
+    -ms-transform: translate(5px, 0);
+    -webkit-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+  }
+  10%,
+  20% {
+    -ms-transform: translate(-5px, 0);
+    -webkit-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+  }
+}
+/* Screen Animations */
+.photo-01 {
+  background: url('../images/user/photo_01.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  background-blend-mode: hard-light;
+  -webkit-animation-name: AniPhoto01;
+  animation-name: AniPhoto01;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes AniPhoto01 {
+  0% {
+    background: url('../images/user/photo_01.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/user/photo_01.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 510px, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+}
+@keyframes AniPhoto01 {
+  0% {
+    background: url('../images/user/photo_01.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/user/photo_01.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 510px, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+}
+.photo-02 {
+  background: url('../images/user/photo_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  background-blend-mode: hard-light;
+  -webkit-animation-name: AniPhoto02;
+  animation-name: AniPhoto02;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes AniPhoto02 {
+  0% {
+    background: url('../images/user/photo_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/user/photo_02.jpg') 0 -1020px, url('../images/tv/screen-artefacts_01.jpg') 0 510px, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+}
+@keyframes AniPhoto02 {
+  0% {
+    background: url('../images/user/photo_02.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/user/photo_02.jpg') 0 -1020px, url('../images/tv/screen-artefacts_01.jpg') 0 510px, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+}
+.photo-03 {
+  background: url('../images/user/photo_03.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  background-blend-mode: hard-light;
+  -webkit-animation-name: AniPhoto03;
+  animation-name: AniPhoto03;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes AniPhoto03 {
+  0% {
+    background: url('../images/user/photo_03.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/user/photo_03.jpg') 0 -2040px, url('../images/tv/screen-artefacts_01.jpg') 0 510px, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+}
+@keyframes AniPhoto02 {
+  0% {
+    background: url('../images/user/photo_03.jpg') 0 0, url('../images/tv/screen-artefacts_01.jpg') 0 0, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+  100% {
+    background: url('../images/user/photo_03.jpg') 0 -2040px, url('../images/tv/screen-artefacts_01.jpg') 0 510px, url('../images/tv/screen-noise_01.jpg') 0 0;
+  }
+}
+/* 10. Custom styles */
+.custom-01 {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  bottom: 80px;
+  border-right: 4px solid #e741be;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  padding-left: 40px;
+}
+.custom-01 p {
+  margin-bottom: 0;
+}
+.tv-note {
+  position: absolute;
+  top: 50px;
+  right: 23px;
+  width: 195px;
+  height: 156px;
+  background: url('../images/tv/note.png') no-repeat;
+  background-size: 100% auto;
+}
+/* Alert */
+.alert-wrapper {
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  width: 400px;
+  padding: 20px 0 20px 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.alert-wrapper:after {
+  content: '!';
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background: #ff4444;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.alert-wrapper .alert-info {
+  font-size: 12px;
+  background: transparent;
+  color: #808080;
+}

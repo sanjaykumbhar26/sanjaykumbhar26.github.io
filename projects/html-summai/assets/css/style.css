@@ -1,0 +1,178 @@
+html{
+-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
+}
+body{
+margin:0;
+background: #e2f1ea;
+background: -moz-radial-gradient(center, ellipse cover,  #f2fcf7  0%, #f2fcf7  32%, #a3d1bc  100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #f2fcf7  0%,#f2fcf7  32%,#a3d1bc  100%);
+background: radial-gradient(ellipse at center,  #f2fcf7  0%,#f2fcf7  32%,#a3d1bc  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcf7', endColorstr='#a3d1bc ',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+min-height: calc(100vh - 30px);
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: normal;
+font-style: normal;
+}
+.container {
+max-width: 1000px;
+margin: 0 auto;
+}
+
+/* bg-font */
+.bg-font-block {
+position: absolute;
+top: 0px;
+min-height: 100vh;
+display: flex;
+align-items: center;
+overflow: hidden;
+width: 100%;
+z-index: -1;
+}
+.bg-font {
+min-width: 3980px;
+overflow: hidden;
+}
+.bg-font h1 {
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 900;
+font-style: normal;
+margin: 0px;
+font-size: 296px;
+line-height: 228px;
+color: rgb(190 217 205 / 16%);
+}
+.bg-font h2 {
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 900;
+margin: 0px;
+font-size: 296px;
+line-height: 228px;
+color: rgb(190 217 205 / 16%);
+}
+
+/* header */
+header {
+margin-top:30px;
+}
+.logo-header {
+ width: max-content;
+}
+.logo-header img {
+ max-height: 32px;
+}
+
+/* app content */
+.app-block {
+display: flex;
+align-items: center;
+min-height: calc(100vh - 80px);
+width: 100%;
+}
+.app-block .container {
+max-width: 640px;
+margin: 0 auto;
+width: 100%;
+}
+.app-block .row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.col-info {
+top: -34px;
+position: relative;
+}
+.summai-logo {
+margin-bottom: 20px;
+}
+.summai-logo img {
+max-height: 45px;
+}
+.col-info p {
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 22px;
+max-width: 258px;
+margin: 0px 0px 40px;
+}
+.app-button img {
+max-height: 40px;
+}
+.hand-image img {
+max-height: 460px;
+}
+
+/* responisve */
+@media (max-width: 767px) {
+
+.app-block .row {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.col-info {
+top: 0px;
+}
+.col-image {
+margin-top: 40px;
+text-align: center;
+margin-bottom: 30px;
+}
+header {
+ padding: 0 20px;
+ margin-bottom: 30px;
+}
+}
+
+/* aniamtion */
+#loop-left {
+    white-space: nowrap;
+    animation: loop-anim 8s linear infinite;
+    -webkit-animation: loop-anim 8s linear infinite; /* Safari */
+
+}
+
+@keyframes loop-anim {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -60% /* This works because of the div between "outer" and "loop" */
+    }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes loop-anim{
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -60% /* This works because of the div between "outer" and "loop" */
+    }
+}
+
+#loop-right {
+    white-space: nowrap;
+    animation: loop-anim1 8s linear infinite;
+    -webkit-animation: loop-anim1 8s linear infinite; /* Safari */
+}
+
+@keyframes loop-anim1 {
+    0% {
+        margin-left: -60%;
+    }
+    100% {
+        margin-left: 0 /* This works because of the div between "outer" and "loop" */
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes loop-anim1 {
+    0% {
+        margin-left: -60%;
+    }
+    100% {
+        margin-left: 0 /* This works because of the div between "outer" and "loop" */
+    }
+}

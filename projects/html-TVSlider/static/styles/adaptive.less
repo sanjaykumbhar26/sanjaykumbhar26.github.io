@@ -1,0 +1,392 @@
+/* Adaptive styles for template "Halloween TV" */
+
+/* 640PX < 1023PX
+---------------------------------------------------*/
+@media (max-width: 1023px) {
+
+/* Wrappers */
+	.wrapper-wall {
+	    padding-bottom: 157px;
+	}
+	.wrapper-floor {
+	    margin: -157px auto 0;
+	    height: 157px;
+	}
+
+/* Environment / Room */
+	.baseboard {
+	    height: 40px;
+	    background-size: 472px 40px; 
+	}
+	.floor {
+	    height: 118px;
+	    background-size: 700px 118px;
+	}
+	.floor-content {
+	    height: 400px;
+	}
+
+	.environment-wrapper {
+	    height: 900px;
+
+	    .environment-inner {
+
+	        .environment {
+
+	            &.center {
+	                width: 700px;
+	                height: 900px;
+
+	                .window-ghost {
+	                    margin-top: -900px;
+	                }
+	            }
+
+	            &.left {
+	            	background-size: 1px 900px;
+	            }
+
+	            &.right {
+	            	background-size: 1px 900px;
+	            }
+	        }
+	    }
+	}
+
+/* Wall poster */
+	.wrapper-wall {
+	    width: 600px;
+
+	    .wall-poster {
+	        max-width: 400px;
+	        margin: 100px auto 300px;
+	        background-size: 100% auto;
+
+	        img {
+	        	width: 400px;
+	        	height: auto;
+	        }
+
+	        .scotch-tape {
+	            width: 75px;
+	            height: 75px;
+	            background-size: 75px 300px;
+
+	            &.top-left {
+	                top: -20px;
+	                left: -20px;
+	                background-position: 0 -75px;
+	            }
+
+	            &.top-right {
+	                top: -20px;
+	                right: -20px;
+	                background-position: 0 -150px;
+	            }
+
+	            &.bot-left {
+	                bottom: -20px;
+	                left: -20px;
+	                background-position: 0 0;
+	            }
+
+	            &.bot-right {
+	                bottom: -20px;
+	                right: -20px;
+	                background-position: 0 75px;
+	            }
+	        }  
+	    }    
+	}
+
+/* TV box */
+	.tv-box {
+	    width: 500px;
+	    height: 400px;
+	}
+	.channel-switcher {
+	    display: none;
+	}
+	.tv {
+
+	    .tv-screen {
+	        width: 325px;
+	        height: 238px;
+	        left: 40px;
+	        top: 40px;
+	    }	    
+	}
+	.screen-inner {
+	    left: 35px;
+	    bottom: 114px;
+	    width: 340px;
+	    height: 255px;   
+	}
+	.screen-item {
+	    left: 35px;
+	    bottom: 114px;
+	    width: 340px;
+	    height: 255px;
+	    font-size: 8px;
+
+	    & > * {
+	    	width: 100%;
+	    	height: 100%;
+	    	overflow: hidden;
+	    }
+	}
+
+/* Robbie the Rabbit */
+.rabbit {
+    margin-left: 210px;
+    bottom: 90px;
+    width: 121px;
+    height: 278px;
+
+    &:after {
+        width: 121px;
+        height: 278px;
+        background-position: 121px 0;
+    }
+}
+
+/* Countdowns */
+	.counter-wrapper-poster {
+	    bottom: 5px;
+	    width: 400px;
+	    padding: 0 15px;
+
+	    .counter {
+	        font-size: 13px;
+
+	        span {
+	            font-size: 60px;
+	        }
+	    }
+	}
+	.counter-wrapper-tv {
+	    width: 100%;
+	    height: 100%;
+	    padding: 40px 5px 15px;
+	    font-size: 8px;
+
+	    .counter {
+	        margin-top: 20px;
+	        font-size: 37px;
+	        line-height: 45px;
+
+	        span {
+	            font-size: 50px;
+	        }
+	    }
+	}
+
+/* TV slider */
+	.tv-slider {
+		display: none !important;
+		width: 340px;
+    	height: 255px;
+	}
+
+/* TV note */
+	.tv-note {
+		display: none;
+	    top: 25px;
+	    right: 12px;;
+	    width: 98px;
+	    height: 78px;
+	}
+}
+
+
+/* 320PX < 639PX
+---------------------------------------------------*/
+@media (max-width: 639px) {
+
+body {
+	background-size: 100px auto; 
+}
+h1 {
+	word-wrap: break-word;
+}
+/* Wrappers */
+	.wrapper-wall {
+	    padding-bottom: 79px;
+	}
+	.wrapper-floor {
+	    margin: -79px auto 0;
+	    height: 79px;
+	}
+
+/* Environment / Room */
+	.baseboard {
+	    height: 20px;
+	    background-size: 236px 20px; 
+	}
+	.floor {
+	    height: 59px;
+	    background-size: 350px 59px;
+	}
+	.floor-content {
+	    height: 200px;
+	}
+
+	.environment-wrapper {
+	    height: 450px;
+
+	    .environment-inner {
+
+	        .environment {
+
+	            &.center {
+	                width: 350px;
+	                height: 450px;
+
+	                .window-ghost {
+	                    margin-top: -450px;
+	                }
+	            }
+
+	            &.left {
+	            	background-size: 1px 450px;
+	            }
+
+	            &.right {
+	            	background-size: 1px 450px;
+	            }
+	        }
+	    }
+	}
+
+/* Wall poster */
+	.wrapper-wall {
+	    width: 300px;
+
+	    .wall-poster {
+	        max-width: 200px;
+	        margin: 100px auto 150px;
+	        background-size: 100% auto;
+
+	        img {
+	        	width: 200px;
+	        	height: auto;
+	        }
+
+	        .scotch-tape {
+	            width: 38px;
+	            height: 38px;
+	            background-size: 38px 150px;
+
+	            &.top-left {
+	                top: -10px;
+	                left: -10px;
+	                background-position: 0 -38px;
+	            }
+
+	            &.top-right {
+	                top: -10px;
+	                right: -10px;
+	                background-position: 0 -75px;
+	            }
+
+	            &.bot-left {
+	                bottom: -10px;
+	                left: -10px;
+	                background-position: 0 0;
+	            }
+
+	            &.bot-right {
+	                bottom: -20px;
+	                right: -20px;
+	                background-position: 0 38px;
+	            }
+	        }  
+	    }    
+	}
+
+/* TV box */
+	.tv-box {
+	    width: 250px;
+	    height: 200px;
+	}
+	.tv {
+	    .tv-screen {
+	        width: 163px;
+	        height: 119px;
+	        left: 20px;
+	        top: 20px;
+	    }
+	}
+	.screen-inner {
+	    left: 18px;
+	    bottom: 57px;
+	    width: 170px;
+	    height: 128px;   
+	}
+	.screen-item {
+	    left: 18px;
+	    bottom: 57px;
+	    width: 170px;
+	    height: 128px;
+	    font-size: 4px;
+	}
+
+/* Robbie the Rabbit */
+	.rabbit {
+	    margin-left: 105px;
+	    bottom: 45px;
+	    width: 60px;
+	    height: 139px;
+
+	    &:after {
+	        width: 60px;
+	        height: 139px;
+	        background-position: 60px 0;
+	    }
+	}
+
+/* Countdowns */
+	.counter-wrapper-poster {
+	    bottom: 3px;
+	    width: 200px;
+	    padding: 0;
+	    padding-left: 5px;
+
+	    .counter {
+	        font-size: 7px;
+
+	        span {
+	            font-size: 30px;
+	        }
+	    }
+	}
+	.counter-wrapper-tv {
+	    padding: 20px 5px 5px;
+	    font-size: 4px;
+
+	    .counter {
+	        margin-top: 10px;
+	        font-size: 16px;
+	        line-height: 22px;
+
+	        span {
+	            font-size: 25px;
+	        }
+	    }
+	}
+/* TV slider */
+	.tv-slider {
+		display: none !important;
+		width: 170px;
+    	height: 127px;
+	}
+
+/* TV note */
+	.tv-note {
+		display: none;
+	    top: 12px;
+	    right: 6px;;
+	    width: 49px;
+	    height: 39px;
+	}
+}

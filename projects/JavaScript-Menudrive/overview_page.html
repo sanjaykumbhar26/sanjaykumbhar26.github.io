@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="Social">
+   <meta name="generator" content="Social">
+   <title>Overview</title>
+   <link rel="stylesheet" href="./src/css/third-party/bootstrap.min.css">
+   <link rel="stylesheet" href="./src/css/third-party/font-awesome.min.css">
+   <link rel="stylesheet" href="./src/css/third-party/dropzone.min.css">
+   <link rel="stylesheet" href="./src/css/third-party/bootstrap-datetimepicker.min.css">
+   <link rel="stylesheet" href="./src/css/third-party/bootstrap-select.min.css">
+   <link rel="stylesheet" href="./src/css/common/common-style.css">
+   <link rel="stylesheet" href="./src/css/custom/menu-style.css">
+   <script>
+      ! function () {
+         var analytics = window.analytics = window.analytics || [];
+         if (!analytics.initialize)
+            if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+            else {
+               analytics.invoked = !0;
+               analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify",
+                  "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on",
+                  "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"
+               ];
+               analytics.factory = function (e) {
+                  return function () {
+                     var t = Array.prototype.slice.call(arguments);
+                     t.unshift(e);
+                     analytics.push(t);
+                     return analytics
+                  }
+               };
+               for (var e = 0; e < analytics.methods.length; e++) {
+                  var key = analytics.methods[e];
+                  analytics[key] = analytics.factory(key)
+               }
+               analytics.load = function (key, e) {
+                  var t = document.createElement("script");
+                  t.type = "text/javascript";
+                  t.async = !0;
+                  t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
+                  var n = document.getElementsByTagName("script")[0];
+                  n.parentNode.insertBefore(t, n);
+                  analytics._loadOptions = e
+               };
+               analytics.SNIPPET_VERSION = "4.13.1";
+               analytics.load("7l9k4CZoobg0JbHiANnRHgVeWFhdzdSG");
+               analytics.page();
+            }
+      }();
+   </script>
+   <script>
+      function importmenubuttonClicked() {
+         analytics.track('MB - Import Menu Button Clicked', {
+            type: 'track',
+            event: 'MB - Import Menu Button Clicked'
+
+         });
+      }
+
+      function createmenubuttonClicked() {
+         analytics.track('MB - Create Menu Button Clicked', {
+            type: 'track',
+            event: 'MB - Create Menu Button Clicked'
+
+         });
+      }
+
+      function copymenuiconClicked() {
+         analytics.track('MB - Copy Menu Icon Clicked', {
+            type: 'track',
+            event: 'MB - Copy Menu Icon Clicked'
+
+         });
+      }
+   </script>
+</head>
+
+<body>
+   <div class="content-block">
+
+      <div class="alert-success-export">
+         <div class="alert-success fade hide ems-toast" data-delay="8000" id="ems-confirmation">
+            <div class="alert-icon"> <img src="src/images/icon-success.svg"></div>
+            <div class="alert-text">
+               <h5>Export menu status</h5>
+               <p>You will receive an email confirmation soon regarding your menu export status.</p>
+            </div>
+            <div class="alert-close toast-close">
+               <img src="src/images/icon-close.svg">
+            </div>
+         </div>
+
+         <div class="alert-success fade hide ems-toast" data-delay="8000" id="ems-registered">
+            <div class="alert-icon"> <img src="src/images/icon-success.svg"></div>
+            <div class="alert-text">
+               <h5>Export menu status</h5>
+               <p>Your request has been registered.</p>
+            </div>
+            <div class="alert-close toast-close">
+               <img src="src/images/icon-close.svg">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="row">
+         <div class="col-sm-12 col-md-12 col-xs-12">
+            <!-- breadcrumb -->
+            <div class="rich-text font-size-14 margin-top-16">
+               <p>Menu / <span class="font-semibold">Overview</span></p>
+            </div>
+            <!-- menu-tab -->
+            <div class="menu-tab">
+               <ul class=" nav-tabs" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="overview_page.html">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-link="items_page.html"  data-target="#navigate-away">Items</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-link="categories_page.html"  data-target="#navigate-away">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-link="modifier_page.html"  data-target="#navigate-away">Modifiers</a>
+                  </li>
+               </ul>
+               <div class="tab-content">
+                  <!--button for testing purpose-->
+                  <button class="md-btn-primary" data-toggle="modal" data-target="#pos-syncup-dialog">pos syncup button</button>
+
+                  <div id="overview-wrapper">
+                     <!-- menu content -->
+                     <div class="add-edit-nav active">
+                        <ul>
+                           <li><a class="font-bold" data-toggle="modal" data-target="#ovp-copy-menu-dialog"><span><img
+                                       src="src/images/icon-copy-menu.svg"></span>copy
+                                 menu</a>
+                           </li>
+                           <li><a class="font-bold" data-toggle="modal" data-target="#ovp-import-csv-dialog"><span><img
+                                       src="src/images/icon-import-menu-orange.svg"></span>import
+                                 menu </a>
+                           </li>
+                           <li><button type="submit"
+                                 class="md-btn-primary font-semibold border-radius-4 md-create-menu">Create
+                                 Menu</button></li>
+                        </ul>
+                        <p class="icon-description"><img src="src/images/icon-menu.svg" class="sort-handle"> Drag & drop to arrange the sequence.</p>
+                     </div>
+                     <div class="add-item-content" id="oai-menus"></div>
+                  </div>
+
+                  <div class="d-none" id="empty-overview-wrapper">
+                     <div class="nomenus-addedn-header">
+                        <div class="anchor-tag font-bold" data-toggle="modal" data-target="#ovp-copy-menu-dialog">
+                           <a class="d-flex align-items-c text-decoration-none" href="#"
+                              onclick="copymenuiconClicked()"> <img class="margin-right-5" alt="copy menu"
+                                 src="src/images/icon-copy-menu.svg">COPY MENU</a>
+                        </div>
+                     </div>
+                     <div class="no-menus-added-box">
+                        <div class="text-image-box text-center">
+                           <div class="image-section">
+                              <img alt="announcements" src="./src/images/no-menus-added.svg">
+                           </div>
+                           <div class="text-section margin-top-40 margin-bottom-30">
+                              <h2 class="font-size-20 margin-bottom-15 manatee-color">No menus added</h2>
+                              <p class="manatee-color font-size-14">You can create your menu manually or <br> import
+                                 from a CSV file.</p>
+                           </div>
+                           <div class="form-group button-row">
+                              <button class="md-btn-primary border-radius-4 margin-right-15 font-semibold" type="button"
+                                 data-toggle="modal" data-target="#ovp-import-csv-dialog"
+                                 onclick="importmenubuttonClicked()">Import Menu</button>
+                              <button class="md-btn-secondary font-semibold font-size-14 border-radius-4 margin-left-15"
+                                 type="button" id="ovp-create-menu" onclick="createmenubuttonClicked()">Create
+                                 Menu</button>
+                           </div>
+                           <div class="text-section margin-top-40">
+                              <img alt="question" src="./src/images/icon-question.svg"><span class="font-size-14">
+                                 Learn
+                                 more about <a class="link-color" href="#">importing a menu.</a></span>
+                              <p class="font-size-14 margin-top-8"><a class="link-color" href="#"
+                                    id="csv-required-format">Download sample CSV here.</a></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- copymenu modal -->
+   <div class="modal fade" id="ovp-copy-menu-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close">
+               <img alt="announcements" src="./src/images/icon-close.svg">
+            </button>
+            <div class="modal-body">
+               <div class="copy-popup-modal">
+                  <div class="copy-popup-modal-header">
+                     <h2>Copy menu from another location</h2>
+                  </div>
+                  <div class="copy-popup-modal-content">
+                     <div class="before-you-proceed">
+                        <h2>Before You Proceed</h2>
+                        <p>This action will delete existing menu(s) for this location. If you want to save your existing
+                           menu information, you can export it as a CSV file.</p>
+                     </div>
+                     <div class="copy-popup-modal-location">
+                        <div class="copy-menu-location grey-select">
+                           <select class="selectpicker" title="Select a location you want to copy FROM" name="name">
+                              <option value="name 1">Location name 1</option>
+                              <option value="name 2">Location name 2</option>
+                              <option value="name 2">Location name 2</option>
+                           </select>
+                           <div class="copy-to-this-location">
+                              <h3>Copy to this location:</h3>
+                              <span>Current location address</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="copy-menu-modal-footer">
+                     <div class="form-group button-row">
+                        <button class="btn-control font-semibold" type="button" data-dismiss="modal"
+                           aria-label="Close">Cancel</button>
+                        <button class="md-btn-primary border-radius-4 font-semibold" type="submit"
+                           id="ovp-copy-menu-button">Copy Menu</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- import csv modal -->
+   <div class="modal fade" id="ovp-import-csv-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <button type="button" class="modal-close-button import-csv-close">
+               <img alt="announcements" src="./src/images/icon-close.svg">
+            </button>
+            <div class="modal-body">
+               <div class="import-menu-modal">
+                  <div class="import-menu-modal-header">
+                     Import Menu by CSV
+                  </div>
+                  <div class="import-menu-modal-content">
+                     <div class="important-modal">
+                        <div class="import-menu-csv-info">
+                          <strong> You can import a CSV file only.</strong> Make sure that your CSV file follows the <a target="_blank" href="javascript:void(0)" id="import-csv-required-format"> required format.</a>  Download a partially completed <a target="_blank" href="javascript:void(0)" id="import-csv-template"> sample CSV template </a> to see an example of the required format.
+                        </div>
+                        <div class="important-not">
+                           <h2>Important <div class="tool-wrap">
+                                 <div class="tool-parent">
+                                    <img src="src/images/icon-info-red.svg">
+                                    <div class="tool-show-wrap">
+                                       <div class="tool-show">
+                                          <p> MenuDrive’s import tool lets you upload your complete menu as a CSV file.
+                                             <br><br>
+                                             Import menu is an alternative to manually adding individual menus,
+                                             categories, items, and modifiers.<br> <br>
+                                             To import a menu, please be sure that your CSV file follows the required
+                                             format.
+                                             Learn more about importing a menu. </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </h2>
+                           <p>This action may replace existing menu(s) and menu information. As a best practice you may wish to export your existing menu(s) first.</p>
+                        </div>
+                     </div>
+                     <div class="important-modal-file-upload">
+                        <div id="file-error-wrapper"></div>
+                        <div class="file-upload" id="dropzone-files"></div>
+                        <div class="upload-file" id="csv-dropzone">
+                           <div class="upload-icon"><img src="src/images/icon-upload.svg"> </div>
+                           <div class="choose-drag"><a>Choose a file</a> or drag it here.</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="import-menu-modal-footer">
+                     <div class="form-group button-row">
+                        <button class="btn-control font-semibold import-csv-close" type="button">Cancel</button>
+                        <button class="md-btn-primary border-radius-4 font-semibold upload-continue">Upload &
+                           Continue</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Delete Menu -->
+   <div class="modal alert fades" id="delete-menu-dialog" tabindex="-1" role="dialog" aria-labelledby="delete-menu"
+      aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+         <div class="modal-content">
+            <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+               <img alt="close" src="src/images/icon-close-black.svg" />
+            </button>
+            <div
+               class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+               <div>
+                  <img alt="facebook" src="src/images/status-alert.svg" />
+                  <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Are you Sure?</h4>
+                  <p class="deleting-info font-size-16 text-center">Deleting a menu item cannot be undone. You can <a
+                        href="#"> turn it off </a> instead.</p>
+                     </div>
+            </div>
+            <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+               <button type="button" data-dismiss="modal"
+                  class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+                  data-dismiss="modal">Cancel</button>
+               <button type="button" id="delete-menu-button"
+                  class="btn  font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Delete</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Delete Item -->
+   <div class="modal alert fades" id="delete-menu-item-dialog" tabindex="-1" role="dialog" aria-labelledby="delete-item"
+      aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+         <div class="modal-content">
+            <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+               <img alt="close" src="src/images/icon-close-black.svg" />
+            </button>
+            <div
+               class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+               <div>
+                  <img alt="facebook" src="src/images/status-alert.svg" />
+                  <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Are you Sure?</h4>
+                  <p class="deleting-info font-size-16 text-center">Deleting a menu item cannot be undone. You can <a
+                        href="#"> turn it off </a> instead.</p>
+               </div>
+            </div>
+            <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+               <button type="button"
+                  class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+                  data-dismiss="modal">Cancel</button>
+               <button type="button" id="delete-menu-item-button"
+                  class="btn  font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Delete</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Lock Item -->
+   <div class="modal alert fades" id="lock-menu-item-dialog" tabindex="-1" role="dialog" aria-labelledby="lock-item"
+      aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+         <div class="modal-content">
+            <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+               <img alt="close" src="src/images/icon-close-black.svg" />
+            </button>
+            <div class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+               <div class="alert-delete-popup">
+                  <div>
+                     <img alt="facebook" src="src/images/status-alert.svg" />
+                     <h4 id="lock-label" class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Lock Item</h4>
+                     <p id="lock-para" class="deleting-info font-size-16 text-center">If you unlock this item, any updates will be reflected in MenuDrive only, not your POS. Please, make menu changes directly in your POS to have them reflected in both locations.</p>
+                  </div>
+               </div>
+            </div>
+               <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+                  <button type="button"
+                     class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+                     data-dismiss="modal">Close</button>
+                  <button type="button" id="lock-menu-item-button"
+                     class="btn md-lock-unlock-status-menu-item font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Lock</button>
+               </div>
+         </div>
+      </div>
+   </div>
+  <!--data model for nav tabs-->
+  <div class="modal alert fades d-none" id="navigate-away" tabindex="-1" role="dialog" aria-labelledby="navigate-item"
+  aria-hidden="true">
+  <div class="modal-dialog delete-modal" role="document">
+    <div class="modal-content">
+      <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+        <img alt="close" src="src/images/icon-close-black.svg" />
+      </button>
+      <div
+        class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+        <div>
+          <img alt="facebook" src="src/images/status-alert.svg" />
+          <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Before you go..</h4>
+          <p class="deleting-info navigation-modal font-size-16 text-center">Are you sure you want to leave this page?<br>If you leave, your work will not be saved.
+              </p>
+        </div>
+      </div>
+      <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+        <button type="button" 
+          class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+          data-dismiss="modal">Cancel</button>
+        <button type="button" id="navigate-away-continue"
+          class="btn  font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- POS Sync Up pop-up -->
+<div class="modal alert fades" id="pos-syncup-dialog" tabindex="-1" role="dialog" aria-labelledby="lock-item"
+aria-hidden="true">
+<div class="modal-dialog pos-syncup-modal delete-modal" role="document">
+   <div class="modal-content">
+      <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+         <img alt="close" src="src/images/icon-close-black.svg" />
+      </button>
+      <div class="modal-header">
+         <p><img src="src/images/syncup-warning.svg"/> You have 13 unlocked properties</p>
+      </div>
+      <div class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60">
+         <div class="alert-delete-popup">
+            <div>
+               <p id="" class="deleting-info font-size-16">You have <span>Menu (1), Categories (3), Items (8), and Modifiers (2)</span> currently unlocked. You must lock them and sync with your POS menu if you want their properties to be the same in MenuDrive as they are in your POS controller. However, you can leave them unlocked and sync them with your POS menu if you want these unlocked properties to differ from your POS controller.</p>
+               <div class="radio-button">
+                  <div class="form-group">
+                     <div class="radio">
+                        <label>
+                           <input type="radio" name="sync-radio-input"> Lock all the properties and sync
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="radio">
+                        <label>
+                           <input type="radio" name="sync-radio-input" checked=""> Keep the properties unlocked and sync
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+         <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+            <button type="button"
+               class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+               data-dismiss="modal">Cancel</button>
+            <button type="button" id="pos-syncup-btn"
+               class="btn md-lock-unlock-status-modifier-group font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">sync</button>
+         </div>
+   </div>
+</div>
+</div>
+
+   <!-- LIBRARIES  -->
+   <script type="text/javascript" src="./src/js/third-party/jquery-3.3.1.slim.min.js"></script>
+   <script type="text/javascript" src="./src/js/third-party/popper.min.js"></script>
+   <script type="text/javascript" src="./src/js/third-party/bootstrap.min.js"></script>
+   <script type="text/javascript" src="./src/js/third-party/bootstrap-select.min.js"></script>
+   <script type="text/javascript" src="src/js/third-party/jquery.dataTables.min.js"></script>
+   <script type="text/javascript" src="./src/js/third-party/dropzone.min.js"></script>
+   <script type="text/javascript" src="./src/js/third-party/Sortable.js"></script>
+   <script type="text/javascript" src="src/js/third-party/daterangepicker.js"></script>
+   <script type="text/javascript" src="src/js/third-party/lodash.min.js"></script>
+
+   <!-- CUSTOM JS  -->
+   <script type="text/javascript" src="src/js/common/common.js"></script>
+   <script type="text/javascript" src="src/js/custom/custom.js"></script>
+</body>
+
+</html>

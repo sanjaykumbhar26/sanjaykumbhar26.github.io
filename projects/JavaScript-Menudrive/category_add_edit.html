@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Social" />
+    <meta name="generator" content="Social" />
+    <title>Category Add/Edit</title>
+    <link rel="stylesheet" href="./src/css/third-party/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/css/third-party/font-awesome.min.css" />
+    <link rel="stylesheet" href="./src/css/third-party/dropzone.min.css" />
+    <link
+      rel="stylesheet"
+      href="./src/css/third-party/bootstrap-datetimepicker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/css/third-party/bootstrap-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/css/third-party/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="./src/css/common/common-style.css" />
+    <link rel="stylesheet" href="./src/css/custom/menu-style.css" />
+    <script>
+      !(function () {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error('Segment snippet included twice.');
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              'trackSubmit',
+              'trackClick',
+              'trackLink',
+              'trackForm',
+              'pageview',
+              'identify',
+              'reset',
+              'group',
+              'track',
+              'ready',
+              'alias',
+              'debug',
+              'page',
+              'once',
+              'off',
+              'on',
+              'addSourceMiddleware',
+              'addIntegrationMiddleware',
+              'setAnonymousId',
+              'addDestinationMiddleware',
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement('script');
+              t.type = 'text/javascript';
+              t.async = !0;
+              t.src =
+                'https://cdn.segment.com/analytics.js/v1/' +
+                key +
+                '/analytics.min.js';
+              var n = document.getElementsByTagName('script')[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics.SNIPPET_VERSION = '4.13.1';
+            analytics.load('7l9k4CZoobg0JbHiANnRHgVeWFhdzdSG');
+            analytics.page();
+          }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="content-block">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12">
+          <!-- breadcrumb -->
+          <div class="rich-text font-size-14 margin-top-16">
+            <p>Menu / <span class="font-semibold">Category</span></p>
+          </div>
+          <!---->
+          <div class="menu-tab">
+            <ul class="nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" data-link="overview_page.html"  data-target="#navigate-away">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="items_page.html"  data-target="#navigate-away">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-link="categories_page.html"  data-target="#navigate-away"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="modifier_page.html"  data-target="#navigate-away">Modifiers</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <!-- menu content -->
+              <div class="add-edit-nav">
+                <ul class="disable">
+                  <li>
+                    <button
+                      type="submit"
+                      class="btn-inactive font-normal border-radius-4"
+                    >
+                      + Add Category
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="add-edit-menu-box">
+                <div class="menu-information">
+                  <div class="btn-back margin-bottom-70">
+                    <a href="javascript:void(0)" class="md-back-to-category">
+                      <img src="src/images/icon-leftarrow-balck.svg" />
+                      <span>Back</span>
+                    </a>
+                  </div>
+                  <div class="md-items-addedit-box">
+                    <div class="md-field">
+                      <div class="menu-name-input-type">
+                        <div class="textfield md-form-group">
+                          <div class="form-group category-header">
+                            <div class="category-input">
+                              <input
+                                type="text"
+                                id="category-name"
+                                class="md-form-field md-input"
+                                maxlength="14"
+                                placeholder="Category name (e.g., Appetizers)"
+                              />
+                              <p class="counter"><span class="currentValueLength">0</span><span>/</span><span class="totalValueLength">14</span></p>
+                            </div>
+                            <img
+                              data-toggle="tooltip"
+                              data-placement="right"
+                              title=""
+                              data-html="true"
+                              data-original-title="Categories are sections of your menu, like appetizers, soups, sandwiches, etc. By default, a category has one size. <br> Category name can't be more than 14 characters long"
+                              src="src/images/icon-info-lightgrey.svg"
+                            />
+                          </div>
+                          <div class="error">Can't be empty</div>
+                        </div>
+                        <!-- Description -->
+                        <div class="form-group md-description">
+                          <h2>Description</h2>
+                          <p>Optional</p>
+                          <textarea
+                            id="category-description"
+                            placeholder="Soups made fresh daily."
+                            maxlength="600"
+                          ></textarea>
+                          <p class="counter"><span class="currentValueLength">0</span>/<span class="totalValueLength">600</span></p>
+                        </div>
+                        <!-- category to the following menus -->
+                        <div
+                          class="add-textfield margin-bottom-70 md-form-dd-group"
+                        >
+                          <h2>Add this category to the following menus:</h2>
+                          <div class="textfield-search">
+                            <input
+                              type="text"
+                              class="md-form-dd-field"
+                              placeholder="Add menu"
+                            />
+                            <!-- <img
+                              alt="search"
+                              class="search-icon"
+                              src="src/images/icn-search-m.svg"
+                            /> -->
+                            <img
+                              alt="search"
+                              class="dropdown-icon md-toggle"
+                              data-target="pick-menus-list"
+                              src="src/images/icon-dropdown.svg"
+                            />
+                          </div>
+                          <div class="pick-menus-list-chips"></div>
+                          <div class="pick-menu d-none" id="pick-menus-list">
+                            <h2>Pick Menu</h2>
+                            <ul class="list"></ul>
+                            <button
+                              class="md-btn-primary border-radius-4 md-create-menu"
+                              type="button"
+                            >
+                              + Create Menu
+                            </button>
+                          </div>
+                          <div class="error">Can't be empty</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="md-image">
+                      <div class="popup-items-imege">
+                        <form
+                          class="images-upload"
+                          enctype="multipart/form-data"
+                          id="category-dropzone"
+                        >
+                          <input
+                            type="file"
+                            data-value="src/images/generic-item.jpg"
+                            id="image-upload-input"
+                            accept="image/gif, image/jpeg, image/png"
+                            style="display: none;"
+                          />
+                          <div class="images-icon">
+                            <img
+                              alt="file"
+                              class="file-icon"
+                              src="src/images/icon-file-image-o.svg"
+                            />
+                            <img
+                              alt="file"
+                              src="src/images/icon-file-upload.svg"
+                            />
+                          </div>
+                          <div class="images-description">
+                            You can upload up to 3 images in JPEG, GIF, or PNG
+                            format. Each must be under 2 MB.
+                          </div>
+                        </form>
+                        <div class="images-preview" id="cdz-preview"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Number of sizes  -->
+                  <div class="md-nameofsize">
+                    <div class="tool-tip-div">
+                      <p class="pos-label">Number of sizes</p>
+                      <div class="tool-wrap">
+                        <div class="tool-parent">
+                           <img src="./src/images/icon-info-lightgrey.svg">
+                           <div class="tool-show-wrap">
+                              <div class="tool-show">
+                                 <p>For example, a category like soups might come in two sizes: bowl and cup. You would select 2 and write Bowl, Cup.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                    </div>
+                    <span class="form-input-number">
+                      <input
+                        type="number"
+                        class="input-normal"
+                        id="number-of-sizes"
+                        value="1"
+                      />
+                      <div class="md-name-arrow">
+                        <img
+                          alt="file"
+                          class="form-input-number-up"
+                          src="src/images/number-icon-top.svg"
+                        />
+                        <img
+                          alt="file"
+                          class="form-input-number-down"
+                          src="src/images/number-icon-down.svg"
+                        />
+                      </div>
+                    </span>
+                    <span class="md-form-group">
+                      <span class="md-sizes-name">
+                        <input
+                          type="text"
+                          class="input-default md-form-field md-input"
+                          id="size-names"
+                          placeholder="Enter size name, separated by commas"
+                        />
+                        <div class="error size-name">Please add size names as per number of sizes selected.</div>
+                      </span>
+                    </span>
+                  </div>
+                  <!-- Display switch -->
+                  <div class="on-off-block margin-bottom-70">
+                    <label class="switch">
+                      <input type="checkbox" id="category-display"/>
+                      <span class="slider round"><span class="switch-on font-normal">off</span></span
+                      >
+                    </label>
+                    <div class="label">
+                      Display this category on your storefront
+                    </div>
+                  </div>
+                </div>
+                <!-- box footer -->
+                <div class="menu-box-footer">
+                  <div class="form-group button-row">
+                    <button
+                      class="btn-control font-semibold font-semibold md-back-to-category"
+                      type="button"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      class="md-btn-primary border-radius-4 font-semibold"
+                      type="button"
+                      id="save-category"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--data model for nav tabs-->
+      <div class="modal alert fades d-none" id="navigate-away" tabindex="-1" role="dialog" aria-labelledby="navigate-item"
+      aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+        <div class="modal-content">
+          <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+            <img alt="close" src="src/images/icon-close-black.svg" />
+          </button>
+          <div
+            class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+            <div>
+              <img alt="facebook" src="src/images/status-alert.svg" />
+              <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Before you go..</h4>
+              <p class="deleting-info navigation-modal font-size-16 text-center">Are you sure you want to leave this page?<br>If you leave, your work will not be saved.
+                  </p>
+            </div>
+          </div>
+          <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+            <button type="button" 
+              class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+              data-dismiss="modal">Cancel</button>
+            <button type="button" id="navigate-away-continue"
+              class="btn  font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LIBRARIES  -->
+    <script type="text/javascript" src="src/js/third-party/moment.js"></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/daterangepicker.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/bootstrap-select.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/jquery.dataTables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/dataTables.bootstrap4.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/dropzone.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="src/js/third-party/lodash.min.js"
+    ></script>
+    <script type="text/javascript" src="src/js/common/common.js"></script>
+
+    <!-- CUSTOM JS  -->
+    <script type="text/javascript" src="src/js/custom/custom.js"></script>
+  </body>
+</html>

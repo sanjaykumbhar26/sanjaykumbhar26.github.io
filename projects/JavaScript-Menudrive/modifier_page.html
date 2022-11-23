@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Social">
+    <meta name="generator" content="Social">
+    <title>Modifier</title>
+    <link rel="stylesheet" href="src/css/third-party/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/third-party/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/third-party/bootstrap-select.min.css">
+    <link rel="stylesheet" href="src/css/third-party/magnific-popup.css">
+    <link rel="stylesheet" href="src/css/common/common-style.css">
+    <link rel="stylesheet" href="src/css/custom/menu-style.css">
+	  <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+  analytics.load("7l9k4CZoobg0JbHiANnRHgVeWFhdzdSG");
+  analytics.page();
+  }}();
+</script>
+<script>
+function addmodifiergroupbuttonClicked() {
+  analytics.track('MB - Add Modifier Group Button Clicked', {
+    type: 'track',
+    event: 'MB - Add Modifier Group Button Clicked'
+
+  });
+}
+</script>
+  </head>
+
+  <body>
+
+    <div class="md-alert-success d-none" id="success-msg-div">
+      <span class="info" id="success-msg"><strong>Success.</strong> Your coupon was created successfully!</span>
+      <span class="close-span"><img src="src/images/success-close-icon.svg"></span>
+   </div>
+  
+   <div class="md-alert-somethingwrong d-none" id="error-msg-div">
+    <span class="info" id="error-msg"><strong>Something went wrong.</strong> Your coupon was not created. Please try
+       again. <a href="#">action.</a></span>
+    <span class="close-span"><img src="src/images/locked-close.svg"></span>
+  </div>
+
+    <div class="content-block">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12">
+          <!-- breadcrumb -->
+          <div class="rich-text font-size-14 margin-top-16">
+            <p>Home / <span class="font-semibold">Modifiers</span></p>
+          </div>
+          <!---->
+          <div class="menu-tab">
+            <ul class=" nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" data-link="overview_page.html"  data-target="#navigate-away">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="items_page.html"  data-target="#navigate-away">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="categories_page.html"  data-target="#navigate-away">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="modifier_page.html">Modifiers</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="modifier-wrapper">
+                <div class="modifier-nav">
+                  <div class="modifier-search-items-div">
+                    <div class="modifier-search">
+                      <div class="modifier-search-field">
+                        <input class="md-form-dd-field" id="modifier-search-field" type="text" placeholder="Select modifier group">
+                        <img class="dropdown-m-icon md-toggle" data-target="modifier-dropdown" src="src/images/icon-dropdown.svg">
+                        <!-- <img class="search-m-icon" src="src/images/icn-search-m.svg"> -->
+                      </div>
+                      <div class="modifier-dropdown d-none" id="modifier-dropdown">
+                        <ul class="modifier-dropdown-list"></ul>
+                      </div>
+                    </div>
+                    <div class="modifiers-per-page">
+                      <label>
+                        show 
+                        <select class="selectpicker">
+                          <option value="10">10</option>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="100">100</option>
+                        </select>
+                        modifiers per page
+                      </label>
+                    </div>
+                  </div>
+                  <div class="modifier-btn">
+                    <button class="md-btn-primary border-radius-4 font-semibold padding-left-20 padding-right-20 add-modifier-group" type="button">+ Add Modifier Group</button>
+                  </div>
+                </div>
+                <div class="modifier-content magnific-popup-view" id="modifier-groups"></div>
+                <div class="md-pagination-box">
+                  <div class="md-pagination">
+                    <ul class="pagination justify-content-end">
+                      <li class="disabled">
+                        <a class="page-link" href="javascript:void(0)">
+                          <img alt="up" class="up-arow" src="src/images/icon-previous.svg">
+                        </a>
+                      </li>
+                      <li class=" active"><a class="page-link" href="#">1</a></li>
+                      <!-- <li><a class="page-link" href="javascript:void(0)">2</a></li>
+                            <li><a class="page-link" href="javascript:void(0)">3</a></li>
+                            <li><a class="page-link" href="javascript:void(0)">...</a></li>
+                            <li><a class="page-link" href="javascript:void(0)">8</a></li> -->
+                      <li>
+                        <a class="page-link" href="javascript:void(0)">
+                          <img alt="up" class="up-arow" src="src/images/icon-next.svg">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none" id="empty-modifier-wrapper">
+                <div class="no-modifiers-added">
+                  <div class="text-image-box text-center">
+                    <div class="image-section">
+                      <img alt="announcements" src="./src/images/no-menus-added.svg">
+                    </div>
+                    <div class="text-section margin-top-40 margin-bottom-30">
+                      <h2 class="font-size-20 margin-bottom-15 manatee-color">No modifiers added</h2>
+                      <p class="manatee-color font-size-14">Click the button below to create your modifier groups (such as toppings) and options (such as pepperoni and mushrooms).</p>
+                    </div>
+                    <div class="form-group button-row">
+                      <button class="md-btn-primary border-radius-4 margin-right-5 modifier-group-show font-semibold add-modifier-group" type="button" onclick="addmodifiergroupbuttonClicked()">+ Add Modifier Group</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete modifier group -->
+    <div class="modal alert fade" id="delete-modifier-group-dialog" tabindex="-1" role="dialog" aria-labelledby="Delete modifier group" aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img alt="close" src="src/images/icon-close-black.svg" />
+          </button>
+          <div class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+            <div>
+              <img alt="status-alert" src="src/images/status-alert.svg" />
+              <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Are you Sure?</h4>
+              <p class="deleting-info font-size-16 text-center">Do you really want to delete this modifier group? It will delete all the options inside this group.</p>
+            </div>
+          </div>
+          <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+            <button type="button" data-dismiss="modal"
+              class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+              data-dismiss="modal">Cancel</button>
+            <button type="button" id="delete-modifier-group-button"
+              class="btn font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete modifier group option -->
+    <div class="modal alert fade" id="delete-modifier-group-option-dialog" tabindex="-1" role="dialog" aria-labelledby="Delete modifier group option" aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img alt="close" src="src/images/icon-close-black.svg" />
+          </button>
+          <div class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+            <div>
+              <img alt="status-alert" src="src/images/status-alert.svg" />
+              <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Are you Sure?</h4>
+              <p class="deleting-info font-size-16 text-center">Do you really want to delete this option? It will delete this option inside this group.</p>
+            </div>
+          </div>
+          <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+            <button type="button" data-dismiss="modal"
+              class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+              data-dismiss="modal">Cancel</button>
+            <button type="button" id="delete-modifier-group-option-button"
+              class="btn font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--data model for nav tabs-->
+  <div class="modal alert fades d-none" id="navigate-away" tabindex="-1" role="dialog" aria-labelledby="navigate-item"
+  aria-hidden="true">
+  <div class="modal-dialog delete-modal" role="document">
+    <div class="modal-content">
+      <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+        <img alt="close" src="src/images/icon-close-black.svg" />
+      </button>
+      <div
+        class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+        <div>
+          <img alt="facebook" src="src/images/status-alert.svg" />
+          <h4 class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Before you go..</h4>
+          <p class="deleting-info navigation-modal font-size-16 text-center">Are you sure you want to leave this page?<br>If you leave, your work will not be saved.
+              </p>
+        </div>
+      </div>
+      <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+        <button type="button" 
+          class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+          data-dismiss="modal">Cancel</button>
+        <button type="button" id="navigate-away-continue"
+          class="btn  font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Lock Item -->
+   <div class="modal alert fades" id="lock-menu-item-dialog" tabindex="-1" role="dialog" aria-labelledby="lock-item"
+      aria-hidden="true">
+      <div class="modal-dialog delete-modal" role="document">
+         <div class="modal-content">
+            <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+               <img alt="close" src="src/images/icon-close-black.svg" />
+            </button>
+            <div class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+               <div class="alert-delete-popup">
+                  <div>
+                     <img alt="facebook" src="src/images/status-alert.svg" />
+                     <h4 id="lock-label" class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Unlock Item</h4>
+                     <p id="lock-para" class="deleting-info font-size-16 text-center">If you unlock this item, any updates will be reflected in MenuDrive only, not your POS. Please, make menu changes directly in your POS to have them reflected in both locations.</p>
+                  </div>
+               </div>
+            </div>
+               <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+                  <button type="button"
+                     class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+                     data-dismiss="modal">Close</button>
+                  <button type="button" id="lock-menu-item-button"
+                     class="btn md-lock-unlock-status-modifier-group font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Unlock</button>
+               </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- visibility Modal -->
+   <div class="modal alert fades" id="visibility-dialog" tabindex="-1" role="dialog" aria-labelledby="lock-item"
+   aria-hidden="true">
+   <div class="modal-dialog delete-modal" role="document">
+     <div class="modal-content">
+         <button type="button" class="close connect_post_cancel" data-dismiss="modal" aria-label="Close">
+           <img alt="close" src="src/images/icon-close-black.svg" />
+         </button>
+         <div class="modal-body delete-modal-body padding-top-40 padding-bottom-40 padding-left-60 padding-right-60 text-center">
+           <div class="alert-delete-popup">
+               <div>
+                 <img alt="facebook" src="src/images/status-alert.svg" />
+                 <h4 id="visibility-heading" class="modal-title font-size-32 font-normal margin-bottom-30 margin-top-30">Unlock Item</h4>
+                 <p id="visibility-para" class="deleting-info font-size-16 text-center">If you unlock this item, any updates will be reflected in MenuDrive only, not your POS. Please, make menu changes directly in your POS to have them reflected in both locations.</p>
+               </div>
+           </div>
+         </div>
+           <div class="common-modal-footer padding-top-0 padding-bottom-0 padding-left-0 padding-right-0">
+               <button type="button"
+                 class="btn font-bold md-btn-default margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center"
+                 data-dismiss="modal">Close</button>
+               <button type="button" id="visibility-button"
+                 class="btn visibile-options-btn font-bold delete-continue-btn margin-top-0 margin-bottom-0 margin-left-0 margin-right-0 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 font-size-14 text-uppercase text-center">Confirm</button>
+           </div>
+     </div>
+   </div>
+   </div>
+
+    <!-- LIBRARIES  -->
+    <script type="text/javascript" src="src/js/third-party/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/popper.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/bootstrap.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="./src/js/third-party/jquery-sortable.js"></script>
+    <script type="text/javascript" src="src/js/third-party/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/lodash.min.js"></script>
+    <script type="text/javascript" src="src/js/third-party/daterangepicker.js"></script>
+    <script type="text/javascript" src="src/js/common/common.js"></script>
+
+    <!-- CUSTOM JS  -->
+    <script src="src/js/custom/custom.js"></script>
+
+  </body>
+
+</html>

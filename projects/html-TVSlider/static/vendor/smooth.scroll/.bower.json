@@ -1,0 +1,13 @@
+{
+  "name": "download",
+  "_cacheHeaders": {
+    "ETag": "\"824c270324b48320ce65c5febde0cfa4\"",
+    "Content-Type": "application/x-gzip",
+    "Content-Disposition": "attachment; filename=\"gist6477177-ca7457b56e94a2e14361de018a020342127a57c1.tar.gz\""
+  },
+  "_release": "e-tag:824c27032",
+  "main": "index.js",
+  "_source": "https://gist.github.com/galambalazs/6477177/download",
+  "_target": "*",
+  "_originalSource": "https://gist.github.com/galambalazs/6477177/download"
+}
