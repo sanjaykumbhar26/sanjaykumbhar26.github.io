@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+.account-header {
+  padding-top: 34px;
+}
+#restaurant-info-dialog .modal-dialog {
+  width: 658px;
+  height: 778px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(212,212,212,0.2);
+}
+#restaurant-info-dialog .close {
+  width: 40px;
+  position: absolute;
+  right: 34px;
+  top: 39px;
+  z-index: 1111;
+}
+#restaurant-info-dialog .modal-content {
+  border: none;
+}
+#restaurant-info-dialog .modal-header {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 60px;
+}
+#restaurant-info-dialog .modal-header h2 {
+  font-family: Open Sans;
+  font-size: 24px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.modal-header p {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+#restaurant-info-dialog .login-box {
+  width: 407px;
+  margin: 0 auto;
+}
+
+.select-option .dropdown-toggle {
+  height: 40px;
+  padding: 0px 0px 0px 15px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.4px;
+  line-height: 36px;
+}
+.select-option .bootstrap-select {
+  width: 100% !important;
+}
+.select-option .bootstrap-select .dropdown-toggle:focus,
+.select-option .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+  outline: none !important;
+  outline-offset: -2px;
+}
+.select-option .bootstrap-select>.dropdown-toggle:after {
+  margin-top: -1px;
+  margin-right: 19px;
+}
+.select-option .dropdown-toggle::after {
+  border-top: .3em solid #c7c7c7;
+}
+.select-option .dropdown-item.active, .select-option .dropdown-item:active {
+  background-color: rgb(254, 229, 209);
+}
+.select-option .dropdown-item.active, .select-option .dropdown-item {
+  padding: 0px 0px 0px 15px;
+  border-bottom-width: 1px;
+  height: 40px;
+  border-style: solid;
+  border-color: #efefef;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.4px;
+  line-height: 40px;
+}
+.answer-list {
+  width: 100%;
+  padding:0;
+  background-size: cover;
+  margin-top: 10px;
+}
+.answer-list li {
+  list-style: none;
+  width: 100%;
+  height: 39px;
+  padding: 0px 0px 0px 15px;
+  border: solid 2px;
+  border-color: #efefef;
+  border-bottom: 0px;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.4px;
+  line-height: 38px;
+  margin-top: 0px;
+}
+.answer-list li:hover {
+  background-color: rgb(254, 229, 209);
+  cursor: pointer;
+}
+.modal-footer {
+  text-align: right;
+}
+.modal-footer .done {
+  margin-top: 40px;
+}
+
+/* login page  */
+.account-setup {
+  background: rgb(246, 246, 246);
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.account-container {
+  position: relative;
+}
+.account-container h2 {
+  font-family: Open Sans;
+  font-size: 32px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.account-tag-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-tag-line p {
+  font-family: Open Sans;
+  font-size: 20px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.15px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.account-tag-line a {
+  left: 200px;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #f58025;
+  text-decoration: none solid rgb(245, 128, 37);
+  letter-spacing: 0.5px;
+  position: relative;
+  font-weight: 700;
+}
+.account-tour {
+  width: 1240px;
+  margin: 0 auto;
+}
+.account-tour-box {
+  width: 100%;
+  min-height: 240px;
+  background: #ffffff;
+  border: solid 1px #efefef;
+}
+.account-tour-box .box-header {
+  width: 100%;
+  border-bottom: solid 4px #2ca323;
+}
+.account-tour-box .box-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  align-items: center;
+  padding-left: 57px;
+  padding-right: 40px;
+      position: relative;
+}
+.account-tour-box .box-header.green {
+  border-bottom: solid 4px #2ca323;
+}
+.account-tour-box .box-header.grey {
+  border-bottom: solid 1px #dadada;
+}
+.account-tour-box .box-header.green-grey::after {
+  content: "";
+  height: 4px;
+  width: 50%;
+  position: absolute;
+  bottom: -4px;
+  z-index: 111111;
+  right: 0;
+  background: #dadada;
+}
+.account-tour-box .box-header h2 {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  font-weight: 700;
+}
+.account-tour-box .box-header a {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #f58025;
+  text-decoration: none solid rgb(245, 128, 37);
+  letter-spacing: 0.5px;
+}
+.complete-profile {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 57px;
+  padding-right: 40px;
+  height: 100%;
+  align-items: center;
+}
+.complete-list {
+ list-style: none;
+ padding-top: 40px;
+}
+.account-list {
+  margin: 0px;
+  padding: 0;
+}
+.account-list li {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.account-list .active .icon {
+  width: 32px !important;
+  height: 32px !important;
+  border: 2px solid #2ca323;
+  border-radius: 50px;
+  background-color: #2ca323;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-list .active .number {
+  width: 32px !important;
+  height: 32px !important;
+  border: 2px solid #333f4b;
+  border-radius: 50px;
+  background-color: #ffffff;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.account-list .value {
+  height: 26px;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  margin-left: 17px;
+}
+#accept-payments-section .account-list .value {
+  opacity: 0.5;
+}
+#build-menu-section .account-list .value {
+  opacity: 0.5;
+}
+.payments-info {
+  display: flex;
+  width: 625px;
+  height: 200px;
+  align-items: center;
+}
+.payments-info img {
+  width: 235px;
+  height: 199px;
+}
+.payments-info p {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+.list-stylet-one {
+   width: 40%;
+}
+.list-stylet-one ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.list-stylet-one ul li {
+    font-family: Open Sans;
+    font-size: 16px;
+    color: #333f4b;
+    text-decoration: none solid rgb(51, 63, 75);
+    letter-spacing: 0.15px;
+    width: max-content;
+    padding: 4px 0;
+    list-style: none;
+    padding-left: 35px;
+    position: relative;
+        min-height: 50px;
+}
+.list-stylet-one ul li span {
+    opacity: 0.5;
+}
+.list-stylet-one ul li::before {
+    content: "";
+    background-image: url(../images/icon/icon-right-sign-balck.svg);
+    height: 30px;
+    width: 28px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 8px;
+}
+.start-here {
+    display: flex;
+    padding-left: 57px;
+    padding-right: 40px;
+    padding-top: 40px;
+    height: 100%;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+
+.progressbar-step {
+  display: flex;
+  width: 100%;
+  flex-direction: revert;
+  align-items: center;
+  margin: 78px 50px 66px;
+}
+.progressbar {
+  width: 100%;
+  margin-bottom: 0;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 240px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 2px dotted #666;
+  top: 30px;
+  left: -50%;
+  z-index : 1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: green;
+}
+.progressbar li.active svg path {
+  fill: #2ca323 !important;
+}
+.progressbar li.active:before {
+  border-color: green;
+}
+/* .progressbar li.active + li:after {
+  border: 2px dotted green;
+} */
+
+.progressbar-icon {
+  display: flex;
+   align-items: center;
+   flex-direction: column;
+   min-width: 100px;
+}
+.progressbar-icon legal {
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.1px;
+  font-weight: 700;
+    margin-top: 30px;
+}
+.progressbar-svg {
+  background: #f6f6f6;
+  z-index: 111;
+  padding: 0px 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+.active .progressbar-svg span {
+  width: 32px !important;
+  height: 32px !important;
+  border: 2px solid #2ca323;
+  border-radius: 50px;
+  background-color: #2ca323;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1px;
+  bottom: -11px;
+}
+ .progressbar-svg span {
+   width: 32px;
+   height: 32px;
+   border: 2px solid #333f4b;
+   border-radius: 50px;
+   background-color: #ffffff;
+   background-size: cover;
+   font-family: Open Sans;
+   font-size: 16px;
+   color: #333f4b;
+   text-decoration: none solid rgb(51, 63, 75);
+   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1px;
+  bottom: -11px;
+}
+.account-tag-line .start-close img.down {
+  transform: rotate(90deg);
+  margin-left: 10px;
+}
+ #start-here.active svg path {
+    fill: #333f4b !important;
+}
+.bootstrap-select .filter-option-inner-inner {
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.4px;
+}
+.bootstrap-select .btn-light.dropdown-toggle {
+    color: #212529;
+    background-color: #fff;
+}
+.radio-group legal {
+  margin-bottom: 12px;
+  display: flex;
+}
+.radio-group .radio-button {
+margin-bottom: 8px;
+
+}
+#restaurant-info-dialog .modal-footer {
+  border-top: none;
+}
+
+
+nput[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+
+#restaurant-info-dialog  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.radio {
+    position: relative;
+}
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+}
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #333f4b;
+    border-radius: 50%;
+}
+.radio .checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #252525;
+}
+
+.radio:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.radio input:checked~.checkmark {
+    border: 2px solid #f89344;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio input:checked~.checkmark:after {
+    display: block;
+}
+
+.radio .checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #f89344;
+}
+.radio label {
+    color: #252525;
+}
+. radio-group .form-group {
+    margin-bottom: 15px;
+}
+a { outline: none; }
+:focus {
+outline: 0;
+}

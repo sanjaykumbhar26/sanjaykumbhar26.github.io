@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+.menudrive-account {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.menudrive-left {
+  flex: 1;
+  background-color: #fff7f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menudrive-right {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menudrive-logo {
+  margin-top: 52px;
+  margin-bottom: 54px;
+  text-align: center;
+}
+.menudrive-logo img {
+  width: 150px;
+}
+.form-box {
+  max-width: 664px;
+  max-height: 625px;
+  min-width: 550px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(212,212,212,0.2);
+  padding: 40px 20px;
+}
+.form-box form {
+  max-width: 381px;
+  margin: 0 auto;
+}
+.form-box .form-detail {
+  background-color: #fff;
+}
+.menudrive-account .form-group input {
+  height: 40px;
+  padding: 0px 8px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-size: cover;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #333f4b;
+  text-decoration: none solid rgb(199, 199, 199);
+}
+.menudrive-account .form-group {
+  margin-bottom: 20px;
+}
+.menudrive-account .form-group.button-row .button-text {
+  margin-right: 10px;
+  min-width: auto;
+}
+.menudrive-account .form-group.button-row {
+ text-align: right;
+ margin-top: 40px;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+::placeholder {
+  font-family: Open Sans !important;
+  font-size: 14px;
+  color: #c7c7c7 !important;
+}
+.menudrive-account .form-group.form-error input {
+  border-color: #c9311a;
+}
+.menudrive-account .form-group.form-error .form-error {
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #c9311a;
+  text-decoration: none solid rgb(201, 49, 26);
+  letter-spacing: 0.4px;
+}
+.form-header {
+  margin-bottom: 30px;
+}
+.box-header {
+  font-family: Open Sans;
+  font-size: 24px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.box-sub-header {
+  text-align: center;
+}
+.box-sub-header span {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+.box-sub-header a {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #f89344;
+  text-decoration: none solid rgb(248, 147, 68);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+}
+.menudrive-info .header {
+
+}
+.menudrive-info .header h2 {
+  font-family: Open Sans;
+  font-size: 32px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.25px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.menudrive-info .sub-header {
+  max-width: 465px;
+  margin: 0 auto;
+}
+.menudrive-info .sub-header h3 {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0;
+}
+.menudrive-info .sub-header p {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #89909b;
+  text-decoration: none solid rgb(137, 144, 155);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0;
+}
+.menudrive-image {
+  text-align: center;
+  margin-top: 40px;
+}
+.form-note {
+  margin: 25px 0;
+}
+.form-note p {
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #89909b;
+  text-decoration: none solid rgb(137, 144, 155);
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+.form-note p a {
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #f89344;
+  text-decoration: none solid rgb(248, 147, 68);
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+.Congratulations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff7f0;
+  min-height: 100vh;
+}
+.congratulations-box {
+  width: 564px;
+  min-height: 572px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(212,212,212,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.congratulations-details {
+  text-align: center;
+  width: 322px;
+  margin: 0 auto;
+}
+.congratulations-details h2 {
+  font-family: Open Sans;
+  font-size: 24px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  text-align: center;
+  font-weight: 700;
+}
+.congratulations-details p {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0;
+}
+.congratulations-details p.sales {
+    margin-bottom: 30px;
+}
+.congratulations-details p.message {
+  margin-bottom: 30px;
+}
+.congratulations-details p.message span {
+  font-weight: 600;
+}
+.forgot {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+.forgot:hover {
+  color: #333f4b;
+}
+.success-block {
+  text-align: center;
+}
+.spine-block  ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+.spine-block ul {
+  margin-bottom: 70px;
+}
+.spine-icon {
+  margin-bottom: 70px;
+}
+.spine-block  ul li {
+  font-family: Open Sans;
+  font-size: 20px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  letter-spacing: 0.15px;
+  width: max-content;
+  padding: 4px 0;
+  list-style: none;
+  padding-left: 35px;
+  position: relative;
+}
+.spine-block  ul li::before {
+  content: "";
+  background-image: url(../images/icon/icon-right-sign-balck.svg);
+  height: 35px;
+  width: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0px;
+  top: 8px;
+}
+.spine-block p{
+  width: 269px;
+  margin: 0 auto;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #89909b;
+  text-decoration: none solid rgb(137, 144, 155);
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+.Congratulations-buton  {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.ca-progress {
+	height: 8px;
+	background-color: #ffffff;
+  border-radius: 2px;
+	margin-bottom: 46px;
+}
+.ca-progress-bar {
+	background-color: #f89344;
+  border-radius: 2px;
+}
+.ca-progress-form {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #333f4b;
+  text-decoration: none solid rgb(51, 63, 75);
+  line-height: 36px;
+  text-align: right;
+}
+.ca-progress-primary {
+  width: 50%;
+}
+.ca-progress-secondary {
+  width: 100%;
+}
+.congra-title {
+  margin-bottom: 40px;
+}
+.cong-box {
+  justify-content: flex-start;
+  padding-top: 60px;
+  max-width: 664px;
+  width: 100%;
+}
+.congratulations-block {
+  flex-direction: column;
+  padding-bottom: 80px;
+}

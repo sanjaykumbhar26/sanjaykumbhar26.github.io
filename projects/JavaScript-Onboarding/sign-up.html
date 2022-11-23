@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Social">
+    <meta name="generator" content="Social">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sign-up.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+  </head>
+
+  <body>
+    <div class="Congratulations d-none" id="congratulations-box">
+      <div class="congratulations-box">
+
+        <!-- Congratulations detail; -->
+        <div class="congratulations-details d-none" id="create-account-process">
+          <div class="spine-block">
+            <ul>
+              <li>Drive revenue and profits.</li>
+              <li>Market your business.</li>
+              <li>Build long-lasting customer relationships.</li>
+            </ul>
+            <div class="spine-icon">
+              <img alt="menu-drive" src="assets/images/spinner.svg" />
+            </div>
+            <p>We are creating your account. This may take a minute.</p>
+          </div>
+        </div>
+
+        <!-- Congratulations detail; -->
+        <div class="congratulations-details d-none" id="create-account-success">
+          <h2>Congratulations!</h2>
+          <p class="sales">
+            You’re on your way to more sales.
+          </p>
+          <p class="message">
+            Please check your email and click <span>Activate My Account</span> in the message we just sent you.
+          </p>
+          <div class="form-group Congratulations-buton ">
+            <button class="button" type="button" id="all-set">All Set</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menudrive-account  -->
+    <div class="menudrive-account" id="menudrive-account">
+      <div class="menudrive-left">
+        <div class="Create-account">
+          <div class="menudrive-logo">
+            <img alt="menu-drive" src="assets/images/menu-drive.png" />
+          </div>
+          <div class="ca-progress-form">1/2</div>
+          <div class="progress ca-progress">
+            <div class="progress-bar ca-progress-bar ca-progress-primary" id="ca-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="form-box">
+            <!--   Create your free MenuDrive account. -->
+            <div class="form-detail" id="create-account-section-primary">
+              <div class="form-header">
+                <div class="box-header">
+                  Create your free MenuDrive account.
+                </div>
+                <div class="box-sub-header">
+                  <span> Already have an account?</span><a href="merchant-login.html">Log in.</a>
+                </div>
+              </div>
+              <form method="post" id="create-account-form-primary">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="first-name" placeholder="First Name" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="last-name" placeholder="Last Name" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="business-name" placeholder="Business Name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email-address" placeholder="Email Address" />
+                </div>
+                <div class="form-group button-row">
+                  <button type="submit" class="button" id="create-account-next">Next</button>
+                </div>
+              </form>
+            </div>
+
+            <!--   Almost there ...  -->
+            <div class="form-detail d-none" id="create-account-section-secondary">
+              <div class="form-header">
+                <div class="box-header">
+                  Almost there ...
+                </div>
+                <div class="box-sub-header">
+                  <span> Already have an account?</span><a href="merchant-login.html">Log in.</a>
+                </div>
+              </div>
+              <form method="post" id="create-account-form-secondary">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="business-address" placeholder="Business Address" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="business-address-optional" placeholder="Business Address 2 (optional)" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="city" placeholder="City" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="state-province-region" placeholder="State, Province, Region" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="zip-code" placeholder="Zip Code" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="country" placeholder="Country" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="phone-number" placeholder="Phone Number">
+                </div>
+                <div class="form-group button-row">
+                  <button class="button-text" type="button" id="create-account-back">Back</button>
+                  <button class="button" type="submit" id="create-account-submit">Create Account</button>
+                </div>
+                <div class="form-note">
+                  <p>By clicking the button above, you agree to our <a href="#"> Terms of Service </a> and <a href="#">Privacy Policy.</a> </p>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="menudrive-right">
+        <div class="menudrive-info">
+          <!-- > menudrive-details  -->
+          <div class="menudrive-details" id="restaurant-section">
+            <div class="header">
+              <h2>Build a better restaurant business.</h2>
+              <div class="sub-header">
+                <h3>The #1 Online Ordering Platform for Restaurants </h3>
+                <p>Source: The Top Tens</p>
+              </div>
+            </div>
+            <div class="menudrive-image">
+              <img alt="restaurant" src="assets/images/restaurant-business.png" />
+            </div>
+          </div>
+          <!-- >No commissions or hidden fees.  -->
+          <div class="menudrive-details d-none" id="commissions-section">
+            <div class="header">
+              <h2>No commissions or hidden fees.</h2>
+              <div class="sub-header">
+                <h3>Join the thousands of restaurants growing their online sales with MenuDrive.</h3>
+              </div>
+            </div>
+            <div class="menudrive-image">
+              <img alt="restaurant" src="assets/images/restaurant-business.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/vendor/jquery-3.3.1.slim.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- PLUGINS  -->
+    <script src="assets/js/plugins/jquery.validate.min.js"></script>
+
+    <!-- CUSTOM JSs  -->
+    <script src="./assets/js/utils/basic-utils.js"></script>
+
+    <script src="./assets/js/create-account/events.js"></script>
+    <script src="./assets/js/create-account/utils.js"></script>
+  </body>
+
+</html>

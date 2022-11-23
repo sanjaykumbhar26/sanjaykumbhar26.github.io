@@ -1,0 +1,539 @@
+@media (max-width: 767px) {
+  #restaurant-info-dialog .login-box {
+    width: 100%;
+    margin: 0 auto;
+}
+#restaurant-info-dialog .modal-dialog {
+    width: auto;
+  }
+.menudrive-account .form-group.button-row {
+text-align: right;
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+}
+.menudrive-account .form-group.button-row .button-text {
+margin-bottom: 10px;
+}
+.form-box {
+max-width: 100%;
+min-width: 90%;
+margin: 0 auto
+}
+.cong-box {
+  max-width: 90%;
+  margin: 0 auto;
+}
+}
+
+@media (min-width: 768px) {
+
+.modal-dialog {
+max-width: 1240px;
+margin: 130px auto;
+}
+.menudrive-left {
+padding-bottom: 80px;
+}
+#connect_account_dialog .modal-dialog {
+width: 608px;
+border-radius: 10px;
+margin: 0 auto;
+margin-top: 40px;
+}
+#facebook-pages-dialog .modal-dialog {
+width: 608px;
+border-radius: 10px;
+fill: #ffffff;
+}
+#important_dialog .modal-dialog {
+width: 608px;
+border-radius: 10px;
+fill: #ffffff;
+}
+}
+
+/* mobile  */
+@media (max-width: 1179px) {
+  #restaurant-info-dialog .modal-dialog {
+    width: 90%;
+    min-height: 778px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(212,212,212,0.2);
+    margin-left: auto;
+    margin-right: 7.4%;
+    height: auto;
+}
+.progressbar-step {
+      margin: 78px 0px 66px;
+}
+  .complete-profile {
+    flex-direction: column;
+  }
+  .account-tour-box {
+      width: 90%;
+      min-height: 376px;
+      background: #ffffff;
+      border: solid 1px #efefef;
+      margin: 0 auto;
+  }
+
+.list-stylet-one {
+      width: 100%;
+}
+.start-here {
+  flex-direction: column;
+      padding-left: 15px;
+}
+.complete-profile {
+  padding: 0px;
+}
+.complete-profile {
+  flex-direction: column;
+}
+.payments-info {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+}
+.complete-list {
+    list-style: none;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.account-tour-box .box-header {
+flex-direction: column;
+line-height: 38px;
+justify-content: center;
+}
+.progressbar-svg {
+background: #f6f6f6;
+z-index: 111;
+padding: 0px 20px 0;
+cursor: pointer;
+width: 100%;
+position: absolute;
+}
+.progressbar-svg svg {
+width: 54px;
+height: 54px;
+position: absolute;
+left: 20px;
+top: -29px;
+}
+.active .progressbar-svg span {
+position: absolute;
+right: 20px;
+bottom: 12px;
+top: -16px;
+}
+.progressbar-svg span {
+position: absolute;
+right: 20px;
+bottom: 12px;
+top: -14px;
+}
+.progressbar-step {
+  flex-direction: column;
+}
+#start-here {
+  width: 90%;
+  margin-bottom: 15px;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.progressbar li:after {
+display: none;
+}
+.account-setup {
+background-color: #fff;
+}
+.progressbar-icon {
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: revert;
+left: 0px;
+width: 100%;
+min-height: 76px;
+}
+.progressbar li {
+width: 100%;
+margin-bottom: 15px;
+background: #f6f6f6;
+display: flex;
+align-items: center;
+min-height: 56px;
+}
+.progressbar li.active {
+border-bottom: solid;
+}
+.progressbar-icon legal {
+margin-top: 0;
+position: relative;
+left: 100px;
+}
+
+.account-tag-line {
+flex-direction: column;
+padding-left: 15px;
+padding-right: 15px;
+}
+.account-tag-line p {
+font-size: 16px;
+}
+.account-tag-line a {
+font-size: 16px;
+top: 15px;
+left: 81px;
+}
+.account-tour {
+width: 100%;
+}
+.progressbar {
+width: 90%;
+margin: 0 auto;
+padding: 0;
+}
+.menudrive-info .header {
+padding-left: 15px;
+padding-right: 15px;
+}
+.menudrive-account .form-group.button-row {
+display: flex;
+}
+.modal-dialog {
+max-width: 1240px;
+margin: 30px;
+}
+/* social tab */
+.published-header {
+padding: 15px;
+}
+.social-media-tab .nav-tabs .nav-item {
+padding-left: 0;
+border-bottom: 1px solid #dee2e6;
+width: 100%;
+}
+.social-media-tab .nav-item a {
+margin-top: 10px;
+}
+.published {
+margin-left: 0;
+margin-top: 20px;
+}
+.view-by-status {
+padding: 30px 0;
+}
+.published-body {
+padding: 40px 18px 88px;
+}
+.published-body-header {
+flex-direction: column;
+}
+.search-a-published {
+margin-bottom: 20px;
+}
+.search-a-published input {
+width: 100%;
+min-width: 300px;
+}
+.sort-by {
+flex-direction: column;
+}
+.sort-by select {
+margin-left: 0;
+}
+.vertical-tab .tabbable {
+flex-direction: column;
+}
+.published-table {
+margin-top: 40px;
+min-width: 280px;
+overflow-x: scroll;
+width: 100%;
+}
+.published-table table thead tr th {
+min-width: 120px;
+}
+.social-accounts p {
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+}
+#connect_account_dialog .modal-post-footer {
+display: flex;
+flex-direction: column;
+}
+#connect_account_dialog .button {
+width: 100%;
+}
+#connect_account_dialog .button-border {
+width: 100%;
+}
+#important_dialog .modal-post-footer {
+display: flex;
+flex-direction: column;
+}
+#important_dialog .button {
+width: 100%;
+}
+#important_dialog .button-border {
+width: 100%;
+}
+#facebook-pages-dialog .modal-post-footer {
+display: flex;
+flex-direction: column;
+}
+#facebook-pages-dialog .button {
+width: 100%;
+}
+#facebook-pages-dialog .button-border {
+width: 100%;
+}
+.select-facebook {
+width: 100%;
+padding: 0 20px;
+}
+.sort-by label {
+margin-bottom: 10px;
+}
+.time-settings-footer{
+flex-direction: column;
+}
+
+.create-post-block {
+flex-direction: column;
+}
+.share-post {
+width: 100%;
+min-height: auto;
+border-right: 0;
+}
+.post-content {
+margin: 44px 0px 32px 0px;
+width: 100%;
+position: relative;
+border-top: solid 1px #f2f2f2;
+padding-top: 20px;
+}
+#create-post .modal-header {
+margin: 50px 20px 0px;
+}
+#create-post .modal-body {
+margin: 0px 20px 35px;
+}
+.post-content-footer {
+flex-direction: column;
+}
+.form-icon-list {
+margin-bottom: 20px;
+}
+.modal-post-footer {
+flex-direction: column;
+}
+.modal-post-footer button {
+margin-left: 0;
+margin-bottom: 20px;
+}
+.modal-post-footer .form-group.schedule {
+margin-bottom: 20px;
+margin-left: 0;
+}
+.input-group-append.button-border {
+width: 100%;
+}
+.emoji {
+width: 100%;
+}
+.menudrive-account {
+flex-direction: column;
+}
+.form-box {
+max-width: 100%;
+min-width: 90%;
+margin: 0 auto
+}
+
+.ca-progress {
+margin-bottom: 46px !important;
+width: 80%;
+margin: 0 auto;
+}
+.ca-progress-form {
+width: 90%;
+}
+.menudrive-info .sub-header {
+max-width: 90%;
+}
+.menudrive-image img {
+width: 80%;
+}
+.menudrive-left {
+padding-bottom: 80px;
+}
+.menudrive-right {
+padding-top: 80px;
+}
+.Congratulations {
+min-height: 100vh;
+}
+
+}
+/* mobile  */
+@media (max-width: 1024px) {
+.error-popup {
+position: relative;
+top: 15px;
+right: 0;
+width: 100%;
+height: auto;
+}
+/* social tab */
+.published-header {
+padding: 15px;
+}
+.social-media-tab .nav-tabs .nav-item {
+padding-left: 0;
+border-bottom: 1px solid #dee2e6;
+width: 100%;
+}
+.social-media-tab .nav-item a {
+margin-top: 10px;
+}
+.published {
+margin-left: 0;
+margin-top: 20px;
+}
+.view-by-status {
+padding: 30px 0;
+}
+.published-body {
+padding: 40px 18px 88px;
+}
+.published-body-header {
+flex-direction: column;
+}
+.search-a-published {
+margin-bottom: 20px;
+}
+.search-a-published input {
+width: 100%;
+min-width: 300px;
+}
+.sort-by {
+flex-direction: column;
+}
+.sort-by select {
+margin-left: 0;
+}
+.vertical-tab .tabbable {
+flex-direction: column;
+}
+.published-table {
+margin-top: 40px;
+min-width: 280px;
+overflow-x: scroll;
+width: 100%;
+}
+.published-table table thead tr th {
+min-width: 120px;
+}
+.social-accounts p {
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+}
+#connect_account_dialog .modal-post-footer {
+display: flex;
+flex-direction: column;
+}
+#connect_account_dialog .button {
+width: 100%;
+}
+#connect_account_dialog .button-border {
+width: 100%;
+}
+#important_dialog .modal-post-footer {
+display: flex;
+flex-direction: column;
+}
+#important_dialog .button {
+width: 100%;
+}
+#important_dialog .button-border {
+width: 100%;
+}
+#facebook-pages-dialog .modal-post-footer {
+display: flex;
+flex-direction: column;
+}
+#facebook-pages-dialog .button {
+width: 100%;
+}
+#facebook-pages-dialog .button-border {
+width: 100%;
+}
+.select-facebook {
+width: 100%;
+padding: 0 20px;
+}
+.sort-by label {
+margin-bottom: 10px;
+}
+.time-settings-footer{
+flex-direction: column;
+}
+
+.create-post-block {
+flex-direction: column;
+}
+.share-post {
+width: 100%;
+min-height: auto;
+border-right: 0;
+}
+.post-content {
+margin: 44px 0px 32px 0px;
+width: 100%;
+position: relative;
+border-top: solid 1px #f2f2f2;
+padding-top: 20px;
+}
+#create-post .modal-header {
+margin: 50px 20px 0px;
+}
+#create-post .modal-body {
+margin: 0px 20px 35px;
+}
+.post-content-footer {
+flex-direction: column;
+}
+.form-icon-list {
+margin-bottom: 20px;
+}
+.modal-post-footer {
+flex-direction: column;
+}
+.modal-post-footer button {
+margin-left: 0;
+margin-bottom: 20px;
+}
+.modal-post-footer .form-group.schedule {
+margin-bottom: 20px;
+margin-left: 0;
+}
+.input-group-append.button-border {
+width: 100%;
+}
+.emoji {
+width: 100%;
+}
+}
