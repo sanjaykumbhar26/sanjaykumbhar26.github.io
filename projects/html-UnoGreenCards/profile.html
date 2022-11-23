@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="author" content="Uno Green" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <title>Uno Green Smart Businnes Cards</title>
+    <link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugin/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugin/Vertical-List-Carousel/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugin/Vertical-List-Carousel/css/jQuery.verticalCarousel.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="hero-bg second-header-section">
+        <div class="container">
+            <nav id="navbar_top" class="navbar navbar-expand-lg">
+                <div class="navbar-action">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Uno Green" src="assets/images/logo.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <img alt="menu" src="assets/images/menuicon.svg"> </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Xyx</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <div class="user-info">
+                                <label>Welcome</label>
+                                <p>Name of a User</p>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- profile -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-block d-xl-none">
+                    <div class="profile-bg"> </div>
+                    <div class="profile-img-box">
+                        <div class="profile-img">
+                            <img alt="Profile" src="assets/images/profile.png">
+                        </div>
+                        <div class="profile-edit">
+                            <img alt="edit" src="assets/images/edit-icon.svg">
+                        </div>
+                    </div>
+
+                    <div class="profile-tab">
+                        <div class="profile-tab-nav">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-personal-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-personal" type="button" role="tab"
+                                        aria-controls="pills-personal" aria-selected="true">Personal
+                                        Information</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-address" type="button" role="tab"
+                                        aria-controls="pills-address" aria-selected="false">Home Address</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-workAddress-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-workAddress" type="button" role="tab"
+                                        aria-controls="pills-workAddress" aria-selected="false">Work Address</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Social Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-messaging-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-messaging" type="button" role="tab"
+                                        aria-controls="pills-messaging" aria-selected="false">Instant Messaging</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <!-- Basic Information and  Corporate Profiles -->
+                            <div class="tab-pane fade show active" id="pills-personal" role="tabpanel"
+                                aria-labelledby="pills-personal-tab">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Basic Information
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="First Name">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Middle Name">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Nick Name">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="number" class="form-control"
+                                                        placeholder="Phone number">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="tel" class="form-control" placeholder="Mobile number">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="email" class="form-control" placeholder="Email ID">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="email" class="form-control" placeholder="Notes">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo">
+                                                Corporate Profiles
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Company Name">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Designation">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Job Title">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Work phone number">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Work Mobile number">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Work Email">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" placeholder="Fax">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-save-button">
+                                    <a href="#" class="btn btn-primary rounded-pill">Save</a>
+                                </div>
+                            </div>
+
+                            <!--  Home Address -->
+                            <div class="tab-pane fade " id="pills-address" role="tabpanel"
+                                aria-labelledby="pills-address-tab">
+                                <div class="home-address">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="City"
+                                                aria-label="City">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="State"
+                                                aria-label="State">
+                                        </div>
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Pincode"
+                                                aria-label="Pincode">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Country"
+                                                aria-label="Country">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-save-button">
+                                    <a href="#" class="btn btn-primary rounded-pill">Save</a>
+                                </div>
+                            </div>
+
+                            <!-- Work Address -->
+                            <div class="tab-pane fade" id="pills-workAddress" role="tabpanel"
+                                aria-labelledby="pills-workAddress-tab">
+                                <div class="WorkAddress">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="City"
+                                                aria-label="City">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="State"
+                                                aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Pincode"
+                                                aria-label="Pincode">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Country"
+                                                aria-label="Country">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-save-button">
+                                    <a href="#" class="btn btn-primary rounded-pill">Save</a>
+                                </div>
+                            </div>
+
+                            <!-- Social Profile  -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class='file file--uploading'>
+                                    <label for='input-file'>
+                                        <img alt="" src="assets/images/file-upload.svg"> Upload
+                                    </label>
+                                    <input id='input-file' type='file' />
+                                </div>
+
+                                <div class="owl-carousel owl-carousel2 owl-theme profile-slider">
+                                    <div class="item">
+                                        <div class="slider-img">
+                                            <img alt="slider" src="assets/images/slider-1.png">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="slider-img">
+                                            <img alt="slider" src="assets/images/slider-2.png">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="slider-img">
+                                            <img alt="slider" src="assets/images/slider-1.png">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="slider-img">
+                                            <img alt="slider" src="assets/images/slider-2.png">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="slider-img">
+                                            <img alt="slider" src="assets/images/slider-1.png">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="slider-img">
+                                            <img alt="slider" src="assets/images/slider-2.png">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfour">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapsefour" aria-expanded="true"
+                                                aria-controls="collapsefour">
+                                                Social Network
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="profile-content ">
+                                                    <div class="profile-list">
+                                                        <a href="#">
+                                                            <img alt="LinkedIn" src="/assets/images/linkedIn.svg">
+                                                            LinkedIn
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="Facebook" src="/assets/images/facebook-b.svg">
+                                                            Facebook
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="google" src="/assets/images/google-talk.svg">
+                                                            Google
+                                                        </a>
+                                                        <a href="#">Other </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-save-button">
+                                    <a href="#" class="btn btn-primary rounded-pill">Save</a>
+                                </div>
+                            </div>
+
+                            <!-- Instant Messaging  -->
+                            <div class="tab-pane fade" id="pills-messaging" role="tabpanel"
+                                aria-labelledby="pills-messaging-tab">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfive">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapsefive" aria-expanded="true"
+                                                aria-controls="collapsefive">
+                                                Instant Messaging
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefive" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="profile-content">
+                                                    <div class="profile-list">
+                                                        <a href="#">
+                                                            <img alt="LinkedIn" src="/assets/images/linkedIn.svg">
+                                                            LinkedIn
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="Facebook" src="/assets/images/facebook-b.svg">
+                                                            Facebook
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="google" src="/assets/images/google-talk.svg">
+                                                            Google
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="Skype" src="/assets/images/Youtubeb.svg"> youtube
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="Skype" src="/assets/images/Twitterb.svg"> Twitter
+                                                        </a>
+                                                        <a href="#">
+                                                            <img alt="Google Talk" src="/assets/images/google-talk.svg">
+                                                            Google Talk
+                                                        </a>
+                                                        <a href="#">Other </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-save-button">
+                                    <a href="#" class="btn btn-primary rounded-pill">Save</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 d-none d-xl-block">
+                    <div class=" profile-bg"> </div>
+                    <div class="profile-info">
+                        <div class="profile-img-box">
+                            <div class="profile-img">
+                                <img alt="Profile" src="assets/images/profile.png">
+                            </div>
+                            <div class="profile-edit">
+                                <img alt="edit" src="assets/images/edit-icon.svg">
+                            </div>
+                        </div>
+
+                        <div class="profile-content mb-5 ">
+                            <h2>Social Profile</h2>
+                            <div class="profile-list">
+                                <a href="#">
+                                    <img alt="LinkedIn" src="/assets/images/linkedIn.svg"> LinkedIn
+                                </a>
+                                <a href="#">
+                                    <img alt="Facebook" src="/assets/images/facebook-b.svg"> Facebook
+                                </a>
+                                <a href="#">
+                                    <img alt="google" src="/assets/images/google-talk.svg"> Google
+                                </a>
+                                <a href="#">Other </a>
+                            </div>
+                        </div>
+                        <div class="profile-content mb-5">
+                            <h2>Instant Messaging</h2>
+                            <div class="profile-list">
+                                <a href="#">
+                                    <img alt="Skype" src="/assets/images/skype.svg"> Skype
+                                </a>
+                                <a href="#">
+                                    <img alt="Google Talk" src="/assets/images/google-talk.svg"> Google Talk
+                                </a>
+                                <a href="#">Other </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-9 d-none d-xl-block">
+                    <div class="profile-form-box">
+                        <div class="profile-header mb-5">
+                            <h1>Personal Information</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Nick Name">
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Designation">
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Work Email">
+                                </div>
+                                <div class="form-field">
+                                    <input type="number" class="form-control" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Middle Name">
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Company Name">
+                                </div>
+                                <div class="form-field">
+                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                </div>
+                                <div class="form-field">
+                                    <input type="tel" class="form-control" placeholder="Mobile number">
+                                </div>
+                                <div class="form-field">
+                                    <input type="number" class="form-control" placeholder="Work phone number">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Job Title">
+                                </div>
+                                <div class="form-field">
+                                    <input type="email" class="form-control" placeholder="Email ID">
+                                </div>
+                                <div class="form-field">
+                                    <input type="tel" class="form-control" placeholder="Work mobile number">
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Fax">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Notes">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row from-box">
+                            <div class="col-md-6">
+                                <div class="profile-header mb-5">
+                                    <h1>Home Address</h1>
+                                </div>
+                                <div class="home-address">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="City"
+                                                aria-label="City">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="State"
+                                                aria-label="State">
+                                        </div>
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Pincode"
+                                                aria-label="Pincode">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Country"
+                                                aria-label="Country">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile-header mb-5">
+                                    <h1>Work Address</h1>
+                                </div>
+                                <div class="WorkAddress">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="City"
+                                                aria-label="City">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="State"
+                                                aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="row form-field-group">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Pincode"
+                                                aria-label="Pincode">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Country"
+                                                aria-label="Country">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-button-action">
+                                    <button class="btn primery-button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" type="button">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="row footer-box">
+                        <div class="col-md-4">
+                            <div class="footer-content mb14">
+                                <h2>Location</h2>
+                                <p>#697, Golden Tower, 12th Cross, 27th Main Sector-I, HSR Layout, Bangalore, Karnataka,
+                                    INDIA-560102.</p>
+                            </div>
+                            <div class="footer-action">
+                                <h4>Company URL</h4>
+                                <a href="#">http://www.iteos.in</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 border-line">
+                            <div class="footer-content">
+                                <h2>About Us</h2>
+                                <p>It’s an NFC-enabled card with sharing information with just a tap. A digital
+                                    business/personal card. A samll initiative by us to make the earth greener by not
+                                    using the traditional paper business cards and switching to our Digital card wgich
+                                    is not only eco friendly but saves tons of rupees that we spent on printing paper
+                                    cards.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="footer-action mb14">
+                                <h4>Get help quickly</h4>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="footer-action mb14">
+                                <h4>Contact no.</h4>
+                                <a href="#">+91 9740924506 <span>(temporary)</span></a>
+                            </div>
+                            <div class="footer-action">
+                                <h4>Email ID</h4>
+                                <a href="#">info@iteos.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex align-items-end flex-column     justify-content-between">
+                    <div class="social-media-link">
+                        <a href="#"><img alt="facebook" src="assets/images/facebook.svg"></a>
+                        <a href="#"><img alt="linkdin" src="assets/images/linkdin.svg"></a>
+                        <a href="#"><img alt="twitter" src="assets/images/twitter.svg"></a>
+                        <a href="#"><img alt="youtube" src="assets/images/youtube.svg"></a>
+                    </div>
+                    <div class="copy-right">
+                        © 2021 Uno Green Cards. All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade form-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body">
+
+                    <div class="modal-profile-header">
+                        <h2>
+                            <span>Are you sure</span>
+                            <span> you want to Save Changes?</span>
+                        </h2>
+                    </div>
+                    <div class="modal-button-action">
+                        <button type="button" class="btn btn-primary rounded-pill">Submit</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill"
+                            data-bs-dismiss="modal">Cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- plugin -->
+    <script src="assets/plugin/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="assets/plugin/Vertical-List-Carousel/js/jQuery.verticalCarousel.js"></script>
+    <!-- scripts -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
