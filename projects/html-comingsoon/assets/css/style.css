@@ -1,0 +1,307 @@
+/* ------------------------
+      General styles
+   ------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-width: 100%;
+
+}
+
+body {
+  overflow: hidden;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+img,
+ol,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+option,
+legend,
+label,
+table,
+th,
+td,
+tr,
+article,
+aside,
+caption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+nav,
+section,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none !important;
+  border: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  display: none;
+}
+
+input::-webkit-focus-inner {
+  border: 0;
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #666;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #666;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0px;
+}
+
+form {
+  position: relative;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-size: inherit;
+  color: inherit;
+}
+
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a,
+h6:hover a {
+  font-size: inherit;
+  color: inherit;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border-color: #000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Coniferous';
+  src: url('../fonts/Coniferous.eot');
+  src: url('../fonts/Coniferous.eot') format('embedded-opentype'),
+    url('../fonts/Coniferous.woff2') format('woff2'),
+    url('../fonts/Coniferous.woff') format('woff'),
+    url('../fonts/Coniferous.ttf') format('truetype'),
+    url('../fonts/Coniferous.svg#Coniferous') format('svg');
+}
+
+/* --------------------------
+    cooming soon 
+   --------------------------- */
+
+.coming-soon {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  overflow: hidden;
+}
+
+.coming-soon-content {
+  height: 500px;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.coming-soon-content a {
+  font-size: 40px;
+  color: #1184b2;
+  font-family: 'Coniferous';
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.coming-soon-content h1 {
+  font-family: 'Coniferous';
+  color: #0a263d;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+
+@media screen and (max-width: 767px) {
+  .coming-soon-content {
+    height: 320px;
+    width: 320px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .coming-soon-content a {
+    font-size: 30px;
+  }
+
+  .logo img {
+    max-width: 260px;
+  }
+
+  .coming-soon-content h1 {
+    font-size: 30px;
+  }
+}
