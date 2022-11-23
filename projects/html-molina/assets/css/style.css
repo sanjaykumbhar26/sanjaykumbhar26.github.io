@@ -1,0 +1,1180 @@
+/* ------------------------
+      General styles
+   ------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,700&display=swap');
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+img,
+ol,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+option,
+legend,
+label,
+table,
+th,
+td,
+tr,
+article,
+aside,
+caption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+nav,
+section,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none !important;
+  border: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #666;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #666;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #B1C8D0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0px;
+}
+
+form {
+  position: relative;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  border-bottom: solid 4px #f5d9c4 !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-size: inherit;
+  color: inherit;
+}
+
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a,
+h6:hover a {
+  font-size: inherit;
+  color: inherit;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border-color: #000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  outline: 0;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Century Gothic Pro Bold';
+  src: url('../fonts/GOTHICB.eot');
+  src: url('../fonts/GOTHICB.eot') format('embedded-opentype'),
+    url('../fonts/GOTHICB.woff2') format('woff2'),
+    url('../fonts/GOTHICB.woff') format('woff'),
+    url('../fonts/GOTHICB.ttf') format('truetype'),
+    url('../fonts/GOTHICB.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coniferous';
+  src: url('../fonts/Coniferous.eot');
+  src: url('../fonts/Coniferous.eot') format('embedded-opentype'),
+    url('../fonts/Coniferous.woff2') format('woff2'),
+    url('../fonts/Coniferous.woff') format('woff'),
+    url('../fonts/Coniferous.ttf') format('truetype'),
+    url('../fonts/Coniferous.svg#Coniferous') format('svg');
+}
+
+@font-face {
+  font-family: 'allura';
+  src: url('../fonts/allura-v18-latin-regular.eot');
+  src: url('../fonts/allura-v18-latin-regular.eot') format('embedded-opentype'),
+    url('../fonts/allura-v18-latin-regular.woff2') format('woff2'),
+    url('../fonts/allura-v18-latin-regular.woff') format('woff'),
+    url('../fonts/allura-v18-latin-regular.ttf') format('truetype'),
+    url('../fonts/allura-v18-latin-regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Century Gothic Pro';
+  src: url('../fonts/GOTHIC.eot');
+  src: url('../fonts/GOTHIC.eot') format('embedded-opentype'),
+    url('../fonts/GOTHIC.woff2') format('woff2'),
+    url('../fonts/GOTHIC.woff') format('woff'),
+    url('../fonts/GOTHIC.ttf') format('truetype'),
+    url('../fonts/GOTHIC.svg') format('svg');
+}
+
+.btn-outline-primary {
+  border: solid 1px #dd803a;
+  color: #282828;
+  font-size: 18px;
+  min-width: 140px;
+  padding: 8px 22px;
+}
+
+
+.btn-outline-primary:hover {
+  border: solid 1px #dd803a;
+  background-color: #dd803a;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #dd803a;
+  color: #fff;
+  font-size: 18px;
+  min-width: 140px;
+  border: solid 1px #dd803a;
+  font-weight: 400;
+  padding: 8px 22px;
+}
+
+.top-btn .btn-primary {
+  min-width: 170px;
+}
+
+.btn-primary:hover {
+  background-color: #dd803a;
+  border: solid 1px #dd803a;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+  background-color: #dd803a;
+  border-color: #dd803a;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background-color: #5d6a7d;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  min-width: 140px;
+  border-radius: 100px;
+  padding: 8px 22px;
+}
+
+.btn-get-know img {
+  max-width: 18px;
+  margin-left: 5px;
+}
+
+/* --------------------------
+   Header section 
+   --------------------------- */
+header {
+  padding-top: 40px;
+}
+
+header .container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-height: 70px;
+}
+
+.header-action a {
+  margin-right: 15px;
+}
+
+.menu-icon img {
+  max-width: 25px;
+}
+
+header .header-action {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  background: #eceef0;
+  margin: 0 3px;
+}
+
+/* --------------------------
+   hero section 
+   --------------------------- */
+
+.hero-img {
+  position: relative;
+  margin-left: 118px;
+  text-align: end;
+  margin-top: 20px;
+}
+
+.hero-img img {
+  max-width: 520px;
+}
+
+.team-owner {
+  box-shadow: 6px 7px 19.95px 1.05px rgba(163, 148, 199, 0.46);
+  width: 200px;
+  min-height: 120px;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 253px;
+  left: -137px;
+  z-index: 111;
+}
+
+.team-owner label {
+  color: #94ca53;
+  font-family: 'Coniferous';
+  font-size: 40px;
+  line-height: 40px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.team-owner h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Century Gothic Pro Bold';
+  font-weight: bold;
+}
+
+.hero-tagline {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(54 54 54 / 80%);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.hero-tagline::after {
+  content: '';
+  width: 46px;
+  height: 2px;
+  background-color: #3f496f;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+
+.hero-content h1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  color: #312e36;
+}
+
+.hero-content h1 .first-line {
+  font-family: 'Coniferous';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 60px;
+}
+
+.hero-content h1 .second-line {
+  font-family: 'Century Gothic Pro';
+  font-size: 40px;
+  font-weight: normal;
+  position: relative;
+  width: max-content;
+}
+
+.hero-content h1 .second-line::after {
+  content: '';
+  width: 85%;
+  position: absolute;
+  left: 0px;
+  height: 13px;
+  background-color: #b6c4cd;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hero-content p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 80%;
+  color: #282828;
+}
+
+.hero-content .btn-get-know {
+  margin-top: 24px;
+}
+
+
+/* --------------------------
+   contact information
+   --------------------------- */
+.contact-information {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.contact-informati-content p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 80%;
+  line-height: 30px;
+}
+
+.contact-informati-content h3 {
+  font-family: 'Coniferous';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.contact-action::after {
+  content: '';
+  background: linear-gradient(117deg, rgba(177, 216, 219, 1) 0%, rgba(178, 216, 219, 1) 52%, rgba(233, 228, 223, 1) 83%);
+  min-height: 104px;
+  width: 33%;
+  position: absolute;
+  left: 0%;
+  top: -8px;
+  z-index: -1;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.contact-action .contact-action-box {
+  display: flex;
+  min-height: 88px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 66px;
+}
+
+.contact-action .contact-action-box a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #0e283d;
+  text-decoration: none;
+}
+
+.contact-action .contact-action-box a h3 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #282828;
+  display: none;
+}
+
+.contact-action .contact-action-box a span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.contact-action .contact-action-box a img {
+  max-width: 25px;
+}
+
+/* --------------------------
+   welcome section 
+   --------------------------- */
+.welcome-section {
+  margin-bottom: 80px;
+}
+
+.rating-img {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rating-img img {
+  max-width: 110px;
+  margin-right: 40px;
+}
+
+.welcome-content h1 {
+  font-size: 40px;
+  color: #0e283d;
+  font-family: 'Coniferous';
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 300;
+  color: #0e283d;
+  line-height: 30px;
+}
+
+/* --------------------------
+   How can I help?
+   --------------------------- */
+
+.how-can-help-section {
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+
+.how-can-help-hedaer h2 {
+  font-family: 'Century Gothic Pro';
+  font-size: 40px;
+  font-weight: normal;
+  position: relative;
+  width: max-content;
+  margin-bottom: 35px;
+}
+
+.how-can-help-hedaer h2::after {
+  content: '';
+  width: 63%;
+  position: absolute;
+  left: 0px;
+  height: 13px;
+  background-color: #b6c4cd;
+  bottom: 7px;
+  z-index: -1;
+}
+
+.how-can-help-hedaer p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+/* --------------------------
+   Happy Clients Section
+   --------------------------- */
+
+.happy-clients-top {
+  min-height: 460px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-bg-logo {
+  text-align: center;
+}
+
+.top-bg-logo img {
+  max-width: 160px;
+  margin-top: 80px;
+}
+
+.top-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+
+}
+
+.top-btn a {
+  margin-bottom: 10px;
+  max-width: max-content;
+}
+
+.top-btn .btn-secondary {
+  background-color: #6c6c6c;
+  min-width: 170px;
+}
+
+.hc-testimonial {
+  margin-bottom: 30px;
+}
+
+.hc-testimonial p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.hc-testimonial h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hc-testimonial-content h2 {
+  font-family: "Century Gothic Pro";
+  font-size: 40px;
+  color: #282828;
+  margin-bottom: 35px;
+  position: relative;
+  width: max-content;
+}
+
+.hc-testimonial-content h2 img {
+  max-width: 49px;
+  margin-left: 10px;
+  top: -14px;
+  position: relative;
+}
+
+.hc-testimonial-content h2::after {
+  content: '';
+  width: 58%;
+  position: absolute;
+  left: 0px;
+  height: 13px;
+  background-color: #b6c4cd;
+  bottom: 7px;
+  z-index: -1;
+}
+
+.contact-header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contact-header .container::after {
+  content: '';
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(219, 223, 226, 1) 100%) !important;
+  height: 52px;
+  width: 100%;
+  position: absolute;
+  left: -8%;
+  top: 0;
+  z-index: -1;
+  border-radius: 100px 100px 100px 0px;
+}
+
+.contact-header-block {
+  text-align: center;
+  font-family: "Century Gothic Pro";
+  font-size: 18px;
+}
+
+.contact-header-block .font-large {
+  font-family: "Century Gothic Pro";
+  font-size: 30px;
+  margin-right: 05px;
+}
+
+.contact-header-block a {
+  color: #282828;
+  font-family: 'Coniferous';
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.contact-header-block a:hover {
+  text-decoration: underline;
+}
+
+.number-block a {
+  font-family: 'Century Gothic Pro';
+  color: #282828;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.number-block span {
+  font-family: 'Coniferous';
+  font-size: 28px;
+  border-bottom: solid 2px #282828;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.how-can-help-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.help-content {
+  color: #282828;
+  font-size: 18px;
+  font-weight: 300;
+  flex-basis: 50%;
+  flex: 45%;
+  box-shadow: none;
+  margin-bottom: 10px;
+  padding: 8px 0px;
+  border: solid 2px #b6c4cd;
+  border-radius: 100px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.help-content.active {
+  border: solid 2px #c6713a;
+}
+
+.help-content:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.help-content:nth-child(even) {
+  margin-left: 20px;
+}
+
+.help-content span {
+  font-family: 'Coniferous';
+  font-weight: 600;
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+
+
+
+/* --------------------------
+   footer section 
+   --------------------------- */
+footer {
+  margin-top: 80px;
+}
+
+.footer-info {
+  border-top: solid 6px #e1e1e1;
+  padding-top: 30px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-link {
+  font-size: 12px;
+  font-weight: 300;
+  color: #000;
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.footer-link a {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+.footer-img {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.footer-img img {
+  max-width: 80px;
+}
+
+.footer-summit-logo {
+  margin-bottom: 25px;
+}
+
+.footer-summit-logo img {
+  max-width: 320px;
+}
+
+.fotter-info {
+  max-width: 320px;
+}
+
+footer .team-owner {
+  position: relative;
+  top: auto;
+  left: 0;
+  width: 153px;
+  min-height: 90px;
+  margin: 0 auto;
+}
+
+footer .team-owner h1 {
+  font-size: 30px;
+}
+
+.footer-social {
+  padding-top: 18px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-social a img {
+  max-width: 40px;
+}
+
+.footer-social a:first-child {
+  margin-right: 5px;
+}
+
+.footer-social a:last-child {
+  margin-left: 5px;
+}
+
+.brand-logo {
+  margin-top: 73px;
+  margin-bottom: 25px;
+}
+
+.brand-logo img {
+  max-height: 50px;
+}
+
+footer .brand-logo img {
+  margin-right: 30px;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #282828;
+  word-break: break-word;
+}
+
+.footer-text.number {
+  display: flex;
+  flex-direction: column;
+}
+
+/* resposnisve */
+/* @media screen and (min-width:1300px) {
+  .contact-action::after {
+    width: 36%;
+  }
+} */
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .contact-action::after {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1450px) {
+  .contact-action::after {
+    width: 37% !important;
+  }
+}
+
+
+@media screen and (min-width: 1451px) and (max-width: 1600px) {
+  .contact-action::after {
+    width: 38% !important;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+  .contact-action::after {
+    width: 39% !important;
+  }
+}
+
+@media screen and (min-width: 1801px) and (max-width: 2000px) {
+  .contact-action::after {
+    width: 40% !important;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2800px) {
+  .contact-action::after {
+    width: 42% !important;
+  }
+}
+
+@media screen and (min-width: 2801px) and (max-width: 5800px) {
+  .contact-action::after {
+    width: 44% !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header .header-action {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-section {
+    margin-top: 30px;
+  }
+
+  .hero-img {
+    min-height: 300px;
+    margin-left: 20px;
+  }
+
+  .hero-img img {
+    max-width: 100% !important;
+  }
+
+  .team-owner {
+    left: inherit;
+    top: inherit;
+    position: relative;
+    margin: 0 auto 60px;
+  }
+
+  .contact-action {
+    margin-bottom: 40px;
+  }
+
+  .contact-action::after {
+    width: 100%;
+  }
+
+  .rating-img {
+    margin-top: 30px;
+  }
+
+  .contact-header {
+    min-height: 164px;
+  }
+
+  .contact-header .container::after {
+    min-height: 165px;
+    left: 0;
+  }
+
+  .how-can-help-content {
+    flex-direction: column;
+  }
+
+  .help-content:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .help-content:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .fotter-info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-tagline::after {
+    width: 26px;
+  }
+
+  .hc-testimonial-content h2 img {
+    max-width: 43px;
+    margin-left: 0px;
+    top: -12px;
+  }
+
+  .contact-header .number-block {
+    text-align: center;
+  }
+
+  .footer-text {
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contact-action {
+    margin-bottom: 40px;
+  }
+
+  .hero-img {
+    min-height: 300px;
+    margin-left: 20px;
+  }
+
+  .hero-img img {
+    max-width: 100% !important;
+  }
+
+  .team-owner {
+    left: inherit;
+    top: inherit;
+    position: relative;
+    margin: 0 auto 60px;
+  }
+
+  .contact-action::after {
+    width: 90%;
+  }
+
+  .hero-img {
+    margin-left: 8px;
+  }
+
+  .hero-img img {
+    max-width: 320px;
+  }
+
+
+
+  .fotter-info {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .hero-img {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 619px;
+  }
+
+  .team-owner {
+    top: 0;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .contact-information {
+    margin-top: 80px;
+  }
+
+  .contact-action::after {
+    width: 96%;
+  }
+
+  .contact-action .contact-action-box {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .contact-informati-content p {
+    max-width: 100%;
+  }
+
+  .fotter-info {
+    margin: 0 auto;
+  }
+
+  .contact-header .container::after {
+    left: -3%;
+  }
+}
+
+.scroll-top {
+  width: 45px;
+  height: 45px;
+  background: #B1C8D0;
+  text-align: center;
+  line-height: 42px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: none;
+}
