@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="meeting-bamberg">
+    <meta name="description" content="meeting-bamberg">
+    <meta name="author" content="meeting-bamberg">
+    <meta property="og:title" content="meeting-bamberg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="meeting-bamberg.de">
+    <meta property="og:image" content="meeting-bamberg">
+    <meta property="og:site_name" content="meeting-bamberg">
+    <meta property="og:description" content="meeting-bamberg">
+    <title>Meeting Bamberg</title>
+    <!--favicon  -->
+    <link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!--style  -->
+    <link  href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link  href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link  href="assets/css/style.css" rel="stylesheet">
+    <link  href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+    
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="nav-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="inner-header">
+                            <div class="logo" data-aos="fade-left">
+                                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a> 
+                            </div>
+                            <div class="header-action" data-aos="fade-right">
+                                <a class="btn btn-primary" href="#">Jetzt anfragen</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero banner  -->
+    <article class="hero-banner" data-aos="fade-up">
+        <img src="assets/images/butscher_header.jpg" alt="img">
+    </article>
+
+    <!-- inquiry form -->
+    <section class="inquiry-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 inquiry-header" data-aos="fade-up">
+                     <h1>Anfrage</h1>
+                     <p>*Pflichtfelder</p>
+                </div>
+            </div>
+            <form class="inquiry-form" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Firma*">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Ansprechpartner*">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="E-Mail*">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Telefon/Mobil*">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Straße, Hausnummer*">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Ort*">
+                    </div>
+                </div>
+                <div class="row form-second-part">
+                    <div class="col-md-6">
+                             <div class="form-group datepicker-block">
+                                    <label>Buchungstag wählen</label>
+                                        <div class='input-group date datepicker_format' id='datepicker'>
+                                            <input type='text' placeholder="jjjj-mm-tt" class="form-control datepicker_format" /> <span class="input-group-addon">
+                                            <span><img src="assets/images/icons/kalender-icon.svg">
+                                            </span>
+                                            </span>
+                                      </div>
+                                </div>
+                            <div class="form-group ">
+                               <label class="control-label">Zeitraum</label>
+                               <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group-inline">
+                                            <div class="form-inline">
+                                                <input type="text" class="form-control" placeholder="Von">
+                                                <label>Uhr</label>
+                                            </div>
+                                            <div class="form-inline">
+                                                <input type="text" class="form-control" placeholder="Bis">
+                                                <label>Uhr</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-textarea">
+                            <label>Anmerkungen</label>
+                            <textarea rows="8"> </textarea>
+                        </div>
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="javascript">
+                            <label for="javascript">Ich habe die unter Datenschutz aufgeführten Hinweise gelesen und stimme diesen zu*</label>
+                        </div>
+                        <div class="g-recaptcha"
+       data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                        <div class="form-button">
+                            <button class="btn btn-primary" type="button">Anfrage senden</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- office information -->
+   <section class="office-info-section">
+        <div class="container">
+            <div class="cost-block">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="cost-item">
+                            <h1>Kosten</h1>
+                            <div class="cost">
+                                <label>40,- € netto/Std.</label>
+                                <p>Bei 4 Stunden Mindestbuchungszeit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                         <div class="cost-item">
+                            <h1>Größe</h1>
+                            <div class="cost">
+                                <label>100 qm</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Das bietet diese Räumlichkeit -->
+            <div class="space-offers">
+                <div class="row">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <h2>Das bietet diese Räumlichkeit</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right">
+                        <div class="space-block">
+                            <div class="space-icon">
+                                <img alt="Beamer" src="assets/images/icons/Beamer.png">
+                            </div>
+                             <h3>Beamer</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="space-block">
+                            <div class="space-icon">
+                                <img alt="Beamer" src="assets/images/icons/Soundbar.png">
+                            </div>
+                             <h3>Soundbar von bang olufsen </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="space-block">
+                            <div class="space-icon">
+                                <img alt="Beamer" src="assets/images/icons/Whiteboard.png">
+                            </div>
+                             <h3>Whiteboard</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right">
+                        <div class="space-block">
+                            <div class="space-icon">
+                                <img alt="Beamer" src="assets/images/icons/grTisch.png">
+                            </div>
+                             <h3>Großer Tisch für 14 Personen </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="space-block">
+                            <div class="space-icon">
+                                <img alt="Beamer" src="assets/images/icons/grTisch.png">
+                            </div>
+                             <h3>Kleinerer Tisch für 9 Personen </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="space-block">
+                            <div class="space-icon">
+                                <img alt="Beamer" src="assets/images/icons/wlan.png">
+                            </div>
+                             <h3>WLAN</h3>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+   </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+             <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img alt="footer logo" src="assets/images/footer-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <address class="mtop">
+                        Firma <br>
+                        Name, Nachname <br>
+                        Adresse 
+                    </address>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer-link mtop">
+                        <li>
+                            <a href="#">
+                                Telefonnummer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Mail-Adresse
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-info mtop">
+                        <p>Achtung! Dieser Blindtext wird gerade erfasst.</p>
+                        <a class="btn btn-primary" href="#">Jetzt anfragen</a>
+                    </div>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-md-9 col-sm-offset-3">
+                    <div class="footer-link">
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/de.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- scripts -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

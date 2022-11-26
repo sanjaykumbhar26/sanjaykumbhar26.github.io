@@ -1,0 +1,552 @@
+/* ------------------------
+      General styles
+   ------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --clr-primary: #144F73;
+  --clr-secondary: #78BCBD;
+
+  --clr-secondary-900: #9DEFF1;
+  --clr-grey: #4A4A4A;
+  --clr-grey-800: #0C3B00;
+  --clr-grey-900: #BABABD;
+  
+
+  --ff-accent: 'Barlow', sans-serif;
+  --ff-base: 'Fira Sans', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: var(--clr-grey);
+  overflow-x: hidden;
+}
+.btn-primary {
+   border-radius:23px;
+   background-color: var(--clr-secondary-900);
+   color: var(--clr-primary) ;
+   font-family: var(--ff-accent);
+   font-weight: var(--fw-bold);
+   font-size: 16px;
+   padding: 8px 20px;
+   min-width: 160px;
+   border: solid 3px var(--clr-secondary-900);
+}
+.btn-primary:hover {
+  border: solid 3px var(--clr-secondary-900);
+  color: var(--clr-secondary-900) ;
+  background-color: var(--clr-primary);
+}
+.btn-primary:is(:hover, :focus, :active:focus) {
+  border: solid 3px var(--clr-secondary-900);
+  color: var(--clr-secondary-900) ;
+  background-color: var(--clr-primary);
+  outline: none;
+}
+
+input {
+  min-height: 55px;
+  border: solid 1px var(--clr-grey-900) !important;
+  box-shadow: none !important;
+}
+
+textarea {
+  border: solid 1px var(--clr-grey-900) !important;
+  box-shadow: none !important;
+  border: solid 3px var(--clr-secondary-900);
+  border-radius: 4px;
+}
+textarea:focus {
+  border: solid 1px var(--clr-grey-900) !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus-visible {
+   outline: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: var(--clr-grey-900) ;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--clr-grey-900) ;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+
+::placeholder {
+  color: var(--clr-grey-900) ;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    min-width: 50px;
+    color: #555;
+    border-left: none !important;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.datepicker_format {
+    border-right: none !important;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+
+.datepicker-block {
+  margin-bottom: 40px;
+  max-width: 320px;
+}
+
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+    background-color: var(--clr-secondary);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
+    background-color: var(--clr-secondary);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+.datepicker table tr td.old, .datepicker table tr td.new {
+    color: #999999;
+}
+.bootstrap-datetimepicker-widget td.today:before {
+  display: none !important;
+}
+
+/* font-family: 'Fira Sans', sans-serif; */
+/* font-family: 'Barlow', sans-serif; */
+
+/* --------------------------
+     Header Section Styles
+   --------------------------- */
+.nav-header {
+  background-color: var(--clr-primary);
+  padding: 28px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-header .logo a img {
+  max-width: 180px;
+}
+.inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-action {
+  position: absolute;
+  right: 0;
+}
+
+/* Hero Banner */  
+.hero-banner img {
+  width: 100%;
+}
+
+/* About information  */
+.about-section {
+  padding: 120px 0;
+}
+.about-info {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 726px;
+}
+.about-info p {
+  color: var(--clr-primary) ;
+  font-size: 20px;
+  text-align: center;
+  font-weight: var(--fw-regular);
+}
+
+/* office images slider */
+.office-slider-section {
+  position: relative;
+}
+
+/* office information */
+.office-info-section {
+   padding: 115px 0 120px;
+}
+.space-offers .row:first-child {
+  margin-bottom: 0;
+} 
+.space-offers .row:last-child {
+  margin-bottom: 0;
+} 
+.space-offers .row {
+  margin-bottom: 72px;
+}
+.space-offers h2 {
+  color: var(--clr-primary) ;
+  font-weight: var(--fw-regular);
+  font-size: 25px;
+  margin-bottom: 36px;
+}
+.space-block {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+.space-block h3 {
+  color: var(--clr-grey) ;
+  font-weight: var(--fw-regular);
+  font-size: 20px;
+  margin-left: 20px;
+}
+.space-block img {
+ max-height: 40px; 
+}
+.cost-block {
+  margin: 0 0 100px;
+}
+.cost-item h1 {
+color: var(--clr-secondary);
+font-weight: var(--fw-medium);
+font-size: 30px;
+margin-bottom: 28px;
+}
+.cost label {
+  color: var(--clr-primary) ;
+  font-size: 45px;
+  font-weight: var(--fw-regular);
+  line-height: normal;
+}
+.cost p {
+  color: var(--clr-grey);
+  font-size: 22px;
+  font-weight: var(--fw-regular);
+}
+
+/* inquiry form */
+.inquiry-section {
+  margin-top: 90px;
+}
+.inquiry-header {
+  margin-bottom: 25px;
+}
+.inquiry-header h1 {
+  color: var(--clr-secondary);
+  font-weight: var(--fw-medium);
+  font-size: 30px;
+}
+.inquiry-header p {
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  color: var(--clr-grey);
+}
+.inquiry-form .row {
+ margin-bottom: 30px;
+}
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+}
+.form-textarea label {
+   font-weight: var(--fw-regular);
+   font-size: 20px;
+   color: var(--clr-grey);
+}
+.form-textarea {
+  margin-bottom: 30px;
+}
+
+.form-button {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-group-checkbox {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group-checkbox label {
+  position: relative;
+  cursor: pointer;
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  color: var(--clr-grey);
+}
+
+.form-group-checkbox label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid var(--clr-grey-900);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 6px;
+}
+
+.form-group-checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--clr-secondary);
+  border: solid var(--clr-secondary);
+  border-radius: 100px;
+}
+
+.form-button button:hover {
+ border: 3px solid var(--clr-primary) !important;
+}
+
+.form-second-part {
+  margin-top: 50px;
+}
+
+.form-group label {
+    font-weight: var(--fw-regular);
+    font-size: 20px;
+    color: var(--clr-grey);
+}
+
+.form-group-inline {
+ display: flex;
+  align-items: flex-end;
+}
+
+.form-group-inline .form-inline  {
+ margin-right: 20px;
+}
+
+.form-group-inline .form-inline input {
+  text-align: center;
+}
+
+.form-inline {
+ display: flex;
+  align-items: flex-end;
+}
+
+.form-inline input {
+  max-width: 96px;
+  margin-right: 10px;
+}
+
+/* footer */
+.footer-section {
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: 680px;
+  background-position-y: 44px;
+  background-position-x: 130%;
+}
+footer {
+   background-color: var(--clr-secondary);
+   padding: 80px 0;
+}
+.mtop {
+  margin-top: 40px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+address {
+  color: var(--clr-primary) ;
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+}
+.footer-link li a {
+  color: var(--clr-primary) ;
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-info p {
+margin-bottom: 20px;
+font-size: 20px;
+font-weight: var(--fw-medium);
+color: var(--clr-primary) ;
+}
+.footer-info a.btn:hover {
+ background-color: var(--clr-secondary);
+ color: var(--clr-primary) ;
+}
+.footer-link  {
+  margin-left: 10px;
+}
+.footer-link a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  margin-left: 50px;
+}
+.footer-link a:first-child {
+  margin-left: 0;
+}
+
+
+/* Resposnisve */
+
+@media screen and (max-width:768px){
+  
+  .space-block {
+    margin-bottom: 30px;
+  }
+  .space-offers .row {
+    margin-bottom: 12px;
+  }
+  .footer-link {
+    margin-left: 0;
+  }
+  .footer-info {
+    margin-bottom: 30px;
+  }
+  .nav-header .logo a img {
+    max-width: 130px;
+  }
+  .about-section {
+    padding: 80px 0;
+  }
+  .office-info-section {
+    padding: 80px 0 80px;
+  }
+}
+
+@media screen and (max-width:992px){ 
+.inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .header-action {
+    position: absolute;
+    right: 20px;
+  }
+  .space-block {
+      margin-bottom: 30px;
+  }
+  .space-offers .row {
+    margin-bottom: 12px;
+  }
+  .slick-prev {
+    left: 05% !important;
+  }
+  .slick-next {
+  right: 05% !important;
+  }
+  .inquiry-form .row .col-md-6 {
+   margin-bottom: 20px;
+  }
+  .inquiry-form .row {
+    margin-bottom: 7px;
+  }
+
+}
+
