@@ -73,7 +73,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --clr-grey: #4A4A4A;
   --clr-grey-800: #0C3B00;
   --clr-grey-900: #BABABD;
-
+  
 
   --ff-accent: 'Barlow', sans-serif;
   --ff-base: 'Fira Sans', sans-serif;
@@ -81,6 +81,33 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
+}
+
+/* Barlow */
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    src: url('../fonts/barlow-bold-webfont.eot');
+    src: url('../fonts/barlow-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-bold-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-bold-webfont.woff') format('woff'),
+         url('../fonts/barlow-bold-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-bold-webfont.svg#barlowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Fira Sans  */
+@font-face {
+    font-family: 'Fira Sans', sans-serif;
+    src: url('../fonts/firasans-regular-webfont.eot');
+    src: url('../fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/firasans-regular-webfont.woff') format('woff'),
+         url('../fonts/firasans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/firasans-regular-webfont.svg#fira_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -233,7 +260,7 @@ textarea:focus-visible {
   right: 0;
 }
 
-/* Hero Banner */
+/* Hero Banner */  
 .hero-banner img {
   width: 100%;
 }
@@ -265,10 +292,10 @@ textarea:focus-visible {
 }
 .space-offers .row:first-child {
   margin-bottom: 0;
-}
+} 
 .space-offers .row:last-child {
   margin-bottom: 0;
-}
+} 
 .space-offers .row {
   margin-bottom: 72px;
 }
@@ -291,7 +318,7 @@ textarea:focus-visible {
   margin-left: 20px;
 }
 .space-block img {
- max-height: 40px;
+ max-height: 40px; 
 }
 .cost-block {
   margin: 0 0 100px;
@@ -495,7 +522,7 @@ color: var(--clr-primary) ;
 /* Resposnisve */
 
 @media screen and (max-width:768px){
-
+  
   .space-block {
     margin-bottom: 30px;
   }
@@ -519,7 +546,7 @@ color: var(--clr-primary) ;
   }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:992px){ 
 .inner-header {
     display: flex;
     align-items: center;
@@ -547,8 +574,10 @@ color: var(--clr-primary) ;
   .inquiry-form .row {
     margin-bottom: 7px;
   }
+
   .cost-block .col-md-6:first-child{
     margin-bottom: 30px;
   }
 
 }
+
