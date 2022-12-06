@@ -1,0 +1,276 @@
+/* ------------------------ General styles ------------------------- */
+html {
+     max-width: 100%;
+     overflow-x: hidden;
+}
+ body, html {
+     height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ html {
+     scroll-behavior: smooth;
+}
+ html, body, div, span, img, ol, ul, li, a, p, h1, h2, h3, h4, h5, h6, option, legend, label, table, th, td, tr, article, aside, caption, figure, footer, header, hgroup, mark, nav, section, time, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+}
+ img {
+     max-width: 100%;
+}
+ a:hover, a:focus, a:active {
+     text-decoration: none;
+     outline: none !important;
+     border: 0;
+}
+ input:focus {
+     outline: none;
+}
+ input::-moz-focus-inner {
+     border: 0;
+     display: none;
+}
+ input::-webkit-focus-inner {
+     border: 0;
+     display: none;
+}
+ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+ input:focus, textarea:focus, select:focus {
+     outline: none;
+}
+ ::-webkit-input-placeholder {
+     color: #666;
+     opacity: 1;
+    /* Firefox */
+}
+ :-ms-input-placeholder {
+     color: #666;
+     opacity: 1;
+    /* Firefox */
+}
+ ::-ms-input-placeholder {
+     color: #666;
+     opacity: 1;
+    /* Firefox */
+}
+ ::placeholder {
+     color: #666;
+     opacity: 1;
+    /* Firefox */
+}
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+     color: #666;
+}
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+     color: #666;
+}
+ table {
+     border-collapse: collapse;
+}
+ html {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     overflow-y: scroll;
+}
+ ul, li {
+     margin: 0;
+     padding: 0;
+}
+ figure {
+     margin: 0px;
+}
+ form {
+     position: relative;
+}
+ .form-control:focus {
+     outline: none !important;
+     border: none !important;
+     -webkit-box-shadow: 0 0 0;
+     box-shadow: 0 0 0;
+}
+ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+     font-size: inherit;
+     color: inherit;
+}
+ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+     font-size: inherit;
+     color: inherit;
+}
+ hr {
+     margin: 0;
+     padding: 0;
+     border-color: #000;
+}
+ ul {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+}
+ li {
+     list-style: none;
+}
+ a:hover, a:focus, button:hover, button:focus {
+     outline: 0;
+     text-decoration: none;
+}
+ .bg-grey {
+     background: #F8FBFF;
+}
+ @media (min-width: 1200px) {
+     .container {
+         width: 1190px;
+    }
+}
+/* -------------------------- Header Section Styles --------------------------- */
+ body, html {
+     background-color: #000;
+     min-height: 100vh;
+}
+ body {
+     margin: 0;
+     font-family: open, sans-serif;
+}
+ .login-page {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height:100vh;
+}
+ .login-block {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+ .twitter-button a {
+     background-color: #03a9f4;
+     color: #F8FBFF;
+     padding: 3px 18px;
+     text-decoration: none;
+     min-height: 40px;
+     display: flex;
+     align-items: center;
+     border-radius: 50px;
+     margin-top: 40px;
+}
+ .twitter-button img {
+     max-width: 40px;
+}
+/* home page */
+ .user-info p {
+     color: #d2691e;
+     margin: 0;
+     padding: 0;
+     font-size: 18px;
+}
+ .user-info h2 {
+     font-size: 23px;
+     color: #fff;
+}
+ .user-spe {
+     display: flex;
+     align-items: center;
+     height: auto !important;
+     margin-bottom: 10px;
+     margin-top: 20px;
+}
+ .user-spe h1 {
+     color: #fff;
+     font-size: 20px;
+}
+ .user-img {
+     width: 34px;
+     height: 34px !important;
+     border-radius: 100px;
+     overflow: hidden;
+     background-color: #fff;
+     margin-right: 10px;
+}
+ .btn-connect {
+     min-height: 40px;
+     border-radius: 50px;
+     padding-left: 20px;
+     padding-right: 20px;
+     border: solid 1px #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: fit-content;
+     margin-top: 20px;
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+}
+ .btn-connect:hover {
+     border: solid 1px #fff;
+     background-color: #fff;
+     color: #000;
+}
+/* sider */
+ .owl-carousel {
+     position: relative;
+     height: 100%;
+}
+ .owl-carousel div:not(.owl-controls) {
+     height: 100%;
+}
+ .owl-carousel .owl-slide {
+     position: relative;
+}
+ .owl-carousel .owl-slide::before{
+     content: '';
+     background-color: rgb(0, 0, 0, 0.6);
+     position: absolute;
+     height: 100%;
+     width: 100%;
+}
+ .owl-carousel .owl-slide {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+ .owl-carousel div.owl--text {
+     position: absolute;
+     bottom: 4em;
+     left: 20px;
+     right: 20px;
+     width: calc(100% - 40px);
+     height: auto;
+     padding: 1em;
+}
+ .owl-carousel .owl-controls {
+     position: absolute;
+     top: 50%;
+     left: 0;
+     right: 0;
+}
+ .owl-carousel .owl-controls .owl-buttons div {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     display: inline-block;
+     zoom: 1;
+     margin: 0;
+     width: 50px;
+     height: 30px;
+     line-height: 25px;
+     text-align: center;
+     font-size: 0.9em;
+     border-radius: 3px;
+     color: #FFF;
+     background: #000;
+     opacity: 0.6;
+     text-transform: capitalize;
+}
+ .owl-carousel .owl-controls .owl-buttons .owl-prev {
+     left: 5px;
+}
+ .owl-carousel .owl-controls .owl-buttons .owl-next {
+     right: 5px;
+}
