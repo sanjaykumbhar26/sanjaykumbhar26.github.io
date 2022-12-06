@@ -1,0 +1,290 @@
+<div class="app-container">
+
+  <div class="app-content">
+      <div class="content">
+          <div  class="row main-content  justify-content-between">
+              <div class="col-md-5 align-self-center">
+                  <div class="inputContainer">
+
+                      <div class="loan-block mb-4">
+                          <span class="light-black">Loan Amount: </span>
+                          <h2 class="m-0 green" v-text="loanAmountFormatted">$300,000</h2>
+                          <div class="sliders mt-3">
+                              <input class="slider" min="0" max="3000000" v-model="loanAmount" type="range" step="any"
+                                  name="" id="">
+                          </div>
+                      </div>
+
+
+                      <div class="interest-block mt-8">
+                          <span class="light-black">Interest Rate (Annual):</span>
+                          <h2 class="m-0 green" v-text="interestRateAnnualFormatted"></h2>
+                          <div class="sliders mt-3">
+                              <input class="slider" min="0" max="20" v-model="interestRateAnnual" type="range"
+                                  step="0.1" name="" id="">
+                          </div>
+                      </div>
+
+                      <div class="interest-block mt-8">
+                          <span class="light-black">Loan Period (In Years):</span>
+                          <div class="periods">
+                              <div @click="selectPeriod(period)" class="period" v-for="period in periods"
+                                  :class="period == loanPeriodInYears?'active':''">
+                                  <div> {{ period }}</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="interest-block mt-8">
+                          <div class="row">
+                              <div class="col">
+                                  <span class="light-black">Monthly Payment:</span>
+                              </div>
+                              <div class="col-4">
+                                  <span class="" v-text="monthlyPaymentFormatted"></span>
+                              </div>
+                          </div>
+                          <div class="row mt-2">
+                              <div class="col">
+                                  <span class="light-black">Total Payments:</span>
+                              </div>
+                              <div class="col-4">
+                                  <span class="" v-text="totalPaymentFormatted"></span>
+                              </div>
+                          </div>
+
+                      </div>
+
+                  </div>
+
+
+
+
+
+              </div>
+              <div class="col-md-7 right-section">
+                  <div class="d-flex flex-col justify-content-md-around"
+                      style="flex-direction:column ;height: 100%">
+                      <div class="top-buttons ">
+                          <div class="d-flex align-items-center justify-content-center">
+                              <div @click="onRateSelect(rate)" class="circle-button" v-for="rate in rateList"
+                                  :class="rate == activeRate?'circle-active':''">
+                                 
+                                     <span> {{ rate }}  </br>
+                                        Buy Down</span>
+            
+
+                              </div>
+
+                          </div>
+
+
+
+                      </div>
+                      <div class="rate-results">
+
+                          <div v-if="activeRate=='3-2-1'">
+                                <table id="customers" style="text-align: center;">
+                                    <tr>
+                                        <th>Interest Rate</th>
+                                        <th>Monthly  Payment</th>
+                                        <th>Monthly Payment Reduction</th>
+                                        <th># of  Payments</th>
+                                        <th>Annual Payment Reduction</th>
+  
+  
+                                    </tr>
+                                    <tbody class="tbody">
+                                        <tr v-for="(item,index) in tto" >
+                                            <td 
+                                            
+                                            >
+                                                <span>{{ formatDecimal(item.rate) }}%</span>
+                                            </td>
+                                            <td><span> {{ format(item.mp) }}</span> </td>
+                                            <td> <span>{{ format(item.mpr) }}</span></td>
+                                            <td> <span>{{ item.of }}</span> </td>
+                                            <td   > <span>{{
+                                                    format( item.ampr )}}</span></td>
+  
+                                        </tr>
+  
+
+                                    </tbody>
+  
+  
+  
+                                </table>
+                                <br>
+                                <div class="footer">
+                                    <div class="bg-green top-left-border top-right-border">
+                                        <span>Total Payment Reduction: {{ format(ttoTotalPaymentRed)}}</span>
+                                    </div>
+                                    <div class="bg-yellow bottom-left-border bottom-right-border">
+                                        <span>Buy Down Pricing: {{ format(ttoBuyDownPricing )}}</span>
+                                    </div>
+  
+                                </div>
+                          
+                          </div>
+
+                          <div v-if="activeRate=='2-1'">
+                              <table id="customers" style="text-align: center;">
+                                  <tr>
+                                      <th>Interest Rate</th>
+                                      <th>Monthly  Payment</th>
+                                      <th>Monthly Payment Reduction</th>
+                                      <th># of  Payments</th>
+                                      <th>Annual Payment Reduction</th>
+
+
+                                  </tr>
+                                  <tbody class="tbody">
+                                    <tr v-for="(item,index) in to" >
+                                        <td >
+                                            <span>{{ formatDecimal(item.rate) }}%</span>
+                                        </td>
+                                        <td><span> {{ format(item.mp) }}</span> </td>
+                                        <td> <span>{{ format(item.mpr) }}</span></td>
+                                        <td> <span>{{ item.of }}</span> </td>
+                                        <td > <span>{{
+                                                format( item.ampr )}}</span></td>
+
+                                    </tr>
+                                  </tbody>
+
+
+
+                              </table>
+                              <br>
+                              <div class="footer">
+                                  <div class="bg-green top-left-border top-right-border">
+                                      <span>Total Payment Reduction: {{ format(toTotalPaymentRed )}}</span>
+                                  </div>
+                                  <div class="bg-yellow bottom-left-border bottom-right-border">
+                                      <span>Buy Down Pricing: {{ toBuyDownPricing }}</span>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div v-if="activeRate=='1-0'">
+                              <table id="customers" style="text-align: center;">
+                                  <tr>
+                                      <th>Interest  Rate</th>
+                                      <th>Monthly Payment</th>
+                                      <th>Monthly Payment Reduction</th>
+                                      <th># of Payments</th>
+                                      <th>Annual Payment Reduction</th>
+
+
+                                  </tr>
+                                  <tbody class="tbody">
+                                    <tr v-for="(item,index) in oz" >
+                                        <td 
+                                        
+                                        >
+                                            <span>{{ formatDecimal(item.rate) }}%</span>
+                                        </td>
+                                        <td><span> {{ format(item.mp) }}</span> </td>
+                                        <td> <span>{{ format(item.mpr) }}</span></td>
+                                        <td> <span>{{ item.of }}</span> </td>
+                                        <td   > <span>{{
+                                                format( item.ampr )}}</span></td>
+
+                                    </tr>
+                                  </tbody>
+
+
+
+                              </table>
+                              <br>
+                              <div class="footer">
+                                  <div class="bg-green top-left-border top-right-border">
+                                      <span>Total Payment Reduction: {{ format(ozTotalPaymentRed)}}</span>
+                                  </div>
+                                  <div class="bg-yellow bottom-left-border bottom-right-border">
+                                      <span>Buy Down Pricing: {{ ozBuyDownPricing }}</span>
+                                  </div>
+
+                              </div>
+                          </div>
+                         
+
+                      </div>
+
+                  </div>
+
+
+
+              </div>
+
+              <!-- <div class="col-12 d-flex justify-content-around mb-4 mt-4">
+
+                <span @click="onModalOpen" class="save-button light-black"> click here to start saving!</button>
+              </div> -->
+
+          </div>
+          
+
+      </div>
+      
+
+      <div class="roundbox">
+      </div>
+
+
+  </div>
+
+
+
+
+
+
+  <div class="modal-overlay" v-if="showModal" @click="onModalClose">
+
+
+    <div class="modal-container">
+      <div class="modal" @click.stop>
+
+
+        <div class="row  align-items-center">
+          <div class="col " style="text-align:right;"> 
+            <p>Your first name </p>
+           
+          </div>
+          <div class="col"> : <input type="text"> 
+            
+          </div>
+  
+        
+  
+        </div>
+        <div class="row  align-items-center">
+          <div class="col" style="text-align:right;">
+            <p>Your phone or email</p>
+          </div>
+          <div class="col"> : <input type="text"></div>
+  
+        </div>
+        <div class="d-flex  mt-4 justify-content-center align-items-center">
+          <div class="col"></div>
+          <div class="col ">     
+             <span @click="onModalClose" class="modal-button">Submit</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-round">
+
+      </div>
+      <div class="close">
+        <img class="close-img" src="https://cdn.mortgagebigger.co/buydowncalc/close.svg" alt="" />
+      </div>
+    </div>
+   
+   
+  </div>
+ 
+
+
+
+</div>
