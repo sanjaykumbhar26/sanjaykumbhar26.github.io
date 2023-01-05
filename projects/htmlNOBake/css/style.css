@@ -1082,7 +1082,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 381px) and (max-width: 480px) {
+@media only screen and (min-width: 481px) and (max-width: 680px) {
   
     footer {
         margin-top: -20pt;
@@ -1090,7 +1090,7 @@ footer {
  }
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
 
     footer {
     top: inherit;
