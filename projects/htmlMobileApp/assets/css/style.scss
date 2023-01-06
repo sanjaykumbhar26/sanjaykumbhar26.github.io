@@ -44,6 +44,7 @@ a,
 button {
   outline: 0;
   text-decoration: none;
+  border: none;
 }
 a:hover,
 a:focus,
@@ -107,6 +108,10 @@ img {
     background: rgb(0, 0, 0);
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
       &::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(128, 126, 126, 0.3);
       background-color: #f5f5f5;
@@ -122,6 +127,11 @@ img {
     .message-list {
        margin-bottom: 80px;
       margin-top: 137px;
+      .userBio {
+        text-align: center;
+        color: #797979;
+        font-size: 11px;
+      }
     }
   }
   .message-box {
@@ -179,6 +189,9 @@ img {
   label {
     color: #fff;
     font-size: 20px;
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 14px;
     margin: 0;
     cursor: pointer;
   }
@@ -310,6 +323,7 @@ img {
   }
   .navgation-section {
     position: relative;
+    
   }
 }
 
@@ -345,7 +359,7 @@ img {
   }
   .owl--text {
     position: absolute;
-    bottom: 70px;
+    bottom: 120px;
     left: 20px;
     right: 20px;
     width: calc(100% - 40px);
@@ -383,13 +397,44 @@ img {
       margin-right: 20px;
       font-size: 20px;
       a {
+        position: relative;
         img {
           max-width: 30px;
+        }
+        .notifactionNumber {
+          width: 25px;
+          color: #fff;
+          background-color: red;
+          height: 25px;
+          border-radius: 100px;
+          overflow: hidden;
+          position: absolute;
+          display: flex;
+          font-size: 13px;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          right: -20px;
         }
       }
     }
   }
 }
+
+ .notifactionNumber {
+      width: 25px;
+      color: #fff;
+      background-color: red;
+      height: 25px;
+      border-radius: 100px;
+      overflow: hidden;
+      position: absolute;
+      display: flex;
+      font-size: 13px;
+      align-items: center;
+      justify-content: center;
+      right: 20px;
+ }
 
 .user-textarea {
   width: 100%;
@@ -398,7 +443,7 @@ img {
     width: 100%;
     background-color: #000;
     color: #f2f2f2;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 40px 10px 10px;
     font-size: 20px;
     margin-top: 10px;
     border: none;
@@ -432,8 +477,12 @@ img {
   }
 }
 
+.postHeader {
+  padding: 10px 10px 0;
+}
+
 .post-list {
-  margin: 80px 0 75px;
+  margin: 0 0 55px;
   h2 {
     color: #fff;
     font-size: 24px;
@@ -480,9 +529,27 @@ img {
       }
 
       img {
-        max-width: 40px;
+       max-width: 20px;
+       margin-left: 20px;
       }
     }
+  }
+}
+
+.generateSuggestions {
+  display: flex;
+  align-items: center;
+  .btn-connect {
+    margin-top: 0;
+  }
+  .btnGenerate {
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 16px;
   }
 }
 
@@ -509,7 +576,15 @@ img {
     max-height: calc(100vh - 150px);
     li {
       padding: 25px 0;
-      border-bottom: solid 1px #f2f2f250;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        border-bottom: solid 1px #f2f2f250;
+        width:calc(100% - 50px);
+        right: 0;
+        bottom: 0;
+      }
       &:last-child {
         border-bottom: none;
       }
@@ -549,9 +624,9 @@ img {
     }
   }
   .message-label {
-    color: rgba(255, 255, 255, 0.468);
+     color: #797979;
      margin: 15px;
-    font-size: 14px;
+     font-size: 14px;
   }
   .opt-out {
     color: rgba(255, 0, 0, 0.539);
@@ -573,6 +648,7 @@ img {
     label {
       color: #fff;
       font-size: 20px;
+      padding-left: 5px;
       margin: 0;
       cursor: pointer;
     }
@@ -607,7 +683,7 @@ img {
   .send-icon {
     position: fixed;
     z-index: 111;
-    bottom: 10px;
+    bottom: 13px;
     right: 10px;
     background: transparent;
     width: 50px;
@@ -641,9 +717,11 @@ img {
       color: rgba(255, 255, 255, 0.468);
      }
     .other-message-info {
-      max-width: 90%;
+      max-width: 75%;
       text-align: left;
       font-size: 14px;
+      line-height: 22px;
+      font-weight: 600;
     }
     p {
       margin-bottom: 0;
@@ -665,7 +743,7 @@ img {
       color: rgba(255, 255, 255, 0.468);
      }
     .my-message-info {
-      max-width: 90%;
+      max-width: 75%;
       font-size: 14px;
     }
      p {

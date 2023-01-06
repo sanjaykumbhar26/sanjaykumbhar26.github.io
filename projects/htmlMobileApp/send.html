@@ -18,25 +18,21 @@
    <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="user-spe">
-                    <div class="user-img">
-                    <img alt="placeholder" src="assets/images/user-icon-placeholder.png">
+                <div class="postHeader">
+                    <div class="user-spe">
+                        <div class="user-img">
+                        <img alt="placeholder" src="assets/images/user-icon-placeholder.png">
+                        </div>
+                        <label>Jimmy Secretan</label>
                     </div>
-                    <label>Jimmy Secretan</label>
+                    <div class="user-textarea">
+                        <textarea placeholder="What do you want help With?"></textarea>
+                        <button type="button" class="microphone-icon">
+                            <img alt="microphone" src="assets/images/icons-microphone.png">
+                        </button>
+                    </div>
                 </div>
-                <div class="user-textarea">
-                    <textarea placeholder="What do you want help With?"></textarea>
-                    <button type="button" class="microphone-icon">
-                        <img alt="microphone" src="assets/images/icons-microphone.png">
-                    </button>
-                </div>
-                <button class="btn-connect" href="#"> Next </button>
-            </div>
-        </div>
-         <div class="row">
-             <div class="col-md-12">
-                <div class="post-list">
-                    <h2>Select your reverie to post </h2>
+                 <div class="post-list">
                         <ul>
                             <li>
                                 <div class="post-text">
@@ -73,8 +69,13 @@
                             </li>
                         </ul>
                 </div>
-              </div>
-         </div>
+                <div class="generateSuggestions">
+                    <button class="btn-connect" href="#">Post </button>
+                    <button class="btnGenerate"  type="button" >Generate suggestions</button>
+                </div>
+            </div>
+        </div>
+        
    </div>
 
     <!-- navgation -->
@@ -89,15 +90,17 @@
                             </a>
                         </li>
                          <li>
-                            <a href="message.html">
-                                <img src="assets/images/message.png">
-                            </a>
-                        </li>
-                        <li>
                             <a href="#">
                                 <img src="assets/images/plus.png">
                             </a>
                         </li>
+                         <li>
+                            <a href="message.html">
+                                <img src="assets/images/message.png">
+                                <span class="notifactionNumber">1</span>
+                            </a>
+                        </li>
+                       
                          <li>
                             <a href="send.html">
                                 <img src="assets/images/send.png">
