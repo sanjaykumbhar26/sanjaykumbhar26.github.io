@@ -87,7 +87,7 @@ img {
 .login-page .login-block .twitter-button a {
   background-color: #03a9f4;
   color: #f8fbff;
-  padding: 3px 18px;
+  padding: 3px 15px 3px 3px;
   text-decoration: none;
   min-height: 40px;
   display: flex;
@@ -126,6 +126,7 @@ img {
 }
 .message-body .message-section .message-list {
   margin-bottom: 0;
+  margin-top: 108px;
 }
 .message-body .message-box {
   position: relative;
@@ -337,7 +338,7 @@ img {
 }
 .owl-slide::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(8.23deg, rgba(0, 0, 0, 0.7) 44.05%, rgba(0, 0, 0, 0) 64.09%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -519,17 +520,20 @@ img {
   border-bottom: 1px solid rgba(242, 242, 242, 0.2);
   z-index: 111;
   background-color: #000;
+  position: fixed;
+  top: 0;
 }
 .message-header .message-header-block {
   display: flex;
   align-items: center;
-  margin: 0 20px;
+  margin: 10px 20px 0;
 }
 .message-header .message-header-block h2 {
   color: #fff;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
+  margin-left: 10px;
 }
 .message-header .message-header-block img {
   max-width: 34px;
@@ -538,8 +542,7 @@ img {
 }
 .message-header .message-label {
   color: rgba(255, 255, 255, 0.468);
-  margin-top: 5px;
-  margin-left: 25px;
+  margin: 15px;
   font-size: 14px;
 }
 .message-header .opt-out {
@@ -597,6 +600,10 @@ img {
   right: 10px;
   background: transparent;
   width: 50px;
+  border: none;
+}
+.message-box .send-icon img {
+  width: 28px;
 }
 
 .message-section {
@@ -715,6 +722,7 @@ img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.71);
   top: 0;
+  transition: all 0.3s ease;
 }
 .popup .popupHeader {
   display: flex;
