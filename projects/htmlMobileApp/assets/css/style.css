@@ -129,7 +129,7 @@ img {
   margin-top: 108px;
 }
 .message-body .message-box {
-  position: relative;
+  position: fixed;
 }
 
 /* -------------------------- home page page  --------------------------- */
