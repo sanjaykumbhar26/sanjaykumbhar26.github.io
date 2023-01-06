@@ -120,8 +120,8 @@ img {
       border: 2px solid #555555;
     }
     .message-list {
-      margin-bottom: 0;
-      margin-top: 108px;
+       margin-bottom: 80px;
+      margin-top: 137px;
     }
   }
   .message-box {
@@ -605,7 +605,7 @@ img {
     }
   }
   .send-icon {
-    position: absolute;
+    position: fixed;
     z-index: 111;
     bottom: 10px;
     right: 10px;

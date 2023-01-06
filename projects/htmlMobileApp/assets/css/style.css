@@ -125,8 +125,8 @@ img {
   border: 2px solid #555555;
 }
 .message-body .message-section .message-list {
-  margin-bottom: 0;
-  margin-top: 108px;
+  margin-bottom: 80px;
+  margin-top: 137px;
 }
 .message-body .message-box {
   position: fixed;
@@ -594,7 +594,7 @@ img {
   outline: none;
 }
 .message-box .send-icon {
-  position: absolute;
+  position: fixed;
   z-index: 111;
   bottom: 10px;
   right: 10px;
