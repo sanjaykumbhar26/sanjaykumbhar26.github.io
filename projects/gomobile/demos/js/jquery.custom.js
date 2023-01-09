@@ -113,6 +113,7 @@ $(document).ready(function () {
 		var swiperslider = new Swiper ('.slider-intro', {
 			direction: 'vertical',
 			effect: 'slide',
+			autoplay: false,
 			parallax: true,
 			pagination: {
 			el: '.swiper-pagination'
@@ -120,9 +121,6 @@ $(document).ready(function () {
 			navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
-			},
-			autoplay: {
-				delay: 2000,
 			}
 		});
 
