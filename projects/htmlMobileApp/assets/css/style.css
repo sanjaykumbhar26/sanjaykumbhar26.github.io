@@ -887,7 +887,7 @@ img {
   left: 20px;
   right: 20px;
   width: calc(100% - 40px);
-  position: relative;
+  position: absolute;
   bottom: 180px;
   display: flex;
   z-index: 1111;
