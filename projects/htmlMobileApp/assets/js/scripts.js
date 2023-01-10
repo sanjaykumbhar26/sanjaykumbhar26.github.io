@@ -54,3 +54,20 @@ var hide = function(id) {
 }
 
 
+/*-------------- Page Index----------- */
+  
+		var swiperslider = new Swiper ('.slider-intro', {
+			direction: 'vertical',
+			effect: 'slide',
+			autoplay: false,
+			parallax: true,
+			pagination: {
+			el: '.swiper-pagination'
+			},
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			}
+		});
+
+

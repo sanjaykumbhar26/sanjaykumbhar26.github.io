@@ -192,7 +192,6 @@ img {
   font-size: 20px;
   padding-left: 5px;
   font-weight: 700;
-  font-size: 14px;
   margin: 0;
   cursor: pointer;
 }
@@ -322,56 +321,10 @@ img {
 }
 .connections-body .navgation-section {
   position: relative;
+  z-index: 11;
 }
 
 /* -------------------------- slider  --------------------------- */
-.owl-slide {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  overflow: hidden;
-}
-.owl-slide .owlSlideBlock {
-  height: 100vh;
-}
-.owl-slide .owl-lazy-img {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.owl-slide .owl-lazy-img img {
-  width: auto;
-  height: 100%;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-.owl-slide::before {
-  content: "";
-  background: linear-gradient(8.23deg, rgba(0, 0, 0, 0.7) 44.05%, rgba(0, 0, 0, 0) 64.09%);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-.owl-slide .owl--text {
-  position: absolute;
-  bottom: 120px;
-  left: 20px;
-  right: 20px;
-  width: calc(100% - 40px);
-  height: auto !important;
-  padding: 1em;
-  z-index: 11;
-  cursor: pointer;
-}
-.owl-slide .owl--text .btn-connect {
-  background-color: transparent;
-}
-
 /* -------------------------- Navgation  --------------------------- */
 .navgation-section {
   position: fixed;
@@ -382,6 +335,7 @@ img {
   height: 60px;
   display: flex;
   align-items: center;
+  z-index: 111;
 }
 .navgation-section ul {
   display: flex;
@@ -802,6 +756,7 @@ img {
   background-color: rgba(0, 0, 0, 0.71);
   top: 0;
   transition: all 0.3s ease;
+  justify-content: center;
 }
 .popup .popupHeader {
   display: flex;
@@ -823,6 +778,17 @@ img {
   color: #fff;
   margin-left: 10px;
 }
+.popup .popupImg {
+  position: relative;
+}
+.popup .popupImg::before {
+  content: "";
+  background: linear-gradient(8.23deg, rgba(0, 0, 0, 0.7) 54.05%, rgba(0, 0, 0, 0) 68.09%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
 .popup .popupInside {
   background-color: #000;
   border-radius: 10px;
@@ -833,6 +799,7 @@ img {
   position: absolute;
   bottom: 0;
   margin: 20px;
+  z-index: 11;
 }
 .popup .popupInside .popupInfo .btn-connect {
   background-color: transparent;
@@ -842,18 +809,99 @@ img {
   width: 100%;
 }
 
-@media only screen and (min-width: 960px) {
-  .owlSlideBlock .owl-lazy-img {
-    height: inherit;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-  }
-  .owlSlideBlock .owl-lazy-img img {
-    width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    max-width: 100%;
-  }
+.signoutSection {
+  height: 100vh;
+  position: relative;
+}
+.signoutSection .user-info {
+  position: absolute;
+  bottom: 120px;
+  left: 20px;
+  right: 20px;
+  width: calc(100% - 40px);
+  height: auto !important;
+  padding: 1em;
+  z-index: 11;
+  cursor: pointer;
+}
+.signoutSection .user-info h2 {
+  color: #B2B2B2;
+  font-size: 12px;
+}
+.signoutSection .user-info .user-spe {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.signoutSection .user-info .user-spe .userActionBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.signoutSection .user-info .user-spe .userActionBlock .userAction {
+  display: flex;
+  align-items: center;
+}
+.signoutSection .user-info .user-spe .userActionBlock .userAction .btn-border {
+  margin-right: 10px;
+}
+.signoutSection .user-info .user-spe .userActionBlock .userAction button {
+  margin-top: 0;
+}
+.signoutSection .user-info .user-spe .user-img {
+  width: 44px;
+  height: 44px !important;
+  margin-bottom: 10px;
+}
+
+.btn-border {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.slider-intro {
+  width: 100%;
+  height: 100%;
+}
+.slider-intro .slider-intro__slide {
+  width: 100%;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.slider-intro .caption {
+  width: 100%;
+  padding: 0 40px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(1deg, rgba(0, 0, 0, 0.7) 54.05%, rgba(0, 0, 0, 0) 68.09%);
+}
+.slider-intro .userCaptionContent {
+  width: 100%;
+  margin-bottom: 120px;
+}
+.slider-intro .userCaptionContent .user-info h2 {
+  text-align: left;
+  margin: 26px 0;
+}
+.slider-intro .userCaptionContent .user-info p {
+  color: #FC6734;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.slider-intro .userCaptionContent .user-info button {
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
