@@ -882,6 +882,7 @@ img {
   text-align: center;
   color: #fff;
   background: linear-gradient(1deg, rgba(0, 0, 0, 0.7) 54.05%, rgba(0, 0, 0, 0) 68.09%);
+  position: relative;
 }
 .slider-intro .userCaptionContent {
   left: 20px;
