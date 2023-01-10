@@ -889,7 +889,7 @@ img {
   right: 20px;
   width: calc(100% - 40px);
   position: absolute;
-  bottom: 140px;
+  bottom: 160px;
   display: flex;
 }
 .slider-intro .userCaptionContent .user-info h2 {
