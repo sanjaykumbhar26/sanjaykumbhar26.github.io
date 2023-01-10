@@ -885,9 +885,11 @@ img {
   background: linear-gradient(1deg, rgba(0, 0, 0, 0.7) 54.05%, rgba(0, 0, 0, 0) 68.09%);
 }
 .slider-intro .userCaptionContent {
-  width: 100%;
+  left: 20px;
+  right: 20px;
+  width: calc(100% - 40px);
   position: absolute;
-  bottom: 130px;
+  bottom: 140px;
   display: flex;
 }
 .slider-intro .userCaptionContent .user-info h2 {
