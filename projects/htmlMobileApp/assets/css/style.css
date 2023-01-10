@@ -886,8 +886,8 @@ img {
 }
 .slider-intro .userCaptionContent {
   width: 100%;
-  margin-bottom: 140px;
-  position: fixed;
+  position: absolute;
+  bottom: 130px;
   display: flex;
 }
 .slider-intro .userCaptionContent .user-info h2 {
