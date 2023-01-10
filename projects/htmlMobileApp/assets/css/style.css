@@ -887,9 +887,10 @@ img {
   left: 20px;
   right: 20px;
   width: calc(100% - 40px);
-  position: fixed;
+  position: relative;
   bottom: 180px;
   display: flex;
+  z-index: 1111;
 }
 .slider-intro .userCaptionContent .user-info {
   width: 100% !important;
