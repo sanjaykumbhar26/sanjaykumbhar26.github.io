@@ -875,10 +875,9 @@ img {
 }
 .slider-intro .caption {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 20px;
   height: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: flex-start;
   text-align: center;
   color: #fff;
@@ -888,9 +887,12 @@ img {
   left: 20px;
   right: 20px;
   width: calc(100% - 40px);
-  position: absolute;
-  bottom: 160px;
+  position: fixed;
+  bottom: 180px;
   display: flex;
+}
+.slider-intro .userCaptionContent .user-info {
+  width: 100% !important;
 }
 .slider-intro .userCaptionContent .user-info h2 {
   text-align: left;
