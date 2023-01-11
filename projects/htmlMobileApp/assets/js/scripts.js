@@ -11,33 +11,33 @@ $(document).ready(function() {
   // });
   
   
-   var slider = tns({
-    container: '.my-slider',
-    items: 1,
-    autoHeight: true,
-    nav: false,
-    loop: true,
-    slideBy: 'page',
-    swipeAngle: false, // tried everything here but same issue occurs
-    navigation: false, 
-    mouseDrag: true,
-    controls: false,
-     arrowKeys: true,
-     axis: 'vertical',
-     controlsContainer: "#customize-controls",
-    // autoplay: true,
-    lazyload: true,
-     speed: 1200,
-    responsive: {
-      700: {
-        controls: false,
-      },
-      900: {
-        controls: true,
+  //  var slider = tns({
+  //   container: '.my-slider',
+  //   items: 1,
+  //   autoHeight: true,
+  //   nav: false,
+  //   loop: true,
+  //   slideBy: 'page',
+  //   swipeAngle: false, // tried everything here but same issue occurs
+  //   navigation: false, 
+  //   mouseDrag: true,
+  //   controls: false,
+  //    arrowKeys: true,
+  //    axis: 'vertical',
+  //    controlsContainer: "#customize-controls",
+  //   // autoplay: true,
+  //   lazyload: true,
+  //    speed: 1200,
+  //   responsive: {
+  //     700: {
+  //       controls: false,
+  //     },
+  //     900: {
+  //       controls: true,
       
-      }
-    }
-   });
+  //     }
+  //   }
+  //  });
  
 });
 
@@ -58,7 +58,11 @@ var hide = function(id) {
   
 		var swiperslider = new Swiper ('.slider-intro', {
 			direction: 'vertical',
-			effect: 'slide',
+      effect: 'slide',
+       preloadImages: false,
+    // Enable lazy loading
+    lazy: true,
+      lazyLoading: true,
 			autoplay: false,
 			parallax: true,
 			pagination: {
@@ -67,7 +71,17 @@ var hide = function(id) {
 			navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
-			}
-		});
+      },
+       onLazyImageReady(s) {
+        if (!s.params.autoplay) {
+          s.params.autoplay = 2500;
+          s.startAutoplay();
+        }
+      }
+    });
+    
+
+
+    
 
 

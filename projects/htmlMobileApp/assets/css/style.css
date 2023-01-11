@@ -258,6 +258,20 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.connection-list ul li .connection-user-info .userSpeBlock {
+  display: flex;
+  align-items: center;
+}
+.connection-list ul li .connection-user-info .userSpeBlock label {
+  text-align: left;
+}
+.connection-list ul li .connection-user-info .userSpeBlock span {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  text-align: left;
+}
 .connection-list ul li .connection-user-info .user-spe .user-img {
   width: 28px;
   height: 28px !important;
@@ -644,7 +658,7 @@ img {
 }
 .message-section .other-message {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   margin-top: 15px;
@@ -670,7 +684,7 @@ img {
 }
 .message-section .my-message {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   position: relative;
   align-items: center;
   margin-top: 15px;
@@ -872,6 +886,7 @@ img {
   background-size: 100%;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
 }
 .slider-intro .caption {
   width: 100%;
@@ -881,8 +896,9 @@ img {
   justify-content: flex-start;
   text-align: center;
   color: #fff;
-  background: linear-gradient(1deg, rgba(0, 0, 0, 0.7) 54.05%, rgba(0, 0, 0, 0) 68.09%);
-  position: relative;
+  background: linear-gradient(1deg, rgba(0, 0, 0, 0.7) 64.05%, rgba(0, 0, 0, 0) 88.09%);
+  position: absolute;
+  top: 0;
 }
 .slider-intro .userCaptionContent {
   left: 20px;
@@ -892,6 +908,12 @@ img {
   bottom: 180px;
   display: flex;
   z-index: 1111;
+}
+.slider-intro .userCaptionContent .userConnectionBlock {
+  width: 100%;
+}
+.slider-intro .userCaptionContent .userConnectionBlock .connection-list p {
+  text-align: left;
 }
 .slider-intro .userCaptionContent .user-info {
   width: 100% !important;
@@ -912,4 +934,30 @@ img {
 }
 .slider-intro .userCaptionContent .user-info button {
   background-color: transparent;
+}
+
+.swipersSlider {
+  height: 100% !important;
+  width: 100%;
+  min-height: 100% !important;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.swiper-lazy-preloader {
+  border: 4px solid #000 !important;
+}
+
+.swiper-lazy {
+  opacity: 0;
+  transition: opacity 700ms ease-in-out;
+}
+
+.swiper-lazy-loaded {
+  opacity: 1 !important;
 }/*# sourceMappingURL=style.css.map */
